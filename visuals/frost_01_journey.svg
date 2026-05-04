@@ -1,0 +1,70 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Frost Bank SMB customer journey map showing 6 stages with sentiment curve and friction points">
+  <rect width="720" height="300" fill="#16140F"/>
+
+  <!-- Stage columns -->
+  <!-- Stage labels -->
+  <text x="60" y="24" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">01</text>
+  <text x="60" y="36" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">AWARENESS</text>
+
+  <text x="180" y="24" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">02</text>
+  <text x="180" y="36" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">RESEARCH</text>
+
+  <text x="300" y="24" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">03 · FRICTION</text>
+  <text x="300" y="36" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">PLATFORM SELECT</text>
+
+  <text x="420" y="24" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">04</text>
+  <text x="420" y="36" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">ONBOARDING</text>
+
+  <text x="540" y="24" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">05 · FRICTION</text>
+  <text x="540" y="36" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">DAILY USE</text>
+
+  <text x="660" y="24" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">06</text>
+  <text x="660" y="36" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">ADVOCACY</text>
+
+  <!-- Vertical stage dividers -->
+  <line x1="120" y1="50" x2="120" y2="240" stroke="#2A2620" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="240" y1="50" x2="240" y2="240" stroke="#2A2620" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="360" y1="50" x2="360" y2="240" stroke="#2A2620" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="480" y1="50" x2="480" y2="240" stroke="#2A2620" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="600" y1="50" x2="600" y2="240" stroke="#2A2620" stroke-width="1" stroke-dasharray="2,4"/>
+
+  <!-- Sentiment axis label -->
+  <text x="8" y="120" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle" transform="rotate(-90, 8, 120)">SENTIMENT</text>
+  <line x1="18" y1="60" x2="18" y2="230" stroke="#2A2620" stroke-width="1"/>
+  <text x="14" y="65" font-family="Geist Mono, monospace" font-size="6" fill="#5A554B">+</text>
+  <text x="14" y="230" font-family="Geist Mono, monospace" font-size="6" fill="#5A554B">−</text>
+
+  <!-- Sentiment curve path -->
+  <!-- Points: (60,90) awareness neutral-high, (180,80) research high, (300,160) friction low, (420,110) onboarding mid, (540,150) daily use friction, (660,90) advocacy high -->
+  <polyline
+    points="60,90 180,80 300,160 420,110 540,150 660,90"
+    fill="none"
+    stroke="#C9A876"
+    stroke-width="1.5"
+    stroke-linejoin="round"
+  />
+
+  <!-- Dots on curve -->
+  <circle cx="60" cy="90" r="4" fill="#C9A876"/>
+  <circle cx="180" cy="80" r="4" fill="#C9A876"/>
+  <circle cx="300" cy="160" r="5" fill="#C9A876" stroke="#0F0E0C" stroke-width="2"/>
+  <circle cx="420" cy="110" r="4" fill="#C9A876"/>
+  <circle cx="540" cy="150" r="5" fill="#C9A876" stroke="#0F0E0C" stroke-width="2"/>
+  <circle cx="660" cy="90" r="4" fill="#C9A876"/>
+
+  <!-- Friction markers -->
+  <text x="300" y="178" font-family="Geist Mono, monospace" font-size="7" fill="#C9A876" text-anchor="middle">▲ FRICTION</text>
+  <text x="540" y="168" font-family="Geist Mono, monospace" font-size="7" fill="#C9A876" text-anchor="middle">▲ FRICTION</text>
+
+  <!-- Action labels per stage -->
+  <text x="60" y="200" font-family="Geist, sans-serif" font-size="9" fill="#9A9384" text-anchor="middle">Referral or ad</text>
+  <text x="180" y="200" font-family="Geist, sans-serif" font-size="9" fill="#9A9384" text-anchor="middle">Compares tools</text>
+  <text x="300" y="200" font-family="Geist, sans-serif" font-size="9" fill="#F2EBDC" text-anchor="middle">Wrong platform</text>
+  <text x="300" y="212" font-family="Geist, sans-serif" font-size="9" fill="#9A9384" text-anchor="middle">chosen</text>
+  <text x="420" y="200" font-family="Geist, sans-serif" font-size="9" fill="#9A9384" text-anchor="middle">Account setup</text>
+  <text x="540" y="200" font-family="Geist, sans-serif" font-size="9" fill="#F2EBDC" text-anchor="middle">Feature gaps</text>
+  <text x="540" y="212" font-family="Geist, sans-serif" font-size="9" fill="#9A9384" text-anchor="middle">discovered</text>
+  <text x="660" y="200" font-family="Geist, sans-serif" font-size="9" fill="#9A9384" text-anchor="middle">Recommends</text>
+
+  <text x="360" y="270" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">FROST BANK SMB · JOURNEY MAP · 6 STAGES · 2 FRICTION POINTS</text>
+</svg>

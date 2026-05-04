@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840" role="img" aria-labelledby="title-frost-guide">
+  <title id="title-frost-guide">Sample interview guide for SMB customer discovery — sanitized excerpt</title>
+
+  <!-- ============== HEADER ============== -->
+  <rect width="720" height="840" fill="#16140F"/>
+  <text x="0" y="22" font-family="'Geist Mono', monospace" font-size="10" letter-spacing="2" fill="#5A554B">RESEARCH ARTIFACT · INTERVIEW GUIDE</text>
+  <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="22" fill="#F2EBDC">SMB customer discovery — <tspan font-style="italic" fill="#C9A876">sanitized excerpt</tspan></text>
+
+  <!-- meta row -->
+  <g transform="translate(0, 72)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">SESSION LENGTH</text>
+    <text x="0" y="18" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">45 minutes</text>
+
+    <text x="180" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">FORMAT</text>
+    <text x="180" y="18" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">1:1 remote, recorded</text>
+
+    <text x="380" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">PARTICIPANT</text>
+    <text x="380" y="18" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">SMB owner / financial DM</text>
+
+    <text x="580" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">METHOD</text>
+    <text x="580" y="18" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">Semi-structured</text>
+
+    <line x1="0" y1="36" x2="720" y2="36" stroke="#2A2620"/>
+  </g>
+
+  <!-- ============== SECTION 01: OPENING ============== -->
+  <g transform="translate(0, 130)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">01 · OPENING</text>
+    <text x="80" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">— 5 MIN</text>
+
+    <text x="0" y="22" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">Goal: build rapport, set expectations, get consent.</text>
+
+    <text x="0" y="48" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">Thanks for taking the time. Before we start — I'm here to learn about</text>
+    <text x="0" y="64" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">how your business handles its banking. There are no right or wrong</text>
+    <text x="0" y="80" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">answers. I'd like to record so I can focus on the conversation — okay?</text>
+  </g>
+
+  <!-- ============== SECTION 02: CONTEXT / WARM-UP ============== -->
+  <g transform="translate(0, 230)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">02 · CONTEXT</text>
+    <text x="80" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">— 5 MIN</text>
+
+    <text x="0" y="22" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">Goal: understand the business and how money moves through it.</text>
+
+    <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Q1.  Tell me about your business — what does a typical week look like?</text>
+
+    <text x="0" y="74" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Q2.  Who in your business handles money — paying bills, sending</text>
+    <text x="0" y="92" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">       invoices, payroll? Just you, or do others have access?</text>
+
+    <!-- probe block -->
+    <g transform="translate(20, 108)">
+      <line x1="0" y1="-4" x2="0" y2="32" stroke="#C9A876" stroke-width="1"/>
+      <text x="14" y="8" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">PROBE</text>
+      <text x="14" y="24" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">If shared: do they need approval before things go out?</text>
+    </g>
+  </g>
+
+  <!-- ============== SECTION 03: BEHAVIOR ============== -->
+  <g transform="translate(0, 380)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">03 · BEHAVIOR</text>
+    <text x="90" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">— 20 MIN · CORE</text>
+
+    <text x="0" y="22" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">Goal: surface real workflow, not opinions on features.</text>
+
+    <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Q3.  Walk me through the last time you sent a payment over $10,000.</text>
+    <text x="0" y="66" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">       What did you do, where did you do it, and how long did it take?</text>
+
+    <g transform="translate(20, 80)">
+      <line x1="0" y1="-4" x2="0" y2="50" stroke="#C9A876" stroke-width="1"/>
+      <text x="14" y="8" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">PROBES</text>
+      <text x="14" y="24" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">Was anything slower or harder than you expected?</text>
+      <text x="14" y="40" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">Did you check anything before submitting? After?</text>
+    </g>
+
+    <text x="0" y="160" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Q4.  When something goes wrong with a payment or transaction,</text>
+    <text x="0" y="178" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">       what's the first thing you do?</text>
+  </g>
+
+  <!-- ============== SECTION 04: DECISION ============== -->
+  <g transform="translate(0, 600)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">04 · DECISION</text>
+    <text x="90" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">— 10 MIN</text>
+
+    <text x="0" y="22" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">Goal: understand how platform-fit decisions actually get made.</text>
+
+    <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Q5.  How did you choose the banking tools you use today? Was there</text>
+    <text x="0" y="66" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">       a specific moment, or did it just happen?</text>
+
+    <text x="0" y="100" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Q6.  If a banker called and recommended switching, what would</text>
+    <text x="0" y="118" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">       you need to hear to take it seriously?</text>
+  </g>
+
+  <!-- ============== SECTION 05: WRAP-UP ============== -->
+  <g transform="translate(0, 750)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">05 · WRAP-UP</text>
+    <text x="90" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">— 5 MIN</text>
+
+    <text x="0" y="22" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">Goal: catch what was missed; thank participant.</text>
+
+    <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Q7.  What didn't I ask about that I should have?</text>
+
+    <line x1="0" y1="68" x2="720" y2="68" stroke="#2A2620"/>
+    <text x="0" y="84" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1.5" fill="#5A554B">DESIGN PRINCIPLE · BEHAVIORAL OVER ATTITUDINAL · SPECIFIC MOMENTS, NOT GENERALITIES</text>
+  </g>
+</svg>

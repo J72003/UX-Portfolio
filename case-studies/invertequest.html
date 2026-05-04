@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inverte-Quest — Jaspal Singh Kahlon</title>
+    <meta
+      name="description"
+      content="An NSF-funded mobile concept for aquatic invertebrate identification. Two design problems: surviving stream-bank use and calibrating trust in ML predictions."
+    />
+    <meta name="theme-color" content="#0F0E0C" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Inverte-Quest — Jaspal Singh Kahlon" />
+    <meta property="og:description" content="An NSF-funded mobile concept for aquatic invertebrate identification. Two design problems: surviving stream-bank use and calibrating trust in ML predictions." />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&family=Geist+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body id="top">
+    <div class="shell">
+
+      <!-- ============ NAV ============ -->
+      <nav class="nav" aria-label="Primary">
+        <div class="nav-mark">
+          <a class="back-link" href="../index.html">← All work</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html#work">Work</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- ============ CASE HERO ============ -->
+      <header class="case-hero">
+        <div class="container">
+          <div class="reveal-stagger">
+            <span class="case-eyebrow">02 · NSF S-STEM · Mobile · AI/ML</span>
+            <h1 class="case-title">
+              Inverte-Quest — designing for<br /><em>field conditions</em> and AI trust
+            </h1>
+            <p class="case-sub">
+              An NSF-funded research project on user-centered AI design for
+              non-traditional contexts. The work asked two research questions:
+              how do you design a mobile interface that survives field conditions,
+              and how do you calibrate user trust in AI predictions for educational
+              use without making the model feel infallible?
+            </p>
+            <div class="case-meta-row">
+              <div class="case-meta-item">
+                <span class="case-meta-label">Role</span>
+                <span class="case-meta-value">UX Designer · Researcher</span>
+              </div>
+              <div class="case-meta-item">
+                <span class="case-meta-label">Duration</span>
+                <span class="case-meta-value">Fall 2024 — Spring 2025</span>
+              </div>
+              <div class="case-meta-item">
+                <span class="case-meta-label">Methods</span>
+                <span class="case-meta-value">Field observation · Competitive audit · Prototype testing</span>
+              </div>
+              <div class="case-meta-item">
+                <span class="case-meta-label">Tools</span>
+                <span class="case-meta-value">Figma · Miro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ============ CASE BODY ============ -->
+      <main class="case-body">
+        <div class="container">
+
+          <!-- 01 · CONTEXT -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">01</span> Context</h2>
+            <div class="case-prose">
+              <p>
+                Inverte-Quest is a concept mobile app developed as part of an
+                NSF S-STEM research grant at Texas A&amp;M University–San Antonio.
+                The goal: give biology students and citizen scientists a way to
+                photograph and identify aquatic macroinvertebrates in the field,
+                using machine learning to surface a species match and a
+                confidence score.
+              </p>
+              <p>
+                I came onto the project as UX designer and was handed two
+                constraints that defined everything downstream. First: the app
+                would be used in streams and creek banks — wet hands, bright
+                sun, time pressure, no stable surface. Second: the ML model
+                had meaningful accuracy variance across species. A high-confidence
+                match on a common stonefly and a low-confidence guess on an
+                obscure midge larva needed to feel different to the user.
+              </p>
+            </div>
+          </section>
+
+          <!-- 02 · RESEARCH -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">02</span> Research</h2>
+            <div class="case-prose">
+              <p>
+                I started with a competitive audit of iNaturalist, Seek, and
+                several academic species ID tools. The pattern was consistent:
+                most apps were designed for desktop-origin workflows (upload
+                a photo you already have, review results later). The capture
+                flow was treated as a formality — tap, confirm, done. Nothing
+                accounted for the fact that capture itself is the hard part
+                when you're standing in a stream.
+              </p>
+              <p>
+                I ran two field observation sessions watching biology students
+                collect samples. Three findings dominated:
+              </p>
+              <ul>
+                <li>
+                  Students held their phone one-handed, meaning most UI
+                  interactions happened in a 2.5-inch thumb zone at the bottom
+                  of the screen.
+                </li>
+                <li>
+                  Glare made standard dark overlays and small text nearly
+                  unreadable in direct sun. Students squinted and leaned in —
+                  a friction signal.
+                </li>
+                <li>
+                  When a result showed low confidence, students didn't know
+                  whether to trust it, skip it, or photograph again. The
+                  confidence number was meaningless without a frame for what
+                  it implied.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- ARTIFACT 01 · CAPTURE-TO-SAVE FLOW -->
+          <div class="artifact reveal">
+            <div class="artifact-label">CAPTURE-TO-SAVE FLOW · 5 STEPS</div>
+            <div class="artifact-svg">
+              <svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Capture-to-save user flow showing five steps from open app to save observation">
+                <rect width="720" height="220" fill="#16140F"/>
+
+                <!-- Step nodes -->
+                <!-- Node 1: Open App -->
+                <rect x="20" y="80" width="110" height="60" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <text x="75" y="106" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">STEP 1</text>
+                <text x="75" y="122" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Open App</text>
+                <text x="75" y="136" font-family="Geist, sans-serif" font-size="10" fill="#5A554B" text-anchor="middle">Camera ready</text>
+
+                <!-- Arrow 1→2 -->
+                <line x1="130" y1="110" x2="158" y2="110" stroke="#2A2620" stroke-width="1"/>
+                <polygon points="158,106 166,110 158,114" fill="#2A2620"/>
+
+                <!-- Node 2: Frame + Capture -->
+                <rect x="166" y="80" width="110" height="60" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <text x="221" y="106" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">STEP 2</text>
+                <text x="221" y="122" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Frame + Capture</text>
+                <text x="221" y="136" font-family="Geist, sans-serif" font-size="10" fill="#5A554B" text-anchor="middle">One-thumb tap</text>
+
+                <!-- Arrow 2→3 -->
+                <line x1="276" y1="110" x2="304" y2="110" stroke="#2A2620" stroke-width="1"/>
+                <polygon points="304,106 312,110 304,114" fill="#2A2620"/>
+
+                <!-- Node 3: ML Result -->
+                <rect x="312" y="80" width="110" height="60" rx="4" fill="none" stroke="#C9A876" stroke-width="1"/>
+                <text x="367" y="106" font-family="Geist Mono, monospace" font-size="9" fill="#C9A876" text-anchor="middle">STEP 3</text>
+                <text x="367" y="122" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">View Result</text>
+                <text x="367" y="136" font-family="Geist, sans-serif" font-size="10" fill="#5A554B" text-anchor="middle">Confidence shown</text>
+
+                <!-- Decision split from node 3 -->
+                <!-- High confidence path (up) -->
+                <line x1="422" y1="110" x2="450" y2="110" stroke="#2A2620" stroke-width="1" stroke-dasharray="4,3"/>
+                <line x1="450" y1="110" x2="450" y2="60" stroke="#2A2620" stroke-width="1" stroke-dasharray="4,3"/>
+                <line x1="450" y1="60" x2="478" y2="60" stroke="#2A2620" stroke-width="1" stroke-dasharray="4,3"/>
+                <polygon points="478,56 486,60 478,64" fill="#2A2620"/>
+                <text x="455" y="48" font-family="Geist Mono, monospace" font-size="8" fill="#9A9384">HIGH CONF</text>
+
+                <!-- High conf node -->
+                <rect x="486" y="40" width="110" height="40" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <text x="541" y="56" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Accept Match</text>
+                <text x="541" y="70" font-family="Geist, sans-serif" font-size="10" fill="#5A554B" text-anchor="middle">→ Save</text>
+
+                <!-- Low confidence path (down) -->
+                <line x1="422" y1="110" x2="450" y2="110" stroke="#2A2620" stroke-width="1"/>
+                <line x1="450" y1="110" x2="450" y2="160" stroke="#2A2620" stroke-width="1" stroke-dasharray="4,3"/>
+                <line x1="450" y1="160" x2="478" y2="160" stroke="#2A2620" stroke-width="1" stroke-dasharray="4,3"/>
+                <polygon points="478,156 486,160 478,164" fill="#2A2620"/>
+                <text x="455" y="152" font-family="Geist Mono, monospace" font-size="8" fill="#9A9384">LOW CONF</text>
+
+                <!-- Low conf node -->
+                <rect x="486" y="140" width="110" height="40" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <text x="541" y="156" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Recapture or</text>
+                <text x="541" y="170" font-family="Geist, sans-serif" font-size="10" fill="#5A554B" text-anchor="middle">Flag + Save</text>
+
+                <!-- Step 5: Save Observation (both paths merge) -->
+                <!-- Arrow from high conf -->
+                <line x1="596" y1="60" x2="640" y2="60" stroke="#2A2620" stroke-width="1"/>
+                <line x1="640" y1="60" x2="640" y2="100" stroke="#2A2620" stroke-width="1"/>
+                <polygon points="636,100 640,108 644,100" fill="#2A2620"/>
+
+                <!-- Arrow from low conf -->
+                <line x1="596" y1="160" x2="640" y2="160" stroke="#2A2620" stroke-width="1"/>
+                <line x1="640" y1="160" x2="640" y2="130" stroke="#2A2620" stroke-width="1"/>
+                <polygon points="636,130 640,122 644,130" fill="#2A2620"/>
+
+                <!-- Step 5 node -->
+                <rect x="610" y="100" width="96" height="30" rx="4" fill="#C9A876" fill-opacity="0.12" stroke="#C9A876" stroke-width="1"/>
+                <text x="658" y="119" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Saved</text>
+
+                <!-- Label -->
+                <text x="360" y="204" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">INVERTE-QUEST · CAPTURE-TO-SAVE FLOW · DASHED = CONDITIONAL PATH</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- 03 · THE RESEARCH QUESTIONS -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">03</span> The research questions</h2>
+            <div class="case-prose">
+              <p>
+                Two research questions sat under the surface of "build an ID app":
+              </p>
+              <h3 style="font-family: var(--serif); font-size: 1.125rem; margin: 2rem 0 0.5rem; color: var(--ink);">Field conditions break typical mobile UI patterns</h3>
+              <p>
+                RQ1: What design patterns survive when standard mobile usability
+                assumptions break down? The camera interface had to work for
+                someone standing in a creek with one dry hand, bright ambient
+                light, and five seconds before the specimen moves. This meant
+                the capture trigger had to live in the thumb zone, guidance text
+                had to be large enough to read in direct sun, and the
+                confirmation step had to be forgiving of accidental taps.
+              </p>
+              <h3 style="font-family: var(--serif); font-size: 1.125rem; margin: 2rem 0 0.5rem; color: var(--ink);">AI predictions need calibrated trust</h3>
+              <p>
+                RQ2: How does interface treatment of confidence and uncertainty
+                shape student trust in AI outputs? A raw percentage (72%)
+                communicates nothing about what action to take. Users needed a
+                result screen that told them both what the model thinks and
+                whether they should trust it — and if not, what to do instead.
+              </p>
+              <blockquote>
+                How might we design a field-use mobile interface where the AI's
+                uncertainty is legible — so students can act on the output, not
+                just receive it?
+              </blockquote>
+            </div>
+          </section>
+
+          <!-- ROLE -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">04</span> Role</h2>
+            <div class="case-prose">
+              <p>This is a solo project. I am the designer, researcher, and developer.</p>
+              <ul>
+                <li>Conducted formative research across three user populations (students in field contexts, teachers reviewing observations, researchers logging stream data) to understand workflow constraints and trust expectations</li>
+                <li>Analyzed model failure modes through dataset review and augmentation testing, translating quantitative ML behavior into qualitative design hypotheses about user trust</li>
+                <li>Designed user flows and interface concepts as hypotheses to be validated, with explicit attention to multi-stakeholder workflows and field-condition usability</li>
+                <li>Built the technical foundation for usability testing — Firebase backend, FastAPI inference service on Cloud Run, Expo cross-platform app — to enable end-to-end research with real users</li>
+                <li>Maintained NSF S-STEM sponsor alignment through formal research presentations communicating findings, design rationale, and roadmap direction</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- 05 · DESIGN DECISIONS -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">05</span> Design decisions</h2>
+            <div class="case-prose">
+              <p>
+                The capture screen resolved around a single principle: reduce
+                the number of decisions required in the moment of capture.
+                One large shutter button. A minimal viewfinder overlay showing
+                only the framing guidance. No menu, no settings, no mode
+                switching accessible mid-capture.
+              </p>
+              <p>
+                For the result screen, I separated confidence into three
+                bands — high, medium, low — each with a distinct visual
+                treatment and a distinct call to action. High confidence
+                showed a bold match name and a single "Save" action. Medium
+                confidence showed the match with a secondary "Recapture"
+                option. Low confidence surfaced the top two candidates as
+                equally weighted options, removed the default "Save" action,
+                and replaced it with "Save as unidentified" and a note
+                explaining why.
+              </p>
+              <p>
+                I also added a brief plain-language explanation under the
+                confidence indicator — not "Confidence: 61%" but "The model
+                found a close match. Photographing from a different angle
+                may produce a clearer result." This closed the loop between
+                the score and the action.
+              </p>
+            </div>
+          </section>
+
+          <!-- DESIGN HYPOTHESES -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">06</span> Design hypotheses</h2>
+            <div class="case-prose">
+              <p>
+                The screens below are design hypotheses, not deliverables. Each
+                one represents a specific bet about how to translate a research
+                finding into an interface — bets that would be validated through
+                moderated usability testing with each user population before
+                moving to higher fidelity.
+              </p>
+            </div>
+          </section>
+
+          <!-- ARTIFACT 02 · CAPTURE SCREEN WIREFRAME -->
+          <div class="artifact reveal">
+            <div class="artifact-label">CAPTURE SCREEN · WIREFRAME</div>
+            <div class="artifact-svg">
+              <svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Capture screen wireframe showing camera viewfinder with thumb-zone shutter button at bottom">
+                <rect width="720" height="360" fill="#16140F"/>
+
+                <!-- Phone frame -->
+                <rect x="260" y="20" width="200" height="320" rx="18" fill="none" stroke="#2A2620" stroke-width="1.5"/>
+                <!-- Screen area -->
+                <rect x="268" y="36" width="184" height="288" rx="4" fill="#1A1810"/>
+
+                <!-- Camera viewfinder area -->
+                <rect x="272" y="44" width="176" height="196" rx="2" fill="#111009"/>
+                <!-- Framing guide corners -->
+                <line x1="306" y1="76" x2="306" y2="92" stroke="#C9A876" stroke-width="1.5"/>
+                <line x1="306" y1="76" x2="322" y2="76" stroke="#C9A876" stroke-width="1.5"/>
+                <line x1="410" y1="76" x2="394" y2="76" stroke="#C9A876" stroke-width="1.5"/>
+                <line x1="410" y1="76" x2="410" y2="92" stroke="#C9A876" stroke-width="1.5"/>
+                <line x1="306" y1="212" x2="306" y2="196" stroke="#C9A876" stroke-width="1.5"/>
+                <line x1="306" y1="212" x2="322" y2="212" stroke="#C9A876" stroke-width="1.5"/>
+                <line x1="410" y1="212" x2="394" y2="212" stroke="#C9A876" stroke-width="1.5"/>
+                <line x1="410" y1="212" x2="410" y2="196" stroke="#C9A876" stroke-width="1.5"/>
+
+                <!-- Guidance label inside viewfinder -->
+                <text x="360" y="145" font-family="Geist, sans-serif" font-size="10" fill="#9A9384" text-anchor="middle">Center specimen</text>
+                <text x="360" y="159" font-family="Geist, sans-serif" font-size="10" fill="#9A9384" text-anchor="middle">in frame</text>
+
+                <!-- Bottom control bar -->
+                <rect x="268" y="244" width="184" height="76" rx="0" fill="#16140F"/>
+
+                <!-- Shutter button — large, thumb zone -->
+                <circle cx="360" cy="282" r="24" fill="none" stroke="#F2EBDC" stroke-width="1.5"/>
+                <circle cx="360" cy="282" r="18" fill="#F2EBDC"/>
+
+                <!-- Flash toggle (left of shutter) -->
+                <rect x="291" y="274" width="32" height="16" rx="8" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <text x="307" y="285" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">FLASH</text>
+
+                <!-- Gallery access (right of shutter) -->
+                <rect x="397" y="274" width="32" height="16" rx="8" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <text x="413" y="285" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">ALBUM</text>
+
+                <!-- Annotations -->
+                <!-- Annotation: Thumb zone -->
+                <line x1="448" y1="282" x2="500" y2="282" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <text x="504" y="278" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">THUMB ZONE</text>
+                <text x="504" y="291" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">Bottom 2.5 in</text>
+
+                <!-- Annotation: Framing guide -->
+                <line x1="410" y1="144" x2="460" y2="200" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <text x="464" y="197" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">FRAMING GUIDE</text>
+                <text x="464" y="210" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">Corner brackets only</text>
+
+                <!-- Annotation: Minimal controls -->
+                <line x1="268" y1="262" x2="220" y2="240" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <text x="100" y="237" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">MINIMAL CONTROLS</text>
+                <text x="100" y="250" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">No mid-capture menu</text>
+
+                <text x="360" y="348" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">INVERTE-QUEST · CAPTURE SCREEN · WIREFRAME</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- ARTIFACT 03 · RESULT: HIGH CONFIDENCE -->
+          <div class="artifact reveal">
+            <div class="artifact-label">RESULT SCREEN · HIGH CONFIDENCE</div>
+            <div class="artifact-svg">
+              <svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Result screen for high confidence match showing bold species name, confidence band, and single save action">
+                <rect width="720" height="360" fill="#16140F"/>
+
+                <!-- Phone frame -->
+                <rect x="260" y="20" width="200" height="320" rx="18" fill="none" stroke="#2A2620" stroke-width="1.5"/>
+                <rect x="268" y="36" width="184" height="288" rx="4" fill="#1A1810"/>
+
+                <!-- Photo thumbnail -->
+                <rect x="272" y="44" width="176" height="120" rx="2" fill="#111009"/>
+                <text x="360" y="108" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">CAPTURED PHOTO</text>
+
+                <!-- Confidence band: HIGH -->
+                <rect x="272" y="168" width="176" height="20" rx="2" fill="#C9A876" fill-opacity="0.15" stroke="#C9A876" stroke-width="1"/>
+                <text x="296" y="182" font-family="Geist Mono, monospace" font-size="8" fill="#C9A876">HIGH CONFIDENCE · 91%</text>
+
+                <!-- Species name -->
+                <text x="280" y="210" font-family="Instrument Serif, serif" font-size="16" fill="#F2EBDC" font-style="italic">Perlidae</text>
+                <text x="280" y="224" font-family="Geist, sans-serif" font-size="10" fill="#9A9384">Common Stonefly · Order Plecoptera</text>
+
+                <!-- Explanation text -->
+                <text x="280" y="244" font-family="Geist, sans-serif" font-size="9" fill="#5A554B">Strong visual match on wing venation</text>
+                <text x="280" y="256" font-family="Geist, sans-serif" font-size="9" fill="#5A554B">and body segmentation pattern.</text>
+
+                <!-- Save button -->
+                <rect x="280" y="268" width="160" height="36" rx="4" fill="#F2EBDC"/>
+                <text x="360" y="291" font-family="Geist, sans-serif" font-size="12" fill="#0F0E0C" text-anchor="middle" font-weight="500">Save observation</text>
+
+                <!-- Annotations -->
+                <line x1="448" y1="178" x2="500" y2="178" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <text x="504" y="174" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">CONFIDENCE BAND</text>
+                <text x="504" y="187" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">3 tiers: high / med / low</text>
+
+                <line x1="448" y1="286" x2="500" y2="286" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <text x="504" y="282" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">SINGLE PRIMARY ACTION</text>
+                <text x="504" y="295" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">No decision friction</text>
+
+                <text x="360" y="348" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">INVERTE-QUEST · RESULT SCREEN · HIGH CONFIDENCE</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- ARTIFACT 04 · RESULT: LOW CONFIDENCE -->
+          <div class="artifact reveal">
+            <div class="artifact-label">RESULT SCREEN · LOW CONFIDENCE</div>
+            <div class="artifact-svg">
+              <svg viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Result screen for low confidence match showing two candidate options, plain-language explanation, and split save actions">
+                <rect width="720" height="380" fill="#16140F"/>
+
+                <!-- Phone frame -->
+                <rect x="260" y="20" width="200" height="340" rx="18" fill="none" stroke="#2A2620" stroke-width="1.5"/>
+                <rect x="268" y="36" width="184" height="308" rx="4" fill="#1A1810"/>
+
+                <!-- Photo thumbnail -->
+                <rect x="272" y="44" width="176" height="90" rx="2" fill="#111009"/>
+                <text x="360" y="93" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">CAPTURED PHOTO</text>
+
+                <!-- Confidence band: LOW -->
+                <rect x="272" y="138" width="176" height="20" rx="2" fill="none" stroke="#5A554B" stroke-width="1"/>
+                <text x="296" y="152" font-family="Geist Mono, monospace" font-size="8" fill="#9A9384">LOW CONFIDENCE · 42%</text>
+
+                <!-- Explanation -->
+                <text x="280" y="174" font-family="Geist, sans-serif" font-size="9" fill="#9A9384">The model found two close matches.</text>
+                <text x="280" y="187" font-family="Geist, sans-serif" font-size="9" fill="#9A9384">A clearer photo may help narrow it.</text>
+
+                <!-- Candidate A -->
+                <rect x="272" y="198" width="84" height="52" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <text x="314" y="218" font-family="Geist Mono, monospace" font-size="7" fill="#9A9384" text-anchor="middle">CANDIDATE A</text>
+                <text x="314" y="232" font-family="Geist, sans-serif" font-size="10" fill="#F2EBDC" text-anchor="middle" font-style="italic">Chironomidae</text>
+                <text x="314" y="244" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">42%</text>
+
+                <!-- Candidate B -->
+                <rect x="364" y="198" width="84" height="52" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <text x="406" y="218" font-family="Geist Mono, monospace" font-size="7" fill="#9A9384" text-anchor="middle">CANDIDATE B</text>
+                <text x="406" y="232" font-family="Geist, sans-serif" font-size="10" fill="#F2EBDC" text-anchor="middle" font-style="italic">Baetidae</text>
+                <text x="406" y="244" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">38%</text>
+
+                <!-- Recapture button -->
+                <rect x="280" y="262" width="160" height="30" rx="4" fill="none" stroke="#F2EBDC" stroke-width="1"/>
+                <text x="360" y="281" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Recapture</text>
+
+                <!-- Save unidentified button -->
+                <rect x="280" y="300" width="160" height="30" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <text x="360" y="319" font-family="Geist, sans-serif" font-size="11" fill="#9A9384" text-anchor="middle">Save as unidentified</text>
+
+                <!-- Annotations -->
+                <line x1="448" y1="224" x2="508" y2="180" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <text x="512" y="177" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">TWO EQUAL CANDIDATES</text>
+                <text x="512" y="190" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">No default selection</text>
+
+                <line x1="448" y1="315" x2="508" y2="315" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <text x="512" y="311" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">SPLIT ACTIONS</text>
+                <text x="512" y="324" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">No "Save" as default CTA</text>
+
+                <text x="360" y="368" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">INVERTE-QUEST · RESULT SCREEN · LOW CONFIDENCE</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- 07 · TESTING -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">07</span> Testing</h2>
+            <div class="case-prose">
+              <p>
+                I ran prototype testing with four biology students across
+                two sessions. The capture flow tested well — students
+                found the shutter button without instruction and didn't
+                comment on it, which was the intended outcome. The framing
+                guide corners were described by one student as "feeling like
+                a camera" rather than "feeling like an app," which tracked
+                with the mental model I was designing toward.
+              </p>
+              <p>
+                The confidence result screens produced more feedback. The
+                three-tier system worked in the high-confidence condition.
+                In the low-confidence condition, two students initially tried
+                to tap a candidate card to "select" it before saving — an
+                interaction the prototype didn't support. This pointed to a
+                gap: the candidates needed to be explicitly selectable, not
+                just informational. I revised the design to add a radio
+                selection state to each candidate card, which resolved the
+                confusion in the follow-up session.
+              </p>
+            </div>
+          </section>
+
+          <!-- ARTIFACT 05 · SAVE OBSERVATION SCREEN -->
+          <div class="artifact reveal">
+            <div class="artifact-label">SAVE OBSERVATION · REVISED CANDIDATE SELECTION</div>
+            <div class="artifact-svg">
+              <svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Revised save observation screen showing selectable candidate cards with radio selection state">
+                <rect width="720" height="360" fill="#16140F"/>
+
+                <!-- Phone frame -->
+                <rect x="260" y="20" width="200" height="320" rx="18" fill="none" stroke="#2A2620" stroke-width="1.5"/>
+                <rect x="268" y="36" width="184" height="288" rx="4" fill="#1A1810"/>
+
+                <!-- Screen header -->
+                <text x="360" y="58" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">SELECT IDENTIFICATION</text>
+
+                <!-- Candidate A — selected state -->
+                <rect x="276" y="70" width="168" height="64" rx="4" fill="#C9A876" fill-opacity="0.08" stroke="#C9A876" stroke-width="1"/>
+                <!-- Radio indicator: selected -->
+                <circle cx="294" cy="102" r="7" fill="none" stroke="#C9A876" stroke-width="1.5"/>
+                <circle cx="294" cy="102" r="4" fill="#C9A876"/>
+                <text x="308" y="94" font-family="Geist Mono, monospace" font-size="8" fill="#9A9384">CANDIDATE A · 42%</text>
+                <text x="308" y="108" font-family="Geist, sans-serif" font-size="12" fill="#F2EBDC" font-style="italic">Chironomidae</text>
+                <text x="308" y="122" font-family="Geist, sans-serif" font-size="9" fill="#5A554B">Midge larvae</text>
+
+                <!-- Candidate B — unselected state -->
+                <rect x="276" y="142" width="168" height="64" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <!-- Radio indicator: empty -->
+                <circle cx="294" cy="174" r="7" fill="none" stroke="#5A554B" stroke-width="1.5"/>
+                <text x="308" y="166" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B">CANDIDATE B · 38%</text>
+                <text x="308" y="180" font-family="Geist, sans-serif" font-size="12" fill="#9A9384" font-style="italic">Baetidae</text>
+                <text x="308" y="194" font-family="Geist, sans-serif" font-size="9" fill="#5A554B">Small minnow mayfly</text>
+
+                <!-- Save unidentified option -->
+                <rect x="276" y="214" width="168" height="40" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <circle cx="294" cy="234" r="7" fill="none" stroke="#5A554B" stroke-width="1.5"/>
+                <text x="308" y="230" font-family="Geist, sans-serif" font-size="11" fill="#5A554B">Save as unidentified</text>
+                <text x="308" y="244" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B">No ID assigned</text>
+
+                <!-- Save button -->
+                <rect x="280" y="268" width="160" height="36" rx="4" fill="#F2EBDC"/>
+                <text x="360" y="291" font-family="Geist, sans-serif" font-size="12" fill="#0F0E0C" text-anchor="middle" font-weight="500">Save observation</text>
+
+                <!-- Annotations -->
+                <line x1="448" y1="102" x2="500" y2="102" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <text x="504" y="98" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">RADIO SELECTION</text>
+                <text x="504" y="111" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">Explicit selectable state</text>
+
+                <line x1="448" y1="174" x2="500" y2="174" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <text x="504" y="170" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">UNSELECTED STATE</text>
+                <text x="504" y="183" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">Visual hierarchy preserved</text>
+
+                <text x="360" y="348" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">INVERTE-QUEST · SAVE OBSERVATION · REVISED AFTER TESTING</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- 09 · WHAT I'D VALIDATE NEXT -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">08</span> What I'd validate next</h2>
+            <div class="case-prose">
+              <p>
+                The current state has design hypotheses but no validation.
+                Before moving to higher-fidelity design, I'd run three rounds
+                of moderated usability research:
+              </p>
+              <ul>
+                <li><strong>Field condition usability</strong> — recruit 6–8 students in actual classroom field-day contexts, observe capture behavior with wet hands and direct sunlight, measure task completion and error recovery rather than satisfaction</li>
+                <li><strong>Trust calibration</strong> — A/B test the high-confidence vs low-confidence result variants with 12+ student participants, measure whether inverted action hierarchy actually shifts behavior toward retake when confidence is low (vs. the rate of save-anyway clicks as counter-signal)</li>
+                <li><strong>Teacher review workflow</strong> — semi-structured interviews with 5–6 teachers about classroom adoption barriers, including a think-aloud protocol on the observation review and export flow</li>
+              </ul>
+              <p>
+                Each round would feed back into the design hypotheses. The
+                point of building the technical infrastructure first was to
+                make this research possible at all — without working ML, the
+                trust questions can't be tested honestly.
+              </p>
+            </div>
+          </section>
+
+          <!-- 10 · REFLECTION -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">09</span> Reflection</h2>
+            <div class="case-prose">
+              <p>
+                The confidence signal problem turned out to be the more
+                interesting design challenge. Translating a model output
+                into an actionable interface decision is something that
+                comes up anywhere ML is surfaced to a non-technical user —
+                and the instinct to display the raw score is almost always
+                wrong. What matters to the user is not the number; it's
+                the answer to "should I trust this and what do I do
+                next."
+              </p>
+              <p>
+                The three-tier band approach had a tradeoff: it hid
+                granularity in exchange for clarity. A 68% and an 89%
+                both read as "high confidence" in this system. For a
+                research app where data quality matters, that flattening
+                could be a problem — which is why the underlying score
+                was kept visible, just de-emphasized. Expert users can
+                find it. Novice users are guided by the band.
+              </p>
+              <p>
+                The testing revision — adding radio selection to the
+                candidate cards — was the cleanest change in the project.
+                The problem surfaced in under ten minutes of observation
+                and the fix took an afternoon. That ratio is why I treat
+                early prototype testing as non-optional rather than as
+                a nice-to-have.
+              </p>
+            </div>
+          </section>
+
+        </div><!-- /container -->
+      </main>
+
+      <!-- ============ CASE NEXT ============ -->
+      <div class="case-next reveal">
+        <div class="container">
+          <a class="case-next-link" href="potraid.html">
+            <span class="case-next-label">Next case study — 03</span>
+            <span class="case-next-title">Potr-Aid — translating an AI verdict into something a person can <em>act on</em></span>
+            <span class="case-next-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ============ FOOTER ============ -->
+      <footer class="footer">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem">
+          <span>© Jaspal Singh Kahlon, 2026</span>
+          <span>Designed &amp; built in San Antonio, TX</span>
+        </div>
+      </footer>
+
+    </div><!-- /shell -->
+    <script src="../scripts.js"></script>
+  </body>
+</html>

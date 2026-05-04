@@ -1,0 +1,45 @@
+<svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wireframe of the question step in the Frost Bank platform recommendation flow, showing a single focused question with progress indicator">
+  <rect width="720" height="360" fill="#16140F"/>
+
+  <!-- Browser frame -->
+  <rect x="160" y="20" width="400" height="320" rx="6" fill="none" stroke="#2A2620" stroke-width="1"/>
+
+  <!-- Progress indicator -->
+  <text x="360" y="48" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">STEP 1 OF 3</text>
+  <rect x="240" y="54" width="240" height="3" rx="1.5" fill="#2A2620"/>
+  <rect x="240" y="54" width="80" height="3" rx="1.5" fill="#C9A876" fill-opacity="0.6"/>
+
+  <!-- Question -->
+  <text x="360" y="94" font-family="Instrument Serif, serif" font-size="18" fill="#F2EBDC" text-anchor="middle" font-style="italic">How many people</text>
+  <text x="360" y="116" font-family="Instrument Serif, serif" font-size="18" fill="#F2EBDC" text-anchor="middle" font-style="italic">use your banking account?</text>
+
+  <text x="360" y="138" font-family="Geist, sans-serif" font-size="10" fill="#5A554B" text-anchor="middle">This helps us match you to the right platform.</text>
+
+  <!-- Answer options -->
+  <rect x="220" y="154" width="280" height="36" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+  <text x="360" y="176" font-family="Geist, sans-serif" font-size="11" fill="#9A9384" text-anchor="middle">Just me</text>
+
+  <rect x="220" y="198" width="280" height="36" rx="4" fill="none" stroke="#C9A876" stroke-width="1.5"/>
+  <text x="360" y="220" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Me and a few employees (2–10)</text>
+  <!-- Selected indicator -->
+  <circle cx="234" cy="216" r="6" fill="none" stroke="#C9A876" stroke-width="1.5"/>
+  <circle cx="234" cy="216" r="3.5" fill="#C9A876"/>
+
+  <rect x="220" y="242" width="280" height="36" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+  <text x="360" y="264" font-family="Geist, sans-serif" font-size="11" fill="#9A9384" text-anchor="middle">A larger team (11+)</text>
+
+  <!-- Next button -->
+  <rect x="280" y="298" width="160" height="34" rx="4" fill="#F2EBDC"/>
+  <text x="360" y="319" font-family="Geist, sans-serif" font-size="12" fill="#0F0E0C" text-anchor="middle" font-weight="500">Continue →</text>
+
+  <!-- Annotations -->
+  <line x1="560" y1="57" x2="600" y2="57" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="604" y="53" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">PROGRESS BAR</text>
+  <text x="604" y="66" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">3 questions total</text>
+
+  <line x1="500" y1="216" x2="560" y2="200" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="564" y="197" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">SELECTED STATE</text>
+  <text x="564" y="210" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">Radio + border highlight</text>
+
+  <text x="360" y="350" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">FROST BANK SMB · SCREEN · QUESTION STEP · WIREFRAME</text>
+</svg>

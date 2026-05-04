@@ -1,0 +1,54 @@
+<svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Inverte-Quest capture screen wireframe showing camera viewfinder with thumb-zone shutter button">
+  <rect width="720" height="360" fill="#16140F"/>
+
+  <!-- Phone frame -->
+  <rect x="260" y="20" width="200" height="320" rx="18" fill="none" stroke="#2A2620" stroke-width="1.5"/>
+  <rect x="268" y="36" width="184" height="288" rx="4" fill="#1A1810"/>
+
+  <!-- Camera viewfinder -->
+  <rect x="272" y="44" width="176" height="196" rx="2" fill="#111009"/>
+
+  <!-- Framing guide corners -->
+  <line x1="306" y1="76" x2="306" y2="92" stroke="#C9A876" stroke-width="1.5"/>
+  <line x1="306" y1="76" x2="322" y2="76" stroke="#C9A876" stroke-width="1.5"/>
+  <line x1="410" y1="76" x2="394" y2="76" stroke="#C9A876" stroke-width="1.5"/>
+  <line x1="410" y1="76" x2="410" y2="92" stroke="#C9A876" stroke-width="1.5"/>
+  <line x1="306" y1="212" x2="306" y2="196" stroke="#C9A876" stroke-width="1.5"/>
+  <line x1="306" y1="212" x2="322" y2="212" stroke="#C9A876" stroke-width="1.5"/>
+  <line x1="410" y1="212" x2="394" y2="212" stroke="#C9A876" stroke-width="1.5"/>
+  <line x1="410" y1="212" x2="410" y2="196" stroke="#C9A876" stroke-width="1.5"/>
+
+  <!-- Guidance text -->
+  <text x="360" y="145" font-family="Geist, sans-serif" font-size="10" fill="#9A9384" text-anchor="middle">Center specimen</text>
+  <text x="360" y="159" font-family="Geist, sans-serif" font-size="10" fill="#9A9384" text-anchor="middle">in frame</text>
+
+  <!-- Bottom control bar -->
+  <rect x="268" y="244" width="184" height="76" rx="0" fill="#16140F"/>
+
+  <!-- Shutter button -->
+  <circle cx="360" cy="282" r="24" fill="none" stroke="#F2EBDC" stroke-width="1.5"/>
+  <circle cx="360" cy="282" r="18" fill="#F2EBDC"/>
+
+  <!-- Flash toggle -->
+  <rect x="291" y="274" width="32" height="16" rx="8" fill="none" stroke="#2A2620" stroke-width="1"/>
+  <text x="307" y="285" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">FLASH</text>
+
+  <!-- Gallery access -->
+  <rect x="397" y="274" width="32" height="16" rx="8" fill="none" stroke="#2A2620" stroke-width="1"/>
+  <text x="413" y="285" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">ALBUM</text>
+
+  <!-- Annotations -->
+  <line x1="448" y1="282" x2="500" y2="282" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="504" y="278" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">THUMB ZONE</text>
+  <text x="504" y="291" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">Bottom 2.5 in</text>
+
+  <line x1="410" y1="144" x2="460" y2="200" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="464" y="197" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">FRAMING GUIDE</text>
+  <text x="464" y="210" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">Corner brackets only</text>
+
+  <line x1="268" y1="262" x2="220" y2="240" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="100" y="237" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">MINIMAL CONTROLS</text>
+  <text x="100" y="250" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">No mid-capture menu</text>
+
+  <text x="360" y="348" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">INVERTE-QUEST · CAPTURE SCREEN · WIREFRAME</text>
+</svg>

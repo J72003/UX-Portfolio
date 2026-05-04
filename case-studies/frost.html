@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Helping SMB Customers Find the Right Digital Banking Tools — Jaspal Singh Kahlon</title>
+    <meta name="description" content="A research-driven UX case study on platform fit across Frost Bank's SMB digital banking portfolio." />
+    <meta name="theme-color" content="#0F0E0C" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&family=Geist+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <!-- ============ NAV ============ -->
+      <nav class="nav" aria-label="Primary">
+        <div class="nav-mark">
+          <a href="../index.html">Jaspal Singh Kahlon</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html#work">Work</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- ============ CASE HERO ============ -->
+      <header class="case-hero">
+        <div class="container">
+          <a href="../index.html#work" class="back-link reveal">← All work</a>
+
+          <div class="case-eyebrow reveal">
+            <span>01 / Frost Bank</span>
+            <span>Fintech</span>
+            <span>2025 — Present</span>
+          </div>
+
+          <h1 class="case-title reveal">
+            Helping SMB customers find the <em>right</em> digital banking tools
+          </h1>
+
+          <p class="case-summary reveal">
+            A research-driven UX case study from my UX &amp; Product internship
+            at Frost Bank, on the question underneath every "redesign these
+            screens" brief: which experience actually fits this customer in
+            the first place?
+          </p>
+
+          <div class="case-meta reveal">
+            <div class="case-meta-block">
+              <span class="case-meta-label">Role</span>
+              <span class="case-meta-value">UX Research &amp; Product Strategy Intern</span>
+            </div>
+            <div class="case-meta-block">
+              <span class="case-meta-label">Timeline</span>
+              <span class="case-meta-value">March 2025 — Present</span>
+            </div>
+            <div class="case-meta-block">
+              <span class="case-meta-label">Focus</span>
+              <span class="case-meta-value">SMB digital banking portfolio</span>
+            </div>
+            <div class="case-meta-block">
+              <span class="case-meta-label">Tools</span>
+              <span class="case-meta-value">Figma · Miro · Confluence · Jira</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ============ CASE BODY ============ -->
+      <main class="case-body">
+        <div class="container">
+          <!-- Disclaimer -->
+          <section class="case-section reveal">
+            <div class="note">
+              <p>
+                <strong>A note on this case study.</strong> My internship work
+                focused on UX research, competitive benchmarking, gap analysis,
+                customer interview planning, and product recommendations. The
+                journey maps, user flows, and wireframes shown below are
+                sanitized concept artifacts I created for this portfolio to
+                demonstrate how my research findings could translate into a
+                user-centered design direction. They do not contain confidential
+                Frost information.
+              </p>
+            </div>
+          </section>
+
+          <!-- Context -->
+          <section class="case-section reveal">
+            <div class="case-section-num">01 — Context</div>
+            <h2 class="case-section-title"><em>Context</em></h2>
+            <p>
+              Frost supports business customers through several digital banking
+              experiences, including Frost Online Banking, the Frost mobile app,
+              and Frost Business Connect — a more advanced, paid platform built
+              for businesses with greater operational complexity.
+            </p>
+            <p>
+              During my internship on the SMB portfolio, I focused on a question
+              that sits underneath the surface of "design better screens":
+            </p>
+            <blockquote>
+              Which Frost digital banking experience actually fits each small or
+              medium business — and how does a customer find that out?
+            </blockquote>
+            <p>
+              Small and medium businesses are not a single audience. A two-person
+              consulting firm, a growing eCommerce shop with three employees and
+              a payroll cycle, and a regional contractor with multiple users and
+              approval chains all fall under "SMB," but they need very different
+              things from a bank. Some need the depth of Business Connect.
+              Others would be better served by simpler free tools. Most don't
+              know which is which until they're already inside the wrong one.
+            </p>
+            <p class="muted">That's a UX problem before it's a product problem.</p>
+          </section>
+
+          <!-- Problem -->
+          <section class="case-section reveal">
+            <div class="case-section-num">02 — Problem</div>
+            <h2 class="case-section-title">The <em>problem</em></h2>
+            <p>
+              The challenge wasn't that Frost's screens were broken. It was that
+              <strong>platform fit was unclear</strong> — both for customers
+              and for the bankers helping them choose.
+            </p>
+            <p>Three things made this hard:</p>
+            <ol>
+              <li>
+                <strong>Differences between platforms aren't easy to see at a
+                glance.</strong> Feature lists exist, but a business owner
+                looking at them can't always map "ACH origination" or "dual
+                approval" to whether their business actually needs those things.
+              </li>
+              <li>
+                <strong>Business needs depend on workflow, not just size.</strong>
+                Two businesses with the same revenue and headcount can have
+                completely different banking needs depending on how money moves
+                through them.
+              </li>
+              <li>
+                <strong>Internal bankers carry a lot of the customer
+                experience.</strong> Relationship managers and community
+                bankers often translate the platform options for customers in
+                conversation. That's a hidden but critical part of the UX.
+              </li>
+            </ol>
+            <p>I framed the problem as a <strong>How Might We</strong>:</p>
+            <blockquote>
+              How might we help SMB customers — and the bankers supporting them
+              — understand which Frost digital banking tools fit different
+              business workflows?
+            </blockquote>
+          </section>
+
+          <!-- Role -->
+          <section class="case-section reveal">
+            <div class="case-section-num">03 — Role</div>
+            <h2 class="case-section-title">My <em>role</em></h2>
+            <p>
+              I joined the SMB portfolio team as a UX &amp; Product intern and
+              worked across research, discovery, and stakeholder communication.
+              Specifically, I:
+            </p>
+            <ul>
+              <li>Benchmarked <strong>13+ national, regional, and digital-first banks</strong> across SMB digital banking features and experiences</li>
+              <li>Analyzed Frost's three main digital touchpoints — Online Banking, mobile, and Business Connect — to map capability overlap and gaps</li>
+              <li>Created <strong>customer interview questions</strong> designed to surface workflow and decision-making behavior, not feature wishlists</li>
+              <li>Partnered with <strong>relationship managers, community bankers, and internal product, design, and business banking stakeholders</strong> to understand the customer experience from the frontline perspective</li>
+              <li>Translated findings into <strong>UX and product opportunities</strong>, including "Art of the Possible" directions for the SMB experience</li>
+              <li><strong>Presented research and recommendations</strong> to product, design, and business banking stakeholders</li>
+              <li>Created <strong>concept user flows and wireframes</strong> (shown below) for this portfolio to demonstrate how research insights could translate into design direction</li>
+            </ul>
+          </section>
+
+          <!-- Methodology -->
+          <section class="case-section reveal">
+            <div class="case-section-num">04 — Methodology</div>
+            <h2 class="case-section-title"><em>Methodology</em></h2>
+            <p>
+              I worked in five overlapping phases. The work wasn't strictly
+              linear — research kept feeding back into framing, and stakeholder
+              conversations kept reshaping which questions mattered most.
+            </p>
+
+            <h3 style="font-family: var(--serif); font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--accent)">Research &amp; discovery</h3>
+            <p>
+              I started by understanding what "SMB" actually means at Frost —
+              how the bank defines small versus medium business, how those
+              segments differ from retail, and which digital experiences are
+              designed for them today. This gave me a baseline for everything
+              that followed.
+            </p>
+
+            <h3 style="font-family: var(--serif); font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--accent)">Competitive benchmarking</h3>
+            <p>
+              I built a comparison across 13+ banks, including national players
+              (Chase, Bank of America, Wells Fargo, PNC, U.S. Bank), regional
+              banks, and digital-first competitors (Mercury, Bluevine). I
+              compared them across categories that matter to SMBs: digital
+              experience, cash flow forecasting, merchant services, payment
+              acceptance, invoicing, bill pay, accounting integrations, POS and
+              eCommerce integrations, lending, pricing transparency, mobile-first
+              experience, and onboarding.
+            </p>
+            <p>
+              I supplemented the feature comparison with external customer-priority
+              data from sources like J.D. Power, BAI, and NerdWallet to
+              understand what SMBs across the industry actually value most.
+            </p>
+
+            <h3 style="font-family: var(--serif); font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--accent)">Gap analysis</h3>
+            <p>
+              With the competitive picture in place, I turned inward and ran a
+              gap analysis across Frost Online Banking, mobile, and Business
+              Connect. The goal wasn't to grade the platforms — it was to
+              understand where capabilities overlap, where they diverge, and
+              where a customer might end up paying for complexity they don't
+              need or missing capabilities they do.
+            </p>
+
+            <h3 style="font-family: var(--serif); font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--accent)">Stakeholder discovery</h3>
+            <p>
+              I met with relationship managers, community bankers, treasury
+              management contacts, UX designers, and product owners. These
+              conversations were some of the most useful research I did, because
+              frontline bankers hear the same customer questions repeatedly —
+              and those questions are early signals of UX problems the digital
+              experience hasn't solved yet.
+            </p>
+
+            <h3 style="font-family: var(--serif); font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--accent)">Customer interview planning</h3>
+            <p>
+              I drafted interview questions designed to surface real workflow
+              behavior rather than feature opinions. Instead of "Would you use
+              a dual-approval feature?", the questions moved toward things like
+              "Walk me through the last time you sent a payment over $10,000" —
+              questions that uncover how the work actually gets done, where it
+              breaks down, and what trust and control mean in that moment.
+            </p>
+
+            <h3 style="font-family: var(--serif); font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--accent)">Design translation (for this portfolio)</h3>
+            <p>
+              For the artifacts shown below, I took a focused slice of the
+              research and translated it into a concept direction: a guided
+              platform-fit experience. These are not Frost-shipped designs.
+              They're my way of showing how the research could inform a UX
+              outcome.
+            </p>
+          </section>
+
+          <!-- Insights -->
+          <section class="case-section reveal">
+            <div class="case-section-num">05 — What I learned</div>
+            <h2 class="case-section-title">Five <em>insights</em></h2>
+
+            <p><strong>1. SMB customers are not one-size-fits-all.</strong></p>
+            <p>
+              Business size is a poor predictor of banking needs. Workflow
+              complexity — number of users, approval requirements, payment
+              volume, reporting depth — predicts platform fit much better than
+              headcount or revenue.
+            </p>
+
+            <p style="margin-top: 2rem"><strong>2. Complexity creates decision friction.</strong></p>
+            <p>
+              When a customer can't tell which tool fits them, the safest-feeling
+              choice is often the most powerful one. That's how customers end up
+              on platforms heavier than they need, which leads to underuse,
+              frustration, and eventually churn risk.
+            </p>
+
+            <p style="margin-top: 2rem"><strong>3. Competitors simplify around jobs-to-be-done.</strong></p>
+            <p>
+              The strongest competitor experiences I benchmarked don't lead with
+              feature lists. They lead with tasks: "send invoices," "manage cash
+              flow," "pay employees." That framing makes the right product feel
+              obvious because it's anchored to what the customer is trying to do.
+            </p>
+
+            <p style="margin-top: 2rem"><strong>4. Internal teams are part of the user experience.</strong></p>
+            <p>
+              Bankers do real UX work in conversation with customers. Any
+              improvement to the digital experience has to either support those
+              conversations or replace them — never ignore them.
+            </p>
+
+            <p style="margin-top: 2rem"><strong>5. Banking UX must simplify without removing necessary complexity.</strong></p>
+            <p>
+              Permissions, approvals, fraud controls, and compliance aren't
+              friction to be designed away. They're the product. The challenge
+              is making them feel simple, not making them disappear.
+            </p>
+          </section>
+
+          <!-- Design Direction -->
+          <section class="case-section reveal">
+            <div class="case-section-num">06 — Design direction</div>
+            <h2 class="case-section-title">Design <em>direction</em></h2>
+            <p>
+              Based on those insights, I explored a single concept direction:
+              <strong>a guided platform-fit experience</strong> that helps SMB
+              customers — and the bankers working with them — understand which
+              Frost digital tools match their business needs.
+            </p>
+            <p>Three ideas inside that direction:</p>
+            <ul>
+              <li><strong>Platform-Fit Guidance</strong> — a short, workflow-based set of questions that recommends a starting point</li>
+              <li><strong>Task-Based Navigation</strong> — framing options around what the business is trying to do, not which product they map to internally</li>
+              <li><strong>Clear Feature Comparison</strong> — a side-by-side that respects how customers actually evaluate options, with a clear path to a banker when the decision needs a human</li>
+            </ul>
+          </section>
+
+          <!-- Artifacts -->
+          <section class="case-section reveal">
+            <div class="case-section-num">07 — Artifacts</div>
+            <h2 class="case-section-title">Research <em>artifacts</em></h2>
+            <p>
+              The artifacts below are sanitized snapshots of the research deliverables
+              I produced. They show how raw signals from interviews, stakeholder
+              discovery, and benchmarking became themes, themes became insights, and
+              insights translated into a research-informed direction the team could
+              act on.
+            </p>
+
+            <!-- Current-State Journey -->
+            <div class="artifact">
+              <div class="artifact-label">Artifact 01 — Current-state journey map</div>
+              <div class="artifact-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="title-frost-journey">
+  <title id="title-frost-journey">Current-state journey map for SMB customer choosing a Frost digital banking tool</title>
+  <defs>
+    <linearGradient id="sentimentGrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#C9A876" stop-opacity="0.15"/>
+      <stop offset="0.5" stop-color="#C9A876" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#C9A876" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <text x="0" y="22" font-family="'Geist Mono', monospace" font-size="10" letter-spacing="2" fill="#5A554B">CURRENT-STATE JOURNEY</text>
+  <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="22" fill="#F2EBDC" font-style="italic">Choosing a Frost digital banking tool</text>
+  <line x1="0" y1="120" x2="720" y2="120" stroke="#2A2620" stroke-width="1"/>
+  <g font-family="'Geist Mono', monospace" font-size="9" fill="#5A554B" letter-spacing="1.5">
+    <circle cx="60" cy="120" r="4" fill="#16140F" stroke="#9A9384" stroke-width="1"/>
+    <text x="60" y="100" text-anchor="middle">01</text>
+    <circle cx="180" cy="120" r="4" fill="#16140F" stroke="#9A9384" stroke-width="1"/>
+    <text x="180" y="100" text-anchor="middle">02</text>
+    <circle cx="300" cy="120" r="5" fill="#C9A876" stroke="#C9A876" stroke-width="1"/>
+    <text x="300" y="100" text-anchor="middle" fill="#C9A876">03 · FRICTION</text>
+    <circle cx="420" cy="120" r="4" fill="#16140F" stroke="#9A9384" stroke-width="1"/>
+    <text x="420" y="100" text-anchor="middle">04</text>
+    <circle cx="540" cy="120" r="5" fill="#C9A876" stroke="#C9A876" stroke-width="1"/>
+    <text x="540" y="100" text-anchor="middle" fill="#C9A876">05 · FRICTION</text>
+    <circle cx="660" cy="120" r="4" fill="#16140F" stroke="#9A9384" stroke-width="1"/>
+    <text x="660" y="100" text-anchor="middle">06</text>
+  </g>
+  <g font-family="'Instrument Serif', serif" font-size="13" fill="#F2EBDC" text-anchor="middle">
+    <text x="60" y="148">Has a need</text>
+    <text x="180" y="148">Learns options</text>
+    <text x="300" y="148" fill="#C9A876" font-style="italic">Unsure of fit</text>
+    <text x="420" y="148">Picks platform</text>
+    <text x="540" y="148" fill="#C9A876" font-style="italic">Hits friction</text>
+    <text x="660" y="148">Calls banker</text>
+  </g>
+  <g font-family="'Geist', sans-serif" font-size="10" fill="#9A9384" text-anchor="middle">
+    <text x="60" y="168">Sends payments,</text>
+    <text x="60" y="181">manages users,</text>
+    <text x="60" y="194">grows revenue.</text>
+    <text x="180" y="168">Online Banking,</text>
+    <text x="180" y="181">mobile, and</text>
+    <text x="180" y="194">Business Connect.</text>
+    <text x="300" y="168">Feature lists don't</text>
+    <text x="300" y="181">map to the customer's</text>
+    <text x="300" y="194">workflow.</text>
+    <text x="420" y="168">Often the most</text>
+    <text x="420" y="181">powerful option,</text>
+    <text x="420" y="194">just to be safe.</text>
+    <text x="540" y="168">Underuse, paying</text>
+    <text x="540" y="181">for tools they</text>
+    <text x="540" y="194">don't need.</text>
+    <text x="660" y="168">Banker explains</text>
+    <text x="660" y="181">manually, in</text>
+    <text x="660" y="194">conversation.</text>
+  </g>
+  <text x="0" y="240" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">CUSTOMER SENTIMENT</text>
+  <line x1="0" y1="252" x2="180" y2="252" stroke="#2A2620" stroke-width="1"/>
+  <path d="M 60 280 Q 120 270, 180 290 Q 240 320, 300 360 Q 360 360, 420 340 Q 480 360, 540 380 Q 600 380, 660 350 L 660 410 L 60 410 Z" fill="url(#sentimentGrad)"/>
+  <path d="M 60 280 Q 120 270, 180 290 Q 240 320, 300 360 Q 360 360, 420 340 Q 480 360, 540 380 Q 600 380, 660 350" fill="none" stroke="#C9A876" stroke-width="1.25" stroke-linecap="round"/>
+  <g fill="#C9A876">
+    <circle cx="60" cy="280" r="2.5"/>
+    <circle cx="180" cy="290" r="2.5"/>
+    <circle cx="300" cy="360" r="3.5"/>
+    <circle cx="420" cy="340" r="2.5"/>
+    <circle cx="540" cy="380" r="3.5"/>
+    <circle cx="660" cy="350" r="2.5"/>
+  </g>
+  <g font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1" fill="#5A554B">
+    <text x="0" y="282">CONFIDENT</text>
+    <text x="0" y="395">CONFUSED</text>
+  </g>
+  <line x1="0" y1="425" x2="720" y2="425" stroke="#2A2620" stroke-width="1"/>
+  <text x="0" y="438" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1.5" fill="#5A554B">JOURNEY MAP · 6 STAGES · 2 FRICTION POINTS</text>
+</svg></div>
+            </div>
+            <p>
+              The current journey for a new SMB customer choosing a digital
+              banking tool roughly follows this arc: customer has a business
+              banking need, learns there are multiple digital options, is
+              unsure which platform fits, chooses (or is guided into) a
+              platform, encounters friction or unnecessary complexity, and
+              contacts a banker for support.
+            </p>
+
+            <p style="margin-top: 1.5rem">Pain points sit along the middle of that journey:</p>
+            <ul>
+              <li>Platform differences are hard to compare from the customer's vantage point</li>
+              <li>The "right" choice depends on workflow detail the customer may not surface unprompted</li>
+              <li>Paid versus free isn't an obvious decision without context</li>
+              <li>Bankers absorb the burden of explaining options manually</li>
+              <li>Customers can end up on a platform mismatched to their actual needs</li>
+            </ul>
+
+            <!-- Insight to Opportunity -->
+            <div class="artifact" style="margin-top: 3rem">
+              <div class="artifact-label">Artifact 02 — Research insight → design opportunity</div>
+              <div class="artifact-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" role="img" aria-labelledby="title-frost-insight">
+  <title id="title-frost-insight">Mapping research insights to design opportunities</title>
+  <text x="0" y="22" font-family="'Geist Mono', monospace" font-size="10" letter-spacing="2" fill="#5A554B">RESEARCH INSIGHT → DESIGN OPPORTUNITY</text>
+  <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="22" fill="#F2EBDC">From <tspan font-style="italic" fill="#C9A876">what we learned</tspan> to what we'd build</text>
+  <text x="0" y="92" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">INSIGHT</text>
+  <text x="400" y="92" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">OPPORTUNITY</text>
+  <line x1="0" y1="100" x2="320" y2="100" stroke="#2A2620"/>
+  <line x1="400" y1="100" x2="720" y2="100" stroke="#C9A876" stroke-opacity="0.5"/>
+  <g font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">
+    <text x="0" y="130">SMB customers are not</text>
+    <text x="0" y="148">one-size-fits-all.</text>
+    <line x1="320" y1="138" x2="395" y2="138" stroke="#C9A876" stroke-width="1" stroke-dasharray="2 3"/>
+    <polygon points="395,138 388,134 388,142" fill="#C9A876"/>
+    <text x="400" y="130" fill="#C9A876">Guided platform-fit tool that</text>
+    <text x="400" y="148" fill="#C9A876">recommends by workflow, not size.</text>
+    <text x="0" y="190">Business needs depend on</text>
+    <text x="0" y="208">workflows, not company size.</text>
+    <line x1="320" y1="198" x2="395" y2="198" stroke="#C9A876" stroke-width="1" stroke-dasharray="2 3"/>
+    <polygon points="395,198 388,194 388,202" fill="#C9A876"/>
+    <text x="400" y="190" fill="#C9A876">Workflow-based onboarding,</text>
+    <text x="400" y="208" fill="#C9A876">not business-type dropdowns.</text>
+    <text x="0" y="250">Customers don't understand</text>
+    <text x="0" y="268">platform differences.</text>
+    <line x1="320" y1="258" x2="395" y2="258" stroke="#C9A876" stroke-width="1" stroke-dasharray="2 3"/>
+    <polygon points="395,258 388,254 388,262" fill="#C9A876"/>
+    <text x="400" y="250" fill="#C9A876">Plain-language comparison</text>
+    <text x="400" y="268" fill="#C9A876">anchored to common SMB tasks.</text>
+    <text x="0" y="310">Internal bankers hold</text>
+    <text x="0" y="328">valuable customer context.</text>
+    <line x1="320" y1="318" x2="395" y2="318" stroke="#C9A876" stroke-width="1" stroke-dasharray="2 3"/>
+    <polygon points="395,318 388,314 388,322" fill="#C9A876"/>
+    <text x="400" y="310" fill="#C9A876">Banker-supported guidance,</text>
+    <text x="400" y="328" fill="#C9A876">with handoff at decision points.</text>
+    <text x="0" y="370">Banking UX must respect</text>
+    <text x="0" y="388">permissions and security.</text>
+    <line x1="320" y1="378" x2="395" y2="378" stroke="#C9A876" stroke-width="1" stroke-dasharray="2 3"/>
+    <polygon points="395,378 388,374 388,382" fill="#C9A876"/>
+    <text x="400" y="370" fill="#C9A876">Recommendations stay simple</text>
+    <text x="400" y="388" fill="#C9A876">but remain compliance-aware.</text>
+  </g>
+  <g stroke="#1F1C16" stroke-width="1">
+    <line x1="0" y1="165" x2="720" y2="165"/>
+    <line x1="0" y1="225" x2="720" y2="225"/>
+    <line x1="0" y1="285" x2="720" y2="285"/>
+    <line x1="0" y1="345" x2="720" y2="345"/>
+    <line x1="0" y1="405" x2="720" y2="405"/>
+  </g>
+  <g font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1" fill="#5A554B">
+    <text x="0" y="115">01</text>
+    <text x="0" y="175">02</text>
+    <text x="0" y="235">03</text>
+    <text x="0" y="295">04</text>
+    <text x="0" y="355">05</text>
+  </g>
+  <g transform="translate(0, 440)">
+    <line x1="0" y1="0" x2="720" y2="0" stroke="#2A2620"/>
+    <text x="0" y="20" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">CONVERGES INTO</text>
+    <text x="0" y="50" font-family="'Instrument Serif', serif" font-style="italic" font-size="20" fill="#C9A876">A guided platform-fit experience.</text>
+    <text x="0" y="74" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384">Recommends a starting point based on workflow signals, with a clear path to a banker</text>
+    <text x="0" y="89" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384">when the decision needs a human.</text>
+  </g>
+</svg></div>
+            </div>
+
+            <p>
+              Below is a sanitized excerpt from the discovery guide I drafted. The structure follows the pattern I find most useful for behavior-focused research: open low-stakes, build context, spend the most time on actual workflow moments, then probe how decisions get made. Probes are deliberate — they're where the most interesting findings tend to come from.
+            </p>
+
+            <!-- Interview Guide -->
+            <div class="artifact" style="margin-top: 3rem">
+              <div class="artifact-label">Artifact 03 — Sample interview guide (sanitized)</div>
+              <div class="artifact-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840" role="img" aria-labelledby="title-frost-guide">
+  <title id="title-frost-guide">Sample interview guide for SMB customer discovery — sanitized excerpt</title>
+
+  <!-- ============== HEADER ============== -->
+  <text x="0" y="22" font-family="'Geist Mono', monospace" font-size="10" letter-spacing="2" fill="#5A554B">RESEARCH ARTIFACT · INTERVIEW GUIDE</text>
+  <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="22" fill="#F2EBDC">SMB customer discovery — <tspan font-style="italic" fill="#C9A876">sanitized excerpt</tspan></text>
+
+  <!-- meta row -->
+  <g transform="translate(0, 72)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">SESSION LENGTH</text>
+    <text x="0" y="18" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">45 minutes</text>
+
+    <text x="180" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">FORMAT</text>
+    <text x="180" y="18" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">1:1 remote, recorded</text>
+
+    <text x="380" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">PARTICIPANT</text>
+    <text x="380" y="18" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">SMB owner / financial DM</text>
+
+    <text x="580" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">METHOD</text>
+    <text x="580" y="18" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">Semi-structured</text>
+
+    <line x1="0" y1="36" x2="720" y2="36" stroke="#2A2620"/>
+  </g>
+
+  <!-- ============== SECTION 01: OPENING ============== -->
+  <g transform="translate(0, 130)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">01 · OPENING</text>
+    <text x="80" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">— 5 MIN</text>
+
+    <text x="0" y="22" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">Goal: build rapport, set expectations, get consent.</text>
+
+    <text x="0" y="48" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">Thanks for taking the time. Before we start — I'm here to learn about</text>
+    <text x="0" y="64" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">how your business handles its banking. There are no right or wrong</text>
+    <text x="0" y="80" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">answers. I'd like to record so I can focus on the conversation — okay?</text>
+  </g>
+
+  <!-- ============== SECTION 02: CONTEXT / WARM-UP ============== -->
+  <g transform="translate(0, 230)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">02 · CONTEXT</text>
+    <text x="80" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">— 5 MIN</text>
+
+    <text x="0" y="22" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">Goal: understand the business and how money moves through it.</text>
+
+    <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Q1.  Tell me about your business — what does a typical week look like?</text>
+
+    <text x="0" y="74" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Q2.  Who in your business handles money — paying bills, sending</text>
+    <text x="0" y="92" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">       invoices, payroll? Just you, or do others have access?</text>
+
+    <!-- probe block -->
+    <g transform="translate(20, 108)">
+      <line x1="0" y1="-4" x2="0" y2="32" stroke="#C9A876" stroke-width="1"/>
+      <text x="14" y="8" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">PROBE</text>
+      <text x="14" y="24" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">If shared: do they need approval before things go out?</text>
+    </g>
+  </g>
+
+  <!-- ============== SECTION 03: BEHAVIOR ============== -->
+  <g transform="translate(0, 380)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">03 · BEHAVIOR</text>
+    <text x="90" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">— 20 MIN · CORE</text>
+
+    <text x="0" y="22" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">Goal: surface real workflow, not opinions on features.</text>
+
+    <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Q3.  Walk me through the last time you sent a payment over $10,000.</text>
+    <text x="0" y="66" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">       What did you do, where did you do it, and how long did it take?</text>
+
+    <g transform="translate(20, 80)">
+      <line x1="0" y1="-4" x2="0" y2="50" stroke="#C9A876" stroke-width="1"/>
+      <text x="14" y="8" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">PROBES</text>
+      <text x="14" y="24" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">Was anything slower or harder than you expected?</text>
+      <text x="14" y="40" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">Did you check anything before submitting? After?</text>
+    </g>
+
+    <text x="0" y="160" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Q4.  When something goes wrong with a payment or transaction,</text>
+    <text x="0" y="178" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">       what's the first thing you do?</text>
+  </g>
+
+  <!-- ============== SECTION 04: DECISION ============== -->
+  <g transform="translate(0, 600)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">04 · DECISION</text>
+    <text x="90" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">— 10 MIN</text>
+
+    <text x="0" y="22" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">Goal: understand how platform-fit decisions actually get made.</text>
+
+    <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Q5.  How did you choose the banking tools you use today? Was there</text>
+    <text x="0" y="66" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">       a specific moment, or did it just happen?</text>
+
+    <text x="0" y="100" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Q6.  If a banker called and recommended switching, what would</text>
+    <text x="0" y="118" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">       you need to hear to take it seriously?</text>
+  </g>
+
+  <!-- ============== SECTION 05: WRAP-UP ============== -->
+  <g transform="translate(0, 750)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">05 · WRAP-UP</text>
+    <text x="90" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">— 5 MIN</text>
+
+    <text x="0" y="22" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384" font-style="italic">Goal: catch what was missed; thank participant.</text>
+
+    <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Q7.  What didn't I ask about that I should have?</text>
+
+    <line x1="0" y1="68" x2="720" y2="68" stroke="#2A2620"/>
+    <text x="0" y="84" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1.5" fill="#5A554B">DESIGN PRINCIPLE · BEHAVIORAL OVER ATTITUDINAL · SPECIFIC MOMENTS, NOT GENERALITIES</text>
+  </g>
+</svg></div>
+            </div>
+
+            <!-- Synthesis Matrix -->
+            <p style="margin-top: 3rem">
+              After the discovery work, I clustered signals from interviews,
+              stakeholder conversations, and benchmark notes into themes. The matrix
+              below is a sanitized version of the working artifact — it shows how raw
+              quotes and observations grouped into the four insights that ended up
+              driving the direction.
+            </p>
+            <div class="artifact" style="margin-top: 1.5rem">
+              <div class="artifact-label">Artifact 04 — Synthesis matrix</div>
+              <div class="artifact-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title-frost-synthesis">
+  <title id="title-frost-synthesis">Research synthesis matrix — clustering interview and stakeholder signals into themes</title>
+  <defs>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="3"/>
+      <feDisplacementMap in="SourceGraphic" scale="1.5"/>
+    </filter>
+    <linearGradient id="note-warm" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#1F1C16"/>
+      <stop offset="1" stop-color="#16140F"/>
+    </linearGradient>
+  </defs>
+  <text x="0" y="22" font-family="'Geist Mono', monospace" font-size="10" letter-spacing="2" fill="#5A554B">RESEARCH ARTIFACT · SYNTHESIS</text>
+  <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="22" fill="#F2EBDC">Clustering signals into <tspan font-style="italic" fill="#C9A876">themes</tspan></text>
+  <text x="0" y="76" font-family="'Geist', sans-serif" font-size="12" fill="#9A9384" font-style="italic">Affinity mapping from interview, stakeholder, and benchmarking notes — workshop snapshot</text>
+  <line x1="0" y1="92" x2="720" y2="92" stroke="#2A2620"/>
+  <!-- CLUSTER 1: Platform fit -->
+  <g transform="translate(0, 110)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">THEME 01 — PLATFORM FIT</text>
+    <text x="0" y="20" font-family="'Instrument Serif', serif" font-style="italic" font-size="16" fill="#F2EBDC">Customers can't tell which tool is theirs.</text>
+    <g transform="translate(2, 38) rotate(-1)">
+      <rect width="160" height="56" fill="url(#note-warm)" stroke="#C9A876" stroke-width="0.75" rx="2"/>
+      <text x="10" y="18" font-family="'Geist Mono', monospace" font-size="8" fill="#5A554B" letter-spacing="1">SIGNAL · INTERVIEW</text>
+      <text x="10" y="34" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">"I picked the most</text>
+      <text x="10" y="48" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">powerful one — to be safe."</text>
+    </g>
+    <g transform="translate(170, 36) rotate(0.8)">
+      <rect width="160" height="56" fill="url(#note-warm)" stroke="#C9A876" stroke-width="0.75" rx="2"/>
+      <text x="10" y="18" font-family="'Geist Mono', monospace" font-size="8" fill="#5A554B" letter-spacing="1">SIGNAL · BANKER</text>
+      <text x="10" y="34" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">"Most customers don't</text>
+      <text x="10" y="48" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">read the comparison."</text>
+    </g>
+    <g transform="translate(338, 39) rotate(-0.5)">
+      <rect width="160" height="56" fill="url(#note-warm)" stroke="#C9A876" stroke-width="0.75" rx="2"/>
+      <text x="10" y="18" font-family="'Geist Mono', monospace" font-size="8" fill="#5A554B" letter-spacing="1">SIGNAL · BENCHMARK</text>
+      <text x="10" y="34" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">Top competitors lead</text>
+      <text x="10" y="48" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">with tasks, not products.</text>
+    </g>
+    <g transform="translate(508, 37) rotate(1.2)">
+      <rect width="160" height="56" fill="url(#note-warm)" stroke="#C9A876" stroke-width="0.75" rx="2"/>
+      <text x="10" y="18" font-family="'Geist Mono', monospace" font-size="8" fill="#5A554B" letter-spacing="1">SIGNAL · INTERVIEW</text>
+      <text x="10" y="34" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">"I called my banker</text>
+      <text x="10" y="48" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">to figure it out."</text>
+    </g>
+    <g stroke="#5A554B" stroke-width="0.5" fill="none" filter="url(#rough)" opacity="0.6">
+      <path d="M 60 36 Q 80 32, 90 22"/>
+      <path d="M 250 36 Q 250 28, 250 22"/>
+      <path d="M 410 39 Q 380 32, 360 22"/>
+      <path d="M 588 37 Q 500 30, 460 22"/>
+    </g>
+  </g>
+  <!-- CLUSTER 2: Workflow over size -->
+  <g transform="translate(0, 248)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">THEME 02 — WORKFLOW OVER SIZE</text>
+    <text x="0" y="20" font-family="'Instrument Serif', serif" font-style="italic" font-size="16" fill="#F2EBDC">Business needs map to behavior, not headcount.</text>
+    <g transform="translate(4, 38) rotate(0.6)">
+      <rect width="220" height="56" fill="url(#note-warm)" stroke="#C9A876" stroke-width="0.75" rx="2"/>
+      <text x="10" y="18" font-family="'Geist Mono', monospace" font-size="8" fill="#5A554B" letter-spacing="1">SIGNAL · INTERVIEW</text>
+      <text x="10" y="34" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">2-person firm + payroll cycle</text>
+      <text x="10" y="48" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">had heavier needs than 8-person retail.</text>
+    </g>
+    <g transform="translate(232, 36) rotate(-0.7)">
+      <rect width="220" height="56" fill="url(#note-warm)" stroke="#C9A876" stroke-width="0.75" rx="2"/>
+      <text x="10" y="18" font-family="'Geist Mono', monospace" font-size="8" fill="#5A554B" letter-spacing="1">SIGNAL · GAP ANALYSIS</text>
+      <text x="10" y="34" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">Approval workflows predict fit</text>
+      <text x="10" y="48" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">better than revenue tier.</text>
+    </g>
+    <g transform="translate(460, 39) rotate(0.4)">
+      <rect width="220" height="56" fill="url(#note-warm)" stroke="#C9A876" stroke-width="0.75" rx="2"/>
+      <text x="10" y="18" font-family="'Geist Mono', monospace" font-size="8" fill="#5A554B" letter-spacing="1">SIGNAL · BANKER</text>
+      <text x="10" y="34" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">"I ask how money moves —</text>
+      <text x="10" y="48" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">that tells me everything."</text>
+    </g>
+    <g stroke="#5A554B" stroke-width="0.5" fill="none" filter="url(#rough)" opacity="0.6">
+      <path d="M 90 36 Q 90 30, 90 22"/>
+      <path d="M 320 36 Q 280 30, 260 22"/>
+      <path d="M 550 39 Q 500 32, 470 22"/>
+    </g>
+  </g>
+  <!-- CLUSTER 3: Internal teams as UX -->
+  <g transform="translate(0, 386)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">THEME 03 — INTERNAL TEAMS ARE PART OF THE UX</text>
+    <text x="0" y="20" font-family="'Instrument Serif', serif" font-style="italic" font-size="16" fill="#F2EBDC">Bankers do real UX work in conversation.</text>
+    <g transform="translate(2, 38) rotate(-0.9)">
+      <rect width="200" height="56" fill="url(#note-warm)" stroke="#C9A876" stroke-width="0.75" rx="2"/>
+      <text x="10" y="18" font-family="'Geist Mono', monospace" font-size="8" fill="#5A554B" letter-spacing="1">SIGNAL · BANKER</text>
+      <text x="10" y="34" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">Same 3 questions every week,</text>
+      <text x="10" y="48" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">across customer types.</text>
+    </g>
+    <g transform="translate(210, 36) rotate(0.5)">
+      <rect width="220" height="56" fill="url(#note-warm)" stroke="#C9A876" stroke-width="0.75" rx="2"/>
+      <text x="10" y="18" font-family="'Geist Mono', monospace" font-size="8" fill="#5A554B" letter-spacing="1">SIGNAL · INTERVIEW</text>
+      <text x="10" y="34" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">"My banker translates</text>
+      <text x="10" y="48" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">the digital options for me."</text>
+    </g>
+    <g transform="translate(438, 39) rotate(-0.4)">
+      <rect width="220" height="56" fill="url(#note-warm)" stroke="#C9A876" stroke-width="0.75" rx="2"/>
+      <text x="10" y="18" font-family="'Geist Mono', monospace" font-size="8" fill="#5A554B" letter-spacing="1">SIGNAL · STAKEHOLDER</text>
+      <text x="10" y="34" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">Migration conversations are</text>
+      <text x="10" y="48" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">trust-driven, not feature-driven.</text>
+    </g>
+    <g stroke="#5A554B" stroke-width="0.5" fill="none" filter="url(#rough)" opacity="0.6">
+      <path d="M 80 36 Q 90 30, 100 22"/>
+      <path d="M 300 36 Q 290 30, 280 22"/>
+      <path d="M 530 39 Q 500 32, 480 22"/>
+    </g>
+  </g>
+  <!-- CLUSTER 4: Necessary complexity -->
+  <g transform="translate(0, 524)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">THEME 04 — NECESSARY COMPLEXITY</text>
+    <text x="0" y="20" font-family="'Instrument Serif', serif" font-style="italic" font-size="16" fill="#F2EBDC">Permissions, approvals, fraud rules — these aren't friction. They're the product.</text>
+    <g transform="translate(2, 42) rotate(0.7)">
+      <rect width="220" height="56" fill="url(#note-warm)" stroke="#C9A876" stroke-width="0.75" rx="2"/>
+      <text x="10" y="18" font-family="'Geist Mono', monospace" font-size="8" fill="#5A554B" letter-spacing="1">SIGNAL · INTERVIEW</text>
+      <text x="10" y="34" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">Dual approval slows payments,</text>
+      <text x="10" y="48" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">but it's why we trust the tool.</text>
+    </g>
+    <g transform="translate(232, 40) rotate(-0.6)">
+      <rect width="220" height="56" fill="url(#note-warm)" stroke="#C9A876" stroke-width="0.75" rx="2"/>
+      <text x="10" y="18" font-family="'Geist Mono', monospace" font-size="8" fill="#5A554B" letter-spacing="1">SIGNAL · STAKEHOLDER</text>
+      <text x="10" y="34" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">Compliance constraints can't be</text>
+      <text x="10" y="48" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">designed away — only made clearer.</text>
+    </g>
+    <g transform="translate(460, 43) rotate(0.3)">
+      <rect width="220" height="56" fill="url(#note-warm)" stroke="#C9A876" stroke-width="0.75" rx="2"/>
+      <text x="10" y="18" font-family="'Geist Mono', monospace" font-size="8" fill="#5A554B" letter-spacing="1">SIGNAL · BENCHMARK</text>
+      <text x="10" y="34" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">Best competitors make rules</text>
+      <text x="10" y="48" font-family="'Geist', sans-serif" font-size="11" fill="#F2EBDC">visible, not invisible.</text>
+    </g>
+    <g stroke="#5A554B" stroke-width="0.5" fill="none" filter="url(#rough)" opacity="0.6">
+      <path d="M 90 40 Q 90 32, 90 22"/>
+      <path d="M 320 40 Q 320 32, 310 22"/>
+      <path d="M 550 43 Q 530 35, 510 22"/>
+    </g>
+  </g>
+  <line x1="0" y1="650" x2="720" y2="650" stroke="#2A2620"/>
+  <text x="0" y="672" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">METHOD · AFFINITY MAPPING FROM SIGNALS — THEMES — INSIGHTS</text>
+  <text x="0" y="692" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384">Signal sources: customer interviews, stakeholder discovery (relationship managers,</text>
+  <text x="0" y="708" font-family="'Geist', sans-serif" font-size="11" fill="#9A9384">community bankers, treasury), competitive benchmarking across 13+ banks.</text>
+</svg></div>
+            </div>
+
+            <!-- Stakeholder Readout -->
+            <p style="margin-top: 3rem">
+              The findings landed as a stakeholder readout structured around three
+              columns: what the research surfaced, why it mattered for the business,
+              and what we recommended doing next. This format made the research
+              actionable — every finding connected to a recommendation a team could
+              own.
+            </p>
+            <div class="artifact" style="margin-top: 1.5rem">
+              <div class="artifact-label">Artifact 05 — Stakeholder readout</div>
+              <div class="artifact-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title-frost-readout">
+  <title id="title-frost-readout">Stakeholder readout slide — research findings, impact, and recommendations</title>
+  <text x="0" y="22" font-family="'Geist Mono', monospace" font-size="10" letter-spacing="2" fill="#5A554B">RESEARCH ARTIFACT · STAKEHOLDER READOUT</text>
+  <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="22" fill="#F2EBDC">Findings — impact — <tspan font-style="italic" fill="#C9A876">recommendation</tspan></text>
+  <text x="0" y="76" font-family="'Geist', sans-serif" font-size="12" fill="#9A9384" font-style="italic">Summary slide presented to product, UX, and business banking stakeholders</text>
+  <g transform="translate(0, 96)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">AUDIENCE</text>
+    <text x="0" y="18" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">Product · UX · Business Banking</text>
+    <text x="280" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">FORMAT</text>
+    <text x="280" y="18" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">30-min readout + Q&amp;A</text>
+    <text x="500" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">EVIDENCE</text>
+    <text x="500" y="18" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">13 banks · stakeholder discovery</text>
+    <line x1="0" y1="36" x2="720" y2="36" stroke="#2A2620"/>
+  </g>
+  <g transform="translate(0, 156)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">WHAT WE LEARNED</text>
+    <text x="244" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">WHY IT MATTERS</text>
+    <text x="488" y="0" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#C9A876">WHAT TO DO NEXT</text>
+    <line x1="0" y1="10" x2="232" y2="10" stroke="#C9A876" stroke-width="1"/>
+    <line x1="244" y1="10" x2="476" y2="10" stroke="#C9A876" stroke-width="1"/>
+    <line x1="488" y1="10" x2="720" y2="10" stroke="#C9A876" stroke-width="1"/>
+  </g>
+  <!-- ROW 1 -->
+  <g transform="translate(0, 186)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1.5" fill="#5A554B">01</text>
+    <text x="0" y="22" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">SMB customers can't tell which</text>
+    <text x="0" y="40" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">platform fits their business.</text>
+    <text x="0" y="62" font-family="'Geist', sans-serif" font-size="10" fill="#9A9384" font-style="italic">Signals: customer interviews,</text>
+    <text x="0" y="76" font-family="'Geist', sans-serif" font-size="10" fill="#9A9384" font-style="italic">banker conversations.</text>
+    <text x="244" y="22" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">Customers default to the most</text>
+    <text x="244" y="38" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">powerful tool "to be safe,"</text>
+    <text x="244" y="54" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">creating underuse, friction,</text>
+    <text x="244" y="70" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">and churn risk.</text>
+    <text x="488" y="22" font-family="'Geist', sans-serif" font-size="12" fill="#C9A876">Build a guided platform-fit</text>
+    <text x="488" y="38" font-family="'Geist', sans-serif" font-size="12" fill="#C9A876">flow anchored in workflow</text>
+    <text x="488" y="54" font-family="'Geist', sans-serif" font-size="12" fill="#C9A876">questions, not business size.</text>
+    <line x1="0" y1="98" x2="720" y2="98" stroke="#1F1C16"/>
+  </g>
+  <!-- ROW 2 -->
+  <g transform="translate(0, 296)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1.5" fill="#5A554B">02</text>
+    <text x="0" y="22" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Bankers do real UX work</text>
+    <text x="0" y="40" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">in conversation.</text>
+    <text x="0" y="62" font-family="'Geist', sans-serif" font-size="10" fill="#9A9384" font-style="italic">Signals: stakeholder discovery</text>
+    <text x="0" y="76" font-family="'Geist', sans-serif" font-size="10" fill="#9A9384" font-style="italic">across multiple roles.</text>
+    <text x="244" y="22" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">Any digital improvement</text>
+    <text x="244" y="38" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">that ignores banker context</text>
+    <text x="244" y="54" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">will under-perform on</text>
+    <text x="244" y="70" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">adoption.</text>
+    <text x="488" y="22" font-family="'Geist', sans-serif" font-size="12" fill="#C9A876">Treat banker handoff as a</text>
+    <text x="488" y="38" font-family="'Geist', sans-serif" font-size="12" fill="#C9A876">first-class path in the</text>
+    <text x="488" y="54" font-family="'Geist', sans-serif" font-size="12" fill="#C9A876">experience, not a fallback.</text>
+    <line x1="0" y1="98" x2="720" y2="98" stroke="#1F1C16"/>
+  </g>
+  <!-- ROW 3 -->
+  <g transform="translate(0, 406)">
+    <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1.5" fill="#5A554B">03</text>
+    <text x="0" y="22" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Competitors lead with tasks,</text>
+    <text x="0" y="40" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">not products.</text>
+    <text x="0" y="62" font-family="'Geist', sans-serif" font-size="10" fill="#9A9384" font-style="italic">Signals: 13+ bank competitive</text>
+    <text x="0" y="76" font-family="'Geist', sans-serif" font-size="10" fill="#9A9384" font-style="italic">benchmark.</text>
+    <text x="244" y="22" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">Task-based framing reduces</text>
+    <text x="244" y="38" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">decision friction; product-</text>
+    <text x="244" y="54" font-family="'Geist', sans-serif" font-size="12" fill="#F2EBDC">named navigation increases it.</text>
+    <text x="488" y="22" font-family="'Geist', sans-serif" font-size="12" fill="#C9A876">Reframe digital touchpoints</text>
+    <text x="488" y="38" font-family="'Geist', sans-serif" font-size="12" fill="#C9A876">around jobs-to-be-done in</text>
+    <text x="488" y="54" font-family="'Geist', sans-serif" font-size="12" fill="#C9A876">information architecture work.</text>
+  </g>
+  <line x1="0" y1="510" x2="720" y2="510" stroke="#2A2620"/>
+  <text x="0" y="532" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">PRESENTED · PRODUCT, UX, BUSINESS BANKING</text>
+  <text x="488" y="532" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">FOLLOW-UP · CUSTOMER INTERVIEWS</text>
+</svg></div>
+            </div>
+
+            <!-- Future State Flow -->
+            <div class="artifact" style="margin-top: 3rem">
+              <div class="artifact-label">Artifact 06 — Future-state user flow</div>
+              <div class="artifact-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title-frost-flow">
+  <title id="title-frost-flow">Future-state user flow for guided platform-fit experience</title>
+  <text x="0" y="22" font-family="'Geist Mono', monospace" font-size="10" letter-spacing="2" fill="#5A554B">FUTURE-STATE USER FLOW</text>
+  <text x="0" y="48" font-family="'Instrument Serif', serif" font-size="22" fill="#F2EBDC">Guided <tspan font-style="italic" fill="#C9A876">platform-fit</tspan> experience</text>
+  <g transform="translate(0, 100)">
+    <circle cx="40" cy="30" r="18" fill="#16140F" stroke="#C9A876" stroke-width="1.25"/>
+    <text x="40" y="34" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1" fill="#C9A876">START</text>
+  </g>
+  <line x1="62" y1="130" x2="118" y2="130" stroke="#5A554B" stroke-width="1"/>
+  <polygon points="118,130 112,127 112,133" fill="#5A554B"/>
+  <g transform="translate(120, 100)">
+    <rect width="180" height="60" fill="#16140F" stroke="#2A2620" stroke-width="1" rx="2"/>
+    <text x="14" y="20" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1.5" fill="#5A554B">SCREEN · INPUT</text>
+    <text x="14" y="40" font-family="'Instrument Serif', serif" font-size="14" fill="#F2EBDC">Workflow questions</text>
+    <text x="14" y="54" font-family="'Geist', sans-serif" font-size="10" fill="#9A9384">4 short questions</text>
+  </g>
+  <line x1="304" y1="130" x2="358" y2="130" stroke="#5A554B" stroke-width="1"/>
+  <polygon points="358,130 352,127 352,133" fill="#5A554B"/>
+  <g transform="translate(360, 100)">
+    <polygon points="100,2 198,30 100,58 2,30" fill="#16140F" stroke="#C9A876" stroke-width="1" stroke-dasharray="3 2"/>
+    <text x="100" y="22" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1.5" fill="#5A554B">SYSTEM</text>
+    <text x="100" y="38" text-anchor="middle" font-family="'Instrument Serif', serif" font-size="13" fill="#F2EBDC">Identify needs</text>
+  </g>
+  <line x1="562" y1="130" x2="618" y2="130" stroke="#5A554B" stroke-width="1"/>
+  <polygon points="618,130 612,127 612,133" fill="#5A554B"/>
+  <g transform="translate(620, 100)">
+    <rect width="100" height="60" fill="#16140F" stroke="#C9A876" stroke-width="1.25" rx="2"/>
+    <text x="50" y="20" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1.5" fill="#C9A876">SCREEN</text>
+    <text x="50" y="40" text-anchor="middle" font-family="'Instrument Serif', serif" font-style="italic" font-size="13" fill="#C9A876">Recommend</text>
+    <text x="50" y="54" text-anchor="middle" font-family="'Geist', sans-serif" font-size="10" fill="#9A9384">platform fit</text>
+  </g>
+  <line x1="670" y1="160" x2="670" y2="200" stroke="#5A554B" stroke-width="1"/>
+  <line x1="200" y1="200" x2="670" y2="200" stroke="#5A554B" stroke-width="1"/>
+  <line x1="200" y1="200" x2="200" y2="240" stroke="#5A554B" stroke-width="1"/>
+  <polygon points="200,240 197,234 203,234" fill="#5A554B"/>
+  <line x1="435" y1="200" x2="435" y2="240" stroke="#5A554B" stroke-width="1"/>
+  <polygon points="435,240 432,234 438,234" fill="#5A554B"/>
+  <line x1="670" y1="200" x2="670" y2="240" stroke="#5A554B" stroke-width="1"/>
+  <polygon points="670,240 667,234 673,234" fill="#5A554B"/>
+  <g font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1.5" fill="#5A554B">
+    <text x="200" y="222" text-anchor="middle">PATH A</text>
+    <text x="435" y="222" text-anchor="middle">PATH B</text>
+    <text x="670" y="222" text-anchor="middle">PATH C</text>
+  </g>
+  <g transform="translate(120, 248)">
+    <rect width="160" height="60" fill="#16140F" stroke="#2A2620" stroke-width="1" rx="2"/>
+    <text x="14" y="20" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1.5" fill="#5A554B">SCREEN</text>
+    <text x="14" y="40" font-family="'Instrument Serif', serif" font-size="13" fill="#F2EBDC">Compare features</text>
+    <text x="14" y="54" font-family="'Geist', sans-serif" font-size="10" fill="#9A9384">side-by-side</text>
+  </g>
+  <g transform="translate(355, 248)">
+    <rect width="160" height="60" fill="#16140F" stroke="#2A2620" stroke-width="1" rx="2"/>
+    <text x="14" y="20" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1.5" fill="#5A554B">ACTION</text>
+    <text x="14" y="40" font-family="'Instrument Serif', serif" font-size="13" fill="#F2EBDC">Start setup</text>
+    <text x="14" y="54" font-family="'Geist', sans-serif" font-size="10" fill="#9A9384">self-service path</text>
+  </g>
+  <g transform="translate(590, 248)">
+    <rect width="160" height="60" fill="#16140F" stroke="#C9A876" stroke-width="1.25" rx="2"/>
+    <text x="14" y="20" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="1.5" fill="#C9A876">HUMAN HANDOFF</text>
+    <text x="14" y="40" font-family="'Instrument Serif', serif" font-style="italic" font-size="13" fill="#C9A876">Talk to a banker</text>
+    <text x="14" y="54" font-family="'Geist', sans-serif" font-size="10" fill="#9A9384">decision needs context</text>
+  </g>
+  <g transform="translate(0, 360)">
+    <line x1="0" y1="0" x2="720" y2="0" stroke="#2A2620"/>
+    <text x="0" y="20" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="1.5" fill="#5A554B">DESIGN NOTES</text>
+    <g font-family="'Geist', sans-serif" font-size="11" fill="#9A9384">
+      <text x="0" y="46"><tspan fill="#C9A876">·</tspan> Workflow questions surface behavior, not self-categorization.</text>
+      <text x="0" y="64"><tspan fill="#C9A876">·</tspan> System reasoning is shown, not just the verdict — customers see why a platform was recommended.</text>
+      <text x="0" y="82"><tspan fill="#C9A876">·</tspan> "Talk to a banker" is treated as a first-class path, not a fallback. For many SMBs, this is the preferred route.</text>
+      <text x="0" y="100"><tspan fill="#C9A876">·</tspan> Comparison view is available before commitment — decisions aren't trapped behind a one-way door.</text>
+    </g>
+  </g>
+</svg></div>
+            </div>
+            <p>The research direction translated into a concept flow for stakeholder discussion. This wasn't a design deliverable — it was a conversation aid for the next phase of work.</p>
+            <p>A guided experience could follow this shape:</p>
+            <blockquote>
+              Start → Customer answers a short set of workflow questions →
+              System identifies likely needs → A recommended platform is shown
+              with reasoning → Customer compares features against alternatives
+              → Customer either starts setup or is handed off to a banker
+            </blockquote>
+            <p style="margin-top: 1.5rem">
+              Sample questions, written to surface workflow rather than ask the
+              customer to self-categorize:
+            </p>
+            <ul>
+              <li>How many people in your business need access to banking?</li>
+              <li>Do payments in your business require approval from someone else before they go out?</li>
+              <li>How often do you send payments to vendors or contractors?</li>
+              <li>Do you need detailed reporting for accounting or tax purposes?</li>
+              <li>Do you mostly bank from your phone, or from a desktop?</li>
+            </ul>
+          </section>
+
+          <!-- Outcome -->
+          <section class="case-section reveal">
+            <div class="case-section-num">08 — Outcome</div>
+            <h2 class="case-section-title"><em>Outcome</em></h2>
+            <p>
+              This work helped clarify how Frost could think about SMB customer
+              segments, surfaced workflow friction across the digital experience,
+              and shaped product conversations around platform fit, migration
+              opportunities, and future digital banking direction.
+            </p>
+            <p>Concrete contributions:</p>
+            <ul>
+              <li>Established the SMB competitive landscape for product and design teams by benchmarking <strong>13+ national, regional, and digital-first banks</strong></li>
+              <li>Identified workflow friction across Frost's three SMB digital platforms through structured gap analysis, surfacing migration opportunities for stakeholder review</li>
+              <li>Built the discovery foundation for SMB customer interviews by drafting a behavior-focused research guide ready for fielding</li>
+              <li>Surfaced frontline customer signals by partnering with <strong>relationship managers, community bankers, and treasury contacts</strong> to integrate banker context into product thinking</li>
+              <li>Influenced SMB product conversations on platform fit and migration criteria through findings presentations to <strong>product, design, and business banking stakeholders</strong></li>
+              <li>Connected discovery work to Agile delivery through user stories and backlog refinement, translating research signals into shippable product context</li>
+            </ul>
+          </section>
+
+          <!-- Reflection -->
+          <section class="case-section reveal">
+            <div class="case-section-num">09 — Reflection</div>
+            <h2 class="case-section-title"><em>Reflection</em></h2>
+            <p>
+              The biggest thing this project taught me is that UX in banking is
+              rarely about cleaner screens. It's about helping customers make
+              better decisions inside a system that has real complexity —
+              permissions, security, business rules, regulatory constraints —
+              that can't and shouldn't be designed away.
+            </p>
+            <p>
+              What I had to learn was how to hold all of that at once: the
+              customer's workflow, the banker's context, the competitive
+              landscape, the platform's actual capabilities, and the business
+              reasoning behind why things are the way they are. Research doesn't
+              get useful until those pieces line up.
+            </p>
+            <p>
+              The other thing I took away: the strongest design directions don't
+              come from the prettiest screens. They come from research insights
+              specific enough that a design opportunity becomes obvious. When
+              the insight is sharp, the design direction almost writes itself.
+              When the insight is fuzzy, no amount of polish on the screen will
+              fix it.
+            </p>
+            <p class="muted">
+              If I were continuing this work, the next steps would be running
+              the customer interviews against the question set I drafted,
+              validating the platform-fit concept through usability testing
+              with real SMB owners and bankers, and partnering with engineering
+              to understand what's feasible inside Frost's platform architecture
+              before moving to higher-fidelity design.
+            </p>
+          </section>
+        </div>
+      </main>
+
+      <!-- ============ NEXT CASE ============ -->
+      <section class="case-next">
+        <div class="container">
+          <div class="case-next-eyebrow">Next case study — 02</div>
+          <a href="invertequest.html" class="case-next-link">
+            <span>Inverte-Quest, designing for <em>field conditions</em> and AI trust</span>
+            <span class="case-next-arrow">→</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============ FOOTER ============ -->
+      <footer class="footer">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem">
+          <span>© Jaspal Singh Kahlon, 2026</span>
+          <span><a href="../index.html">jaspalkahlon.com</a></span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../scripts.js"></script>
+  </body>
+</html>

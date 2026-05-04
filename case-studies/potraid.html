@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Potr-Aid — Jaspal Singh Kahlon</title>
+    <meta
+      name="description"
+      content="An honors research project on portrait composition. A published paper, a 92% accurate model, and the design problem at the heart of every confidence-scored interface."
+    />
+    <meta name="theme-color" content="#0F0E0C" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Potr-Aid — Jaspal Singh Kahlon" />
+    <meta property="og:description" content="An honors research project on portrait composition. A published paper, a 92% accurate model, and the design problem at the heart of every confidence-scored interface." />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&family=Geist+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body id="top">
+    <div class="shell">
+
+      <!-- ============ NAV ============ -->
+      <nav class="nav" aria-label="Primary">
+        <div class="nav-mark">
+          <a class="back-link" href="../index.html">← All work</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html#work">Work</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- ============ CASE HERO ============ -->
+      <header class="case-hero">
+        <div class="container">
+          <div class="reveal-stagger">
+            <span class="case-eyebrow">03 · Honors Research · Explainable AI · Published</span>
+            <h1 class="case-title">
+              Potr-Aid — translating an AI verdict<br />into something a person can <em>act on</em>
+            </h1>
+            <p class="case-sub">
+              An honors research project on portrait composition. A published
+              paper, a 92% accurate model, and the design problem at the heart
+              of every confidence-scored interface.
+            </p>
+            <div class="case-meta-row">
+              <div class="case-meta-item">
+                <span class="case-meta-label">Role</span>
+                <span class="case-meta-value">Researcher · UX Designer · ML Contributor</span>
+              </div>
+              <div class="case-meta-item">
+                <span class="case-meta-label">Duration</span>
+                <span class="case-meta-value">Spring 2024 — Fall 2024</span>
+              </div>
+              <div class="case-meta-item">
+                <span class="case-meta-label">Methods</span>
+                <span class="case-meta-value">Dataset curation · CNN training · Interface design · User testing</span>
+              </div>
+              <div class="case-meta-item">
+                <span class="case-meta-label">Output</span>
+                <span class="case-meta-value">Published paper · Working prototype</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ============ CASE BODY ============ -->
+      <main class="case-body">
+        <div class="container">
+
+          <!-- 01 · CONTEXT -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">01</span> Context</h2>
+            <div class="case-prose">
+              <p>
+                Potr-Aid started as an honors thesis question: can a machine
+                learning model evaluate portrait photograph composition and
+                give a photographer actionable feedback? The prior work on
+                computational aesthetics treated image quality as a scalar
+                score — a number that told you whether a photo was good but
+                not why, and not what to change.
+              </p>
+              <p>
+                I worked as part of a small research team. My contributions
+                spanned three areas: dataset curation and labeling, training
+                and evaluating the CNN model, and designing the interface
+                that made the model's output useful to a human photographer.
+                The paper was submitted and accepted. The model achieved
+                92% classification accuracy on a held-out test set.
+              </p>
+              <p>
+                The design problem was the most interesting part: a 92%
+                accurate model is not 100% accurate. Every result carries
+                a confidence score. How do you surface that score to a
+                non-technical user in a way that supports good decisions
+                rather than blind trust — or blind rejection?
+              </p>
+            </div>
+          </section>
+
+          <!-- 02 · ROLE -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">02</span> Role</h2>
+            <div class="case-prose">
+              <p>
+                This was a year-long honors research project on AI evaluation
+                under faculty advisement. I ran the evaluation methodology —
+                quantitative model performance analysis combined with qualitative
+                failure-mode review — and translated findings into design
+                hypotheses for the prediction interface.
+              </p>
+            </div>
+          </section>
+
+          <!-- 03 · RESEARCH AND MODEL WORK -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">03</span> Research and model work</h2>
+            <div class="case-prose">
+              <p>
+                Portrait composition quality is subjective enough to be
+                a research problem in itself. I curated a dataset of labeled
+                portrait photographs, coding each image across five
+                compositional attributes: subject framing, rule-of-thirds
+                alignment, background separation, eye contact, and
+                exposure balance. Each attribute was binary — present or
+                absent — so the labeling was defensible rather than
+                aesthetic.
+              </p>
+              <p>
+                The CNN was trained on this labeled dataset using transfer
+                learning from a pretrained image backbone. After training,
+                the model output a per-image classification (well-composed
+                / needs improvement) plus a confidence score and — via
+                gradient-weighted class activation mapping — an attention
+                overlay showing which regions of the image most influenced
+                the verdict.
+              </p>
+              <p>
+                The attention overlay was the piece that made the design
+                problem interesting. It gave us something specific to show
+                the user: not just "this photo needs improvement" but
+                "the model is focusing on this region, and here's what
+                it found there."
+              </p>
+            </div>
+          </section>
+
+          <!-- ARTIFACT 01 · SYSTEM FLOW -->
+          <div class="artifact reveal">
+            <div class="artifact-label">SYSTEM FLOW · UPLOAD TO FEEDBACK</div>
+            <div class="artifact-svg">
+              <svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="System flow showing five stages from photo upload through CNN inference to feedback display">
+                <rect width="720" height="200" fill="#16140F"/>
+
+                <!-- Stage nodes -->
+                <!-- 1: Upload -->
+                <rect x="20" y="70" width="110" height="60" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <text x="75" y="96" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">STEP 1</text>
+                <text x="75" y="112" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Upload Photo</text>
+                <text x="75" y="124" font-family="Geist, sans-serif" font-size="9" fill="#5A554B" text-anchor="middle">JPEG / PNG</text>
+
+                <!-- Arrow -->
+                <line x1="130" y1="100" x2="158" y2="100" stroke="#2A2620" stroke-width="1"/>
+                <polygon points="158,96 166,100 158,104" fill="#2A2620"/>
+
+                <!-- 2: Preprocessing -->
+                <rect x="166" y="70" width="110" height="60" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <text x="221" y="96" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">STEP 2</text>
+                <text x="221" y="112" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Preprocess</text>
+                <text x="221" y="124" font-family="Geist, sans-serif" font-size="9" fill="#5A554B" text-anchor="middle">Resize · Normalize</text>
+
+                <!-- Arrow -->
+                <line x1="276" y1="100" x2="304" y2="100" stroke="#2A2620" stroke-width="1"/>
+                <polygon points="304,96 312,100 304,104" fill="#2A2620"/>
+
+                <!-- 3: CNN Inference -->
+                <rect x="312" y="70" width="110" height="60" rx="4" fill="none" stroke="#C9A876" stroke-width="1"/>
+                <text x="367" y="96" font-family="Geist Mono, monospace" font-size="9" fill="#C9A876" text-anchor="middle">STEP 3</text>
+                <text x="367" y="112" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">CNN Inference</text>
+                <text x="367" y="124" font-family="Geist, sans-serif" font-size="9" fill="#5A554B" text-anchor="middle">Classification + Grad-CAM</text>
+
+                <!-- Arrow -->
+                <line x1="422" y1="100" x2="450" y2="100" stroke="#2A2620" stroke-width="1"/>
+                <polygon points="450,96 458,100 450,104" fill="#2A2620"/>
+
+                <!-- 4: Result assembly -->
+                <rect x="458" y="70" width="110" height="60" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <text x="513" y="96" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">STEP 4</text>
+                <text x="513" y="112" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Assemble result</text>
+                <text x="513" y="124" font-family="Geist, sans-serif" font-size="9" fill="#5A554B" text-anchor="middle">Score + Overlay + Text</text>
+
+                <!-- Arrow -->
+                <line x1="568" y1="100" x2="596" y2="100" stroke="#2A2620" stroke-width="1"/>
+                <polygon points="596,96 604,100 596,104" fill="#2A2620"/>
+
+                <!-- 5: Feedback display -->
+                <rect x="604" y="70" width="100" height="60" rx="4" fill="#C9A876" fill-opacity="0.12" stroke="#C9A876" stroke-width="1"/>
+                <text x="654" y="96" font-family="Geist Mono, monospace" font-size="9" fill="#C9A876" text-anchor="middle">STEP 5</text>
+                <text x="654" y="112" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Show feedback</text>
+                <text x="654" y="124" font-family="Geist, sans-serif" font-size="9" fill="#5A554B" text-anchor="middle">To user</text>
+
+                <text x="360" y="180" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">POTR-AID · SYSTEM FLOW · UPLOAD TO FEEDBACK</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- 03 · DESIGN PROBLEM -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">04</span> Design problem</h2>
+            <div class="case-prose">
+              <p>
+                The model had three outputs: a binary verdict
+                (well-composed / needs improvement), a confidence score
+                (0–100%), and an attention overlay (a heatmap showing
+                which pixels most influenced the classification). The
+                question was how to present these three things together
+                without creating a misleading, confusing, or over-engineered
+                interface.
+              </p>
+              <p>
+                Two failure modes I wanted to avoid:
+              </p>
+              <ul>
+                <li>
+                  <strong>Overtrust.</strong> If the verdict is displayed
+                  prominently with no confidence qualifier, users treat
+                  a 61% call as authoritative. A portrait is "bad" because
+                  the AI said so, even though the model barely cleared the
+                  decision boundary.
+                </li>
+                <li>
+                  <strong>Undertrust.</strong> If the confidence score is
+                  displayed raw and foregrounded, users dismiss every
+                  sub-90% result. The model stops being useful because
+                  users have learned to ignore it.
+                </li>
+              </ul>
+              <p>
+                The design had to thread between these: surface enough
+                uncertainty to prevent blind trust, without so much
+                uncertainty that the result became useless.
+              </p>
+            </div>
+          </section>
+
+          <!-- ARTIFACT 02 · UPLOAD SCREEN WIREFRAME -->
+          <div class="artifact reveal">
+            <div class="artifact-label">UPLOAD SCREEN · WIREFRAME</div>
+            <div class="artifact-svg">
+              <svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Upload screen wireframe showing drag-and-drop zone, recent uploads, and submit action">
+                <rect width="720" height="340" fill="#16140F"/>
+
+                <!-- Browser chrome suggestion -->
+                <rect x="160" y="20" width="400" height="300" rx="6" fill="none" stroke="#2A2620" stroke-width="1"/>
+
+                <!-- Page title -->
+                <text x="360" y="50" font-family="Instrument Serif, serif" font-size="18" fill="#F2EBDC" text-anchor="middle" font-style="italic">Potr-Aid</text>
+                <text x="360" y="66" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">PORTRAIT COMPOSITION FEEDBACK</text>
+
+                <!-- Drop zone -->
+                <rect x="180" y="78" width="360" height="140" rx="4" fill="none" stroke="#2A2620" stroke-width="1" stroke-dasharray="6,4"/>
+                <!-- Drop zone icon suggestion -->
+                <rect x="346" y="104" width="28" height="22" rx="2" fill="none" stroke="#5A554B" stroke-width="1"/>
+                <line x1="346" y1="114" x2="374" y2="114" stroke="#5A554B" stroke-width="1"/>
+                <polygon points="354,108 360,104 366,108" fill="none" stroke="#5A554B" stroke-width="1"/>
+
+                <text x="360" y="144" font-family="Geist, sans-serif" font-size="11" fill="#9A9384" text-anchor="middle">Drag a portrait here</text>
+                <text x="360" y="160" font-family="Geist, sans-serif" font-size="10" fill="#5A554B" text-anchor="middle">or</text>
+                <text x="360" y="178" font-family="Geist, sans-serif" font-size="11" fill="#C9A876" text-anchor="middle">Browse files →</text>
+                <text x="360" y="204" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">JPEG · PNG · Max 10MB</text>
+
+                <!-- Submit button -->
+                <rect x="280" y="238" width="160" height="36" rx="4" fill="#F2EBDC"/>
+                <text x="360" y="261" font-family="Geist, sans-serif" font-size="12" fill="#0F0E0C" text-anchor="middle" font-weight="500">Analyze composition</text>
+
+                <!-- Note below -->
+                <text x="360" y="294" font-family="Geist, sans-serif" font-size="9" fill="#5A554B" text-anchor="middle">Results include a confidence score and composition notes.</text>
+                <text x="360" y="308" font-family="Geist, sans-serif" font-size="9" fill="#5A554B" text-anchor="middle">The model is 92% accurate on the test set. Use judgment.</text>
+
+                <!-- Annotations -->
+                <line x1="540" y1="148" x2="580" y2="148" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <text x="584" y="144" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">DROP ZONE</text>
+                <text x="584" y="157" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">Primary input</text>
+
+                <line x1="440" y1="256" x2="580" y2="220" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <text x="584" y="217" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">SINGLE ACTION</text>
+                <text x="584" y="230" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">One step to result</text>
+
+                <text x="360" y="328" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">POTR-AID · UPLOAD SCREEN · WIREFRAME</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- 05 · TRUST CALIBRATION HYPOTHESES -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">05</span> Trust calibration hypotheses</h2>
+            <div class="case-prose">
+              <p>
+                The result interface rests on three hypotheses, derived
+                directly from the failure-mode research. Each is a testable
+                bet about how interface treatment shapes calibrated trust —
+                and each could be validated through follow-on research with
+                real photographers.
+              </p>
+              <p>
+                The result screen was organized around a hierarchy of
+                certainty. The verdict (well-composed / needs improvement)
+                was displayed at the top, but in a softer visual weight
+                than I might otherwise use — set in the muted palette,
+                not as a large proclamation. The confidence score sat
+                immediately below it, with a plain-language gloss:
+                "The model is fairly confident" at 80%+ and "The model
+                is uncertain" below 60%.
+              </p>
+              <p>
+                The attention overlay was placed directly on the uploaded
+                photo, using a heatmap-style highlight (warm tones over
+                areas of high influence). This grounded the abstract score
+                in something concrete — a specific region the user could
+                look at and evaluate for themselves.
+              </p>
+              <p>
+                Below the overlay, a short composition note explained the
+                finding in plain language. Not "gradient activation map
+                indicates poor background separation" but "The model flagged
+                the background region. Check whether the subject is visually
+                separated from what's behind them." The language was written
+                to be actionable without being prescriptive.
+              </p>
+              <p>
+                Critically: the interface included a persistent disclosure
+                note at the bottom of every result — "This model is 92%
+                accurate on the test set. Treat this as a second opinion,
+                not a verdict." This was the most explicit trust-calibration
+                mechanism in the design. It was also the one I had to argue
+                for against the instinct to make the interface feel more
+                polished and confident.
+              </p>
+            </div>
+          </section>
+
+          <!-- ARTIFACT 03 · RESULT WITH ATTENTION OVERLAY -->
+          <div class="artifact reveal">
+            <div class="artifact-label">RESULT SCREEN · WITH ATTENTION OVERLAY</div>
+            <div class="artifact-svg">
+              <svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Result screen showing uploaded portrait with gradient attention overlay, confidence score, verdict, composition note, and accuracy disclosure">
+                <rect width="720" height="400" fill="#16140F"/>
+
+                <!-- Browser chrome -->
+                <rect x="140" y="20" width="440" height="360" rx="6" fill="none" stroke="#2A2620" stroke-width="1"/>
+
+                <!-- Two-column layout -->
+                <!-- Left: photo + overlay -->
+                <rect x="156" y="40" width="180" height="200" rx="4" fill="#111009"/>
+                <!-- Simulated portrait subject (simplified face/torso silhouette) -->
+                <!-- Face -->
+                <ellipse cx="246" cy="80" rx="28" ry="34" fill="#1E1C17"/>
+                <!-- Body/torso -->
+                <rect x="218" y="110" width="56" height="80" rx="6" fill="#1E1C17"/>
+                <!-- Background region (upper corners) -->
+                <rect x="156" y="40" width="60" height="60" rx="4" fill="#181610"/>
+                <rect x="276" y="40" width="60" height="60" rx="4" fill="#181610"/>
+
+                <!-- Attention overlay — warm heatmap on background regions -->
+                <rect x="156" y="40" width="60" height="60" rx="4" fill="#C9A876" fill-opacity="0.28"/>
+                <rect x="276" y="40" width="60" height="60" rx="4" fill="#C9A876" fill-opacity="0.22"/>
+                <!-- Lower intensity on subject -->
+                <ellipse cx="246" cy="80" rx="28" ry="34" fill="#C9A876" fill-opacity="0.06"/>
+
+                <!-- Overlay legend -->
+                <text x="160" y="256" font-family="Geist Mono, monospace" font-size="7" fill="#9A9384">ATTENTION OVERLAY</text>
+                <!-- Legend gradient bar -->
+                <defs>
+                  <linearGradient id="heat" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#16140F"/>
+                    <stop offset="100%" stop-color="#C9A876" stop-opacity="0.8"/>
+                  </linearGradient>
+                </defs>
+                <rect x="160" y="262" width="80" height="6" rx="2" fill="url(#heat)"/>
+                <text x="160" y="280" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B">LOW</text>
+                <text x="230" y="280" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="end">HIGH</text>
+
+                <!-- Right column: result panel -->
+                <!-- Verdict -->
+                <text x="358" y="58" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">VERDICT</text>
+                <text x="358" y="76" font-family="Instrument Serif, serif" font-size="17" fill="#F2EBDC" font-style="italic">Needs improvement</text>
+
+                <!-- Confidence -->
+                <text x="358" y="100" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">CONFIDENCE</text>
+                <rect x="358" y="108" width="200" height="16" rx="2" fill="#2A2620"/>
+                <rect x="358" y="108" width="134" height="16" rx="2" fill="#C9A876" fill-opacity="0.4"/>
+                <text x="362" y="121" font-family="Geist Mono, monospace" font-size="8" fill="#C9A876">67% · MODEL IS UNCERTAIN</text>
+
+                <!-- Composition note -->
+                <text x="358" y="148" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">COMPOSITION NOTE</text>
+                <text x="358" y="166" font-family="Geist, sans-serif" font-size="10" fill="#F2EBDC">The model flagged the background region.</text>
+                <text x="358" y="180" font-family="Geist, sans-serif" font-size="10" fill="#9A9384">Check whether the subject is visually</text>
+                <text x="358" y="194" font-family="Geist, sans-serif" font-size="10" fill="#9A9384">separated from what's behind them.</text>
+
+                <!-- Separator -->
+                <line x1="358" y1="210" x2="558" y2="210" stroke="#2A2620" stroke-width="1"/>
+
+                <!-- Action buttons -->
+                <rect x="358" y="220" width="110" height="28" rx="4" fill="#F2EBDC"/>
+                <text x="413" y="238" font-family="Geist, sans-serif" font-size="10" fill="#0F0E0C" text-anchor="middle" font-weight="500">Analyze another</text>
+
+                <rect x="480" y="220" width="78" height="28" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <text x="519" y="238" font-family="Geist, sans-serif" font-size="10" fill="#9A9384" text-anchor="middle">Save result</text>
+
+                <!-- Disclosure note -->
+                <rect x="156" y="308" width="402" height="48" rx="4" fill="#1A1810"/>
+                <text x="174" y="328" font-family="Geist Mono, monospace" font-size="8" fill="#9A9384">NOTE</text>
+                <text x="174" y="342" font-family="Geist, sans-serif" font-size="9" fill="#5A554B">This model is 92% accurate on the test set. Treat this as a second</text>
+                <text x="174" y="354" font-family="Geist, sans-serif" font-size="9" fill="#5A554B">opinion, not a verdict. Your judgment is the final authority.</text>
+
+                <!-- Annotations -->
+                <line x1="336" y1="120" x2="310" y2="120" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="310" y1="120" x2="310" y2="160" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <text x="156" y="140" font-family="Geist Mono, monospace" font-size="8" fill="#9A9384">CONFIDENCE BAR</text>
+                <text x="156" y="152" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B">With text gloss</text>
+
+                <line x1="558" y1="332" x2="590" y2="332" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <text x="594" y="328" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">DISCLOSURE NOTE</text>
+                <text x="594" y="341" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">Every result, always</text>
+
+                <text x="360" y="390" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">POTR-AID · RESULT SCREEN · WITH ATTENTION OVERLAY + DISCLOSURE</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- 05 · REFLECTION -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">06</span> Reflection</h2>
+            <div class="case-prose">
+              <p>
+                The disclosure note was the decision I'm most confident about
+                in hindsight. It felt slightly over-cautious at the time —
+                we had a strong model, and making the uncertainty explicit
+                risked undermining the product. But the opposite risk was
+                worse: a photographer adjusting their style based on a
+                borderline classification, because the interface made the
+                model's judgment look more reliable than it was.
+              </p>
+              <p>
+                The attention overlay worked better than I expected as an
+                explanatory tool. Participants who struggled to understand
+                a verdict ("but the photo looks fine to me") changed their
+                reasoning when they could see which region had triggered
+                the classification. The overlay converted an abstract score
+                into a spatial argument — something you could agree or
+                disagree with, rather than just accept.
+              </p>
+              <p>
+                The deeper takeaway, which connects to the Inverte-Quest
+                work: showing a confidence score is not the same as
+                communicating uncertainty. A number requires numeracy and
+                a reference point to interpret. What users actually need
+                is an answer to "should I act on this, and how?" The
+                score is an input to that answer, not the answer itself.
+                The interface's job is to close that gap.
+              </p>
+            </div>
+          </section>
+
+          <div class="note reveal">
+            <strong>Publication note.</strong> This research was completed
+            as an honors capstone project at Texas A&amp;M University–San Antonio
+            and submitted for publication. The paper covers the dataset
+            construction methodology, model architecture, and evaluation
+            results in full. <a href="https://drive.google.com/drive/folders/1lpzyEyVOHH5fVAz3LBbCPn_8iEFlyK8p?usp=sharing" target="_blank" rel="noopener noreferrer">Read the paper.</a>
+          </div>
+
+        </div><!-- /container -->
+      </main>
+
+      <!-- ============ CASE NEXT ============ -->
+      <div class="case-next reveal">
+        <div class="container">
+          <a class="case-next-link" href="../index.html#work">
+            <span class="case-next-label">Back to work</span>
+            <span class="case-next-title">View all selected projects</span>
+            <span class="case-next-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ============ FOOTER ============ -->
+      <footer class="footer">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem">
+          <span>© Jaspal Singh Kahlon, 2026</span>
+          <span>Designed &amp; built in San Antonio, TX</span>
+        </div>
+      </footer>
+
+    </div><!-- /shell -->
+    <script src="../scripts.js"></script>
+  </body>
+</html>

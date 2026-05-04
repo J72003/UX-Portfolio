@@ -1,0 +1,47 @@
+<svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Potr-Aid system flow showing five stages from photo upload through CNN inference to user feedback display">
+  <rect width="720" height="200" fill="#16140F"/>
+
+  <!-- Stage 1: Upload -->
+  <rect x="20" y="70" width="110" height="60" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+  <text x="75" y="96" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">STEP 1</text>
+  <text x="75" y="112" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Upload Photo</text>
+  <text x="75" y="124" font-family="Geist, sans-serif" font-size="9" fill="#5A554B" text-anchor="middle">JPEG / PNG</text>
+
+  <line x1="130" y1="100" x2="158" y2="100" stroke="#2A2620" stroke-width="1"/>
+  <polygon points="158,96 166,100 158,104" fill="#2A2620"/>
+
+  <!-- Stage 2: Preprocess -->
+  <rect x="166" y="70" width="110" height="60" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+  <text x="221" y="96" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">STEP 2</text>
+  <text x="221" y="112" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Preprocess</text>
+  <text x="221" y="124" font-family="Geist, sans-serif" font-size="9" fill="#5A554B" text-anchor="middle">Resize · Normalize</text>
+
+  <line x1="276" y1="100" x2="304" y2="100" stroke="#2A2620" stroke-width="1"/>
+  <polygon points="304,96 312,100 304,104" fill="#2A2620"/>
+
+  <!-- Stage 3: CNN Inference -->
+  <rect x="312" y="70" width="110" height="60" rx="4" fill="none" stroke="#C9A876" stroke-width="1"/>
+  <text x="367" y="96" font-family="Geist Mono, monospace" font-size="9" fill="#C9A876" text-anchor="middle">STEP 3</text>
+  <text x="367" y="112" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">CNN Inference</text>
+  <text x="367" y="124" font-family="Geist, sans-serif" font-size="9" fill="#5A554B" text-anchor="middle">Classification + Grad-CAM</text>
+
+  <line x1="422" y1="100" x2="450" y2="100" stroke="#2A2620" stroke-width="1"/>
+  <polygon points="450,96 458,100 450,104" fill="#2A2620"/>
+
+  <!-- Stage 4: Assemble result -->
+  <rect x="458" y="70" width="110" height="60" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+  <text x="513" y="96" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">STEP 4</text>
+  <text x="513" y="112" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Assemble result</text>
+  <text x="513" y="124" font-family="Geist, sans-serif" font-size="9" fill="#5A554B" text-anchor="middle">Score + Overlay + Text</text>
+
+  <line x1="568" y1="100" x2="596" y2="100" stroke="#2A2620" stroke-width="1"/>
+  <polygon points="596,96 604,100 596,104" fill="#2A2620"/>
+
+  <!-- Stage 5: Show feedback -->
+  <rect x="604" y="70" width="100" height="60" rx="4" fill="#C9A876" fill-opacity="0.12" stroke="#C9A876" stroke-width="1"/>
+  <text x="654" y="96" font-family="Geist Mono, monospace" font-size="9" fill="#C9A876" text-anchor="middle">STEP 5</text>
+  <text x="654" y="112" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Show feedback</text>
+  <text x="654" y="124" font-family="Geist, sans-serif" font-size="9" fill="#5A554B" text-anchor="middle">To user</text>
+
+  <text x="360" y="180" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">POTR-AID · SYSTEM FLOW · UPLOAD TO FEEDBACK</text>
+</svg>
