@@ -13,12 +13,12 @@
   /* emerald text scale */
   --ink:         #0E3B2E;  /* deep emerald — headlines, primary text */
   --ink-soft:    #2F5E4F;  /* forest — body paragraphs */
-  --ink-muted:   #7A8B7F;  /* sage — captions, meta, eyebrows */
-  --ink-faint:   #7A8B7F;  /* sage — lightest labels */
+  --ink-muted:   #4A5F53;  /* deep sage — captions, meta, eyebrows (5.9:1 on cream, AA) */
+  --ink-faint:   #4A5F53;  /* deep sage — lightest labels (5.9:1 on cream, AA) */
 
   /* antique gold accent */
-  --accent:      #B68D3C;  /* antique gold — italics, links, arrows */
-  --accent-dim:  #8A6A2A;  /* gold hover/pressed */
+  --accent:      #8A6625;  /* oxidised gold — italics, links, arrows (4.5:1 on cream, AA) */
+  --accent-dim:  #6A4D1A;  /* gold hover/pressed */
 
   /* warm hairline borders */
   --line:        #D8CFB8;  /* warm hairline / divider */
@@ -27,9 +27,9 @@
   /* semantic aliases per spec */
   --surface:     #FBF7EC;
   --rule:        #D8CFB8;
-  --muted:       #7A8B7F;
-  --gold:        #B68D3C;
-  --gold-deep:   #8A6A2A;
+  --muted:       #4A5F53;
+  --gold:        #8A6625;
+  --gold-deep:   #6A4D1A;
 
   /* typography */
   --serif: 'Instrument Serif', 'Cormorant Garamond', Georgia, serif;

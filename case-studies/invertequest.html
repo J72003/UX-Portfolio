@@ -151,73 +151,73 @@
 
                 <!-- Step nodes -->
                 <!-- Node 1: Open App -->
-                <rect x="20" y="80" width="110" height="60" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <rect x="20" y="80" width="110" height="60" rx="4" fill="none" stroke="#706A64" stroke-width="1"/>
                 <text x="75" y="106" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">STEP 1</text>
                 <text x="75" y="122" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Open App</text>
-                <text x="75" y="136" font-family="Geist, sans-serif" font-size="10" fill="#5A554B" text-anchor="middle">Camera ready</text>
+                <text x="75" y="136" font-family="Geist, sans-serif" font-size="10" fill="#87817A" text-anchor="middle">Camera ready</text>
 
                 <!-- Arrow 1→2 -->
-                <line x1="130" y1="110" x2="158" y2="110" stroke="#2A2620" stroke-width="1"/>
-                <polygon points="158,106 166,110 158,114" fill="#2A2620"/>
+                <line x1="130" y1="110" x2="158" y2="110" stroke="#706A64" stroke-width="1"/>
+                <polygon points="158,106 166,110 158,114" fill="#706A64"/>
 
                 <!-- Node 2: Frame + Capture -->
-                <rect x="166" y="80" width="110" height="60" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <rect x="166" y="80" width="110" height="60" rx="4" fill="none" stroke="#706A64" stroke-width="1"/>
                 <text x="221" y="106" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384" text-anchor="middle">STEP 2</text>
                 <text x="221" y="122" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Frame + Capture</text>
-                <text x="221" y="136" font-family="Geist, sans-serif" font-size="10" fill="#5A554B" text-anchor="middle">One-thumb tap</text>
+                <text x="221" y="136" font-family="Geist, sans-serif" font-size="10" fill="#87817A" text-anchor="middle">One-thumb tap</text>
 
                 <!-- Arrow 2→3 -->
-                <line x1="276" y1="110" x2="304" y2="110" stroke="#2A2620" stroke-width="1"/>
-                <polygon points="304,106 312,110 304,114" fill="#2A2620"/>
+                <line x1="276" y1="110" x2="304" y2="110" stroke="#706A64" stroke-width="1"/>
+                <polygon points="304,106 312,110 304,114" fill="#706A64"/>
 
                 <!-- Node 3: ML Result -->
                 <rect x="312" y="80" width="110" height="60" rx="4" fill="none" stroke="#C9A876" stroke-width="1"/>
                 <text x="367" y="106" font-family="Geist Mono, monospace" font-size="9" fill="#C9A876" text-anchor="middle">STEP 3</text>
                 <text x="367" y="122" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">View Result</text>
-                <text x="367" y="136" font-family="Geist, sans-serif" font-size="10" fill="#5A554B" text-anchor="middle">Confidence shown</text>
+                <text x="367" y="136" font-family="Geist, sans-serif" font-size="10" fill="#87817A" text-anchor="middle">Confidence shown</text>
 
                 <!-- Decision split from node 3 -->
                 <!-- High confidence path (up) -->
-                <line x1="422" y1="110" x2="450" y2="110" stroke="#2A2620" stroke-width="1" stroke-dasharray="4,3"/>
-                <line x1="450" y1="110" x2="450" y2="60" stroke="#2A2620" stroke-width="1" stroke-dasharray="4,3"/>
-                <line x1="450" y1="60" x2="478" y2="60" stroke="#2A2620" stroke-width="1" stroke-dasharray="4,3"/>
-                <polygon points="478,56 486,60 478,64" fill="#2A2620"/>
+                <line x1="422" y1="110" x2="450" y2="110" stroke="#706A64" stroke-width="1" stroke-dasharray="4,3"/>
+                <line x1="450" y1="110" x2="450" y2="60" stroke="#706A64" stroke-width="1" stroke-dasharray="4,3"/>
+                <line x1="450" y1="60" x2="478" y2="60" stroke="#706A64" stroke-width="1" stroke-dasharray="4,3"/>
+                <polygon points="478,56 486,60 478,64" fill="#706A64"/>
                 <text x="455" y="48" font-family="Geist Mono, monospace" font-size="8" fill="#9A9384">HIGH CONF</text>
 
                 <!-- High conf node -->
-                <rect x="486" y="40" width="110" height="40" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <rect x="486" y="40" width="110" height="40" rx="4" fill="none" stroke="#706A64" stroke-width="1"/>
                 <text x="541" y="56" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Accept Match</text>
-                <text x="541" y="70" font-family="Geist, sans-serif" font-size="10" fill="#5A554B" text-anchor="middle">→ Save</text>
+                <text x="541" y="70" font-family="Geist, sans-serif" font-size="10" fill="#87817A" text-anchor="middle">→ Save</text>
 
                 <!-- Low confidence path (down) -->
-                <line x1="422" y1="110" x2="450" y2="110" stroke="#2A2620" stroke-width="1"/>
-                <line x1="450" y1="110" x2="450" y2="160" stroke="#2A2620" stroke-width="1" stroke-dasharray="4,3"/>
-                <line x1="450" y1="160" x2="478" y2="160" stroke="#2A2620" stroke-width="1" stroke-dasharray="4,3"/>
-                <polygon points="478,156 486,160 478,164" fill="#2A2620"/>
+                <line x1="422" y1="110" x2="450" y2="110" stroke="#706A64" stroke-width="1"/>
+                <line x1="450" y1="110" x2="450" y2="160" stroke="#706A64" stroke-width="1" stroke-dasharray="4,3"/>
+                <line x1="450" y1="160" x2="478" y2="160" stroke="#706A64" stroke-width="1" stroke-dasharray="4,3"/>
+                <polygon points="478,156 486,160 478,164" fill="#706A64"/>
                 <text x="455" y="152" font-family="Geist Mono, monospace" font-size="8" fill="#9A9384">LOW CONF</text>
 
                 <!-- Low conf node -->
-                <rect x="486" y="140" width="110" height="40" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <rect x="486" y="140" width="110" height="40" rx="4" fill="none" stroke="#706A64" stroke-width="1"/>
                 <text x="541" y="156" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Recapture or</text>
-                <text x="541" y="170" font-family="Geist, sans-serif" font-size="10" fill="#5A554B" text-anchor="middle">Flag + Save</text>
+                <text x="541" y="170" font-family="Geist, sans-serif" font-size="10" fill="#87817A" text-anchor="middle">Flag + Save</text>
 
                 <!-- Step 5: Save Observation (both paths merge) -->
                 <!-- Arrow from high conf -->
-                <line x1="596" y1="60" x2="640" y2="60" stroke="#2A2620" stroke-width="1"/>
-                <line x1="640" y1="60" x2="640" y2="100" stroke="#2A2620" stroke-width="1"/>
-                <polygon points="636,100 640,108 644,100" fill="#2A2620"/>
+                <line x1="596" y1="60" x2="640" y2="60" stroke="#706A64" stroke-width="1"/>
+                <line x1="640" y1="60" x2="640" y2="100" stroke="#706A64" stroke-width="1"/>
+                <polygon points="636,100 640,108 644,100" fill="#706A64"/>
 
                 <!-- Arrow from low conf -->
-                <line x1="596" y1="160" x2="640" y2="160" stroke="#2A2620" stroke-width="1"/>
-                <line x1="640" y1="160" x2="640" y2="130" stroke="#2A2620" stroke-width="1"/>
-                <polygon points="636,130 640,122 644,130" fill="#2A2620"/>
+                <line x1="596" y1="160" x2="640" y2="160" stroke="#706A64" stroke-width="1"/>
+                <line x1="640" y1="160" x2="640" y2="130" stroke="#706A64" stroke-width="1"/>
+                <polygon points="636,130 640,122 644,130" fill="#706A64"/>
 
                 <!-- Step 5 node -->
                 <rect x="610" y="100" width="96" height="30" rx="4" fill="#C9A876" fill-opacity="0.12" stroke="#C9A876" stroke-width="1"/>
                 <text x="658" y="119" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Saved</text>
 
                 <!-- Label -->
-                <text x="360" y="204" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">INVERTE-QUEST · CAPTURE-TO-SAVE FLOW · DASHED = CONDITIONAL PATH</text>
+                <text x="360" y="204" font-family="Geist Mono, monospace" font-size="8" fill="#87817A" text-anchor="middle">INVERTE-QUEST · CAPTURE-TO-SAVE FLOW · DASHED = CONDITIONAL PATH</text>
               </svg>
             </div>
           </div>
@@ -324,7 +324,7 @@
                 <rect width="720" height="360" fill="#16140F"/>
 
                 <!-- Phone frame -->
-                <rect x="260" y="20" width="200" height="320" rx="18" fill="none" stroke="#2A2620" stroke-width="1.5"/>
+                <rect x="260" y="20" width="200" height="320" rx="18" fill="none" stroke="#706A64" stroke-width="1.5"/>
                 <!-- Screen area -->
                 <rect x="268" y="36" width="184" height="288" rx="4" fill="#1A1810"/>
 
@@ -352,30 +352,30 @@
                 <circle cx="360" cy="282" r="18" fill="#F2EBDC"/>
 
                 <!-- Flash toggle (left of shutter) -->
-                <rect x="291" y="274" width="32" height="16" rx="8" fill="none" stroke="#2A2620" stroke-width="1"/>
-                <text x="307" y="285" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">FLASH</text>
+                <rect x="291" y="274" width="32" height="16" rx="8" fill="none" stroke="#706A64" stroke-width="1"/>
+                <text x="307" y="285" font-family="Geist Mono, monospace" font-size="7" fill="#87817A" text-anchor="middle">FLASH</text>
 
                 <!-- Gallery access (right of shutter) -->
-                <rect x="397" y="274" width="32" height="16" rx="8" fill="none" stroke="#2A2620" stroke-width="1"/>
-                <text x="413" y="285" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">ALBUM</text>
+                <rect x="397" y="274" width="32" height="16" rx="8" fill="none" stroke="#706A64" stroke-width="1"/>
+                <text x="413" y="285" font-family="Geist Mono, monospace" font-size="7" fill="#87817A" text-anchor="middle">ALBUM</text>
 
                 <!-- Annotations -->
                 <!-- Annotation: Thumb zone -->
-                <line x1="448" y1="282" x2="500" y2="282" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="448" y1="282" x2="500" y2="282" stroke="#706A64" stroke-width="1" stroke-dasharray="3,3"/>
                 <text x="504" y="278" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">THUMB ZONE</text>
-                <text x="504" y="291" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">Bottom 2.5 in</text>
+                <text x="504" y="291" font-family="Geist Mono, monospace" font-size="9" fill="#87817A">Bottom 2.5 in</text>
 
                 <!-- Annotation: Framing guide -->
-                <line x1="410" y1="144" x2="460" y2="200" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="410" y1="144" x2="460" y2="200" stroke="#706A64" stroke-width="1" stroke-dasharray="3,3"/>
                 <text x="464" y="197" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">FRAMING GUIDE</text>
-                <text x="464" y="210" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">Corner brackets only</text>
+                <text x="464" y="210" font-family="Geist Mono, monospace" font-size="9" fill="#87817A">Corner brackets only</text>
 
                 <!-- Annotation: Minimal controls -->
-                <line x1="268" y1="262" x2="220" y2="240" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="268" y1="262" x2="220" y2="240" stroke="#706A64" stroke-width="1" stroke-dasharray="3,3"/>
                 <text x="100" y="237" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">MINIMAL CONTROLS</text>
-                <text x="100" y="250" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">No mid-capture menu</text>
+                <text x="100" y="250" font-family="Geist Mono, monospace" font-size="9" fill="#87817A">No mid-capture menu</text>
 
-                <text x="360" y="348" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">INVERTE-QUEST · CAPTURE SCREEN · WIREFRAME</text>
+                <text x="360" y="348" font-family="Geist Mono, monospace" font-size="8" fill="#87817A" text-anchor="middle">INVERTE-QUEST · CAPTURE SCREEN · WIREFRAME</text>
               </svg>
             </div>
           </div>
@@ -388,12 +388,12 @@
                 <rect width="720" height="360" fill="#16140F"/>
 
                 <!-- Phone frame -->
-                <rect x="260" y="20" width="200" height="320" rx="18" fill="none" stroke="#2A2620" stroke-width="1.5"/>
+                <rect x="260" y="20" width="200" height="320" rx="18" fill="none" stroke="#706A64" stroke-width="1.5"/>
                 <rect x="268" y="36" width="184" height="288" rx="4" fill="#1A1810"/>
 
                 <!-- Photo thumbnail -->
                 <rect x="272" y="44" width="176" height="120" rx="2" fill="#111009"/>
-                <text x="360" y="108" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">CAPTURED PHOTO</text>
+                <text x="360" y="108" font-family="Geist Mono, monospace" font-size="8" fill="#87817A" text-anchor="middle">CAPTURED PHOTO</text>
 
                 <!-- Confidence band: HIGH -->
                 <rect x="272" y="168" width="176" height="20" rx="2" fill="#C9A876" fill-opacity="0.15" stroke="#C9A876" stroke-width="1"/>
@@ -404,23 +404,23 @@
                 <text x="280" y="224" font-family="Geist, sans-serif" font-size="10" fill="#9A9384">Common Stonefly · Order Plecoptera</text>
 
                 <!-- Explanation text -->
-                <text x="280" y="244" font-family="Geist, sans-serif" font-size="9" fill="#5A554B">Strong visual match on wing venation</text>
-                <text x="280" y="256" font-family="Geist, sans-serif" font-size="9" fill="#5A554B">and body segmentation pattern.</text>
+                <text x="280" y="244" font-family="Geist, sans-serif" font-size="9" fill="#87817A">Strong visual match on wing venation</text>
+                <text x="280" y="256" font-family="Geist, sans-serif" font-size="9" fill="#87817A">and body segmentation pattern.</text>
 
                 <!-- Save button -->
                 <rect x="280" y="268" width="160" height="36" rx="4" fill="#F2EBDC"/>
                 <text x="360" y="291" font-family="Geist, sans-serif" font-size="12" fill="#0F0E0C" text-anchor="middle" font-weight="500">Save observation</text>
 
                 <!-- Annotations -->
-                <line x1="448" y1="178" x2="500" y2="178" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="448" y1="178" x2="500" y2="178" stroke="#706A64" stroke-width="1" stroke-dasharray="3,3"/>
                 <text x="504" y="174" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">CONFIDENCE BAND</text>
-                <text x="504" y="187" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">3 tiers: high / med / low</text>
+                <text x="504" y="187" font-family="Geist Mono, monospace" font-size="9" fill="#87817A">3 tiers: high / med / low</text>
 
-                <line x1="448" y1="286" x2="500" y2="286" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="448" y1="286" x2="500" y2="286" stroke="#706A64" stroke-width="1" stroke-dasharray="3,3"/>
                 <text x="504" y="282" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">SINGLE PRIMARY ACTION</text>
-                <text x="504" y="295" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">No decision friction</text>
+                <text x="504" y="295" font-family="Geist Mono, monospace" font-size="9" fill="#87817A">No decision friction</text>
 
-                <text x="360" y="348" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">INVERTE-QUEST · RESULT SCREEN · HIGH CONFIDENCE</text>
+                <text x="360" y="348" font-family="Geist Mono, monospace" font-size="8" fill="#87817A" text-anchor="middle">INVERTE-QUEST · RESULT SCREEN · HIGH CONFIDENCE</text>
               </svg>
             </div>
           </div>
@@ -433,15 +433,15 @@
                 <rect width="720" height="380" fill="#16140F"/>
 
                 <!-- Phone frame -->
-                <rect x="260" y="20" width="200" height="340" rx="18" fill="none" stroke="#2A2620" stroke-width="1.5"/>
+                <rect x="260" y="20" width="200" height="340" rx="18" fill="none" stroke="#706A64" stroke-width="1.5"/>
                 <rect x="268" y="36" width="184" height="308" rx="4" fill="#1A1810"/>
 
                 <!-- Photo thumbnail -->
                 <rect x="272" y="44" width="176" height="90" rx="2" fill="#111009"/>
-                <text x="360" y="93" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">CAPTURED PHOTO</text>
+                <text x="360" y="93" font-family="Geist Mono, monospace" font-size="8" fill="#87817A" text-anchor="middle">CAPTURED PHOTO</text>
 
                 <!-- Confidence band: LOW -->
-                <rect x="272" y="138" width="176" height="20" rx="2" fill="none" stroke="#5A554B" stroke-width="1"/>
+                <rect x="272" y="138" width="176" height="20" rx="2" fill="none" stroke="#87817A" stroke-width="1"/>
                 <text x="296" y="152" font-family="Geist Mono, monospace" font-size="8" fill="#9A9384">LOW CONFIDENCE · 42%</text>
 
                 <!-- Explanation -->
@@ -449,35 +449,35 @@
                 <text x="280" y="187" font-family="Geist, sans-serif" font-size="9" fill="#9A9384">A clearer photo may help narrow it.</text>
 
                 <!-- Candidate A -->
-                <rect x="272" y="198" width="84" height="52" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <rect x="272" y="198" width="84" height="52" rx="4" fill="none" stroke="#706A64" stroke-width="1"/>
                 <text x="314" y="218" font-family="Geist Mono, monospace" font-size="7" fill="#9A9384" text-anchor="middle">CANDIDATE A</text>
                 <text x="314" y="232" font-family="Geist, sans-serif" font-size="10" fill="#F2EBDC" text-anchor="middle" font-style="italic">Chironomidae</text>
-                <text x="314" y="244" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">42%</text>
+                <text x="314" y="244" font-family="Geist Mono, monospace" font-size="7" fill="#87817A" text-anchor="middle">42%</text>
 
                 <!-- Candidate B -->
-                <rect x="364" y="198" width="84" height="52" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <rect x="364" y="198" width="84" height="52" rx="4" fill="none" stroke="#706A64" stroke-width="1"/>
                 <text x="406" y="218" font-family="Geist Mono, monospace" font-size="7" fill="#9A9384" text-anchor="middle">CANDIDATE B</text>
                 <text x="406" y="232" font-family="Geist, sans-serif" font-size="10" fill="#F2EBDC" text-anchor="middle" font-style="italic">Baetidae</text>
-                <text x="406" y="244" font-family="Geist Mono, monospace" font-size="7" fill="#5A554B" text-anchor="middle">38%</text>
+                <text x="406" y="244" font-family="Geist Mono, monospace" font-size="7" fill="#87817A" text-anchor="middle">38%</text>
 
                 <!-- Recapture button -->
                 <rect x="280" y="262" width="160" height="30" rx="4" fill="none" stroke="#F2EBDC" stroke-width="1"/>
                 <text x="360" y="281" font-family="Geist, sans-serif" font-size="11" fill="#F2EBDC" text-anchor="middle">Recapture</text>
 
                 <!-- Save unidentified button -->
-                <rect x="280" y="300" width="160" height="30" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <rect x="280" y="300" width="160" height="30" rx="4" fill="none" stroke="#706A64" stroke-width="1"/>
                 <text x="360" y="319" font-family="Geist, sans-serif" font-size="11" fill="#9A9384" text-anchor="middle">Save as unidentified</text>
 
                 <!-- Annotations -->
-                <line x1="448" y1="224" x2="508" y2="180" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="448" y1="224" x2="508" y2="180" stroke="#706A64" stroke-width="1" stroke-dasharray="3,3"/>
                 <text x="512" y="177" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">TWO EQUAL CANDIDATES</text>
-                <text x="512" y="190" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">No default selection</text>
+                <text x="512" y="190" font-family="Geist Mono, monospace" font-size="9" fill="#87817A">No default selection</text>
 
-                <line x1="448" y1="315" x2="508" y2="315" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="448" y1="315" x2="508" y2="315" stroke="#706A64" stroke-width="1" stroke-dasharray="3,3"/>
                 <text x="512" y="311" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">SPLIT ACTIONS</text>
-                <text x="512" y="324" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">No "Save" as default CTA</text>
+                <text x="512" y="324" font-family="Geist Mono, monospace" font-size="9" fill="#87817A">No "Save" as default CTA</text>
 
-                <text x="360" y="368" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">INVERTE-QUEST · RESULT SCREEN · LOW CONFIDENCE</text>
+                <text x="360" y="368" font-family="Geist Mono, monospace" font-size="8" fill="#87817A" text-anchor="middle">INVERTE-QUEST · RESULT SCREEN · LOW CONFIDENCE</text>
               </svg>
             </div>
           </div>
@@ -518,7 +518,7 @@
                 <rect width="720" height="360" fill="#16140F"/>
 
                 <!-- Phone frame -->
-                <rect x="260" y="20" width="200" height="320" rx="18" fill="none" stroke="#2A2620" stroke-width="1.5"/>
+                <rect x="260" y="20" width="200" height="320" rx="18" fill="none" stroke="#706A64" stroke-width="1.5"/>
                 <rect x="268" y="36" width="184" height="288" rx="4" fill="#1A1810"/>
 
                 <!-- Screen header -->
@@ -531,36 +531,36 @@
                 <circle cx="294" cy="102" r="4" fill="#C9A876"/>
                 <text x="308" y="94" font-family="Geist Mono, monospace" font-size="8" fill="#9A9384">CANDIDATE A · 42%</text>
                 <text x="308" y="108" font-family="Geist, sans-serif" font-size="12" fill="#F2EBDC" font-style="italic">Chironomidae</text>
-                <text x="308" y="122" font-family="Geist, sans-serif" font-size="9" fill="#5A554B">Midge larvae</text>
+                <text x="308" y="122" font-family="Geist, sans-serif" font-size="9" fill="#87817A">Midge larvae</text>
 
                 <!-- Candidate B — unselected state -->
-                <rect x="276" y="142" width="168" height="64" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
+                <rect x="276" y="142" width="168" height="64" rx="4" fill="none" stroke="#706A64" stroke-width="1"/>
                 <!-- Radio indicator: empty -->
-                <circle cx="294" cy="174" r="7" fill="none" stroke="#5A554B" stroke-width="1.5"/>
-                <text x="308" y="166" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B">CANDIDATE B · 38%</text>
+                <circle cx="294" cy="174" r="7" fill="none" stroke="#87817A" stroke-width="1.5"/>
+                <text x="308" y="166" font-family="Geist Mono, monospace" font-size="8" fill="#87817A">CANDIDATE B · 38%</text>
                 <text x="308" y="180" font-family="Geist, sans-serif" font-size="12" fill="#9A9384" font-style="italic">Baetidae</text>
-                <text x="308" y="194" font-family="Geist, sans-serif" font-size="9" fill="#5A554B">Small minnow mayfly</text>
+                <text x="308" y="194" font-family="Geist, sans-serif" font-size="9" fill="#87817A">Small minnow mayfly</text>
 
                 <!-- Save unidentified option -->
-                <rect x="276" y="214" width="168" height="40" rx="4" fill="none" stroke="#2A2620" stroke-width="1"/>
-                <circle cx="294" cy="234" r="7" fill="none" stroke="#5A554B" stroke-width="1.5"/>
-                <text x="308" y="230" font-family="Geist, sans-serif" font-size="11" fill="#5A554B">Save as unidentified</text>
-                <text x="308" y="244" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B">No ID assigned</text>
+                <rect x="276" y="214" width="168" height="40" rx="4" fill="none" stroke="#706A64" stroke-width="1"/>
+                <circle cx="294" cy="234" r="7" fill="none" stroke="#87817A" stroke-width="1.5"/>
+                <text x="308" y="230" font-family="Geist, sans-serif" font-size="11" fill="#87817A">Save as unidentified</text>
+                <text x="308" y="244" font-family="Geist Mono, monospace" font-size="8" fill="#87817A">No ID assigned</text>
 
                 <!-- Save button -->
                 <rect x="280" y="268" width="160" height="36" rx="4" fill="#F2EBDC"/>
                 <text x="360" y="291" font-family="Geist, sans-serif" font-size="12" fill="#0F0E0C" text-anchor="middle" font-weight="500">Save observation</text>
 
                 <!-- Annotations -->
-                <line x1="448" y1="102" x2="500" y2="102" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="448" y1="102" x2="500" y2="102" stroke="#706A64" stroke-width="1" stroke-dasharray="3,3"/>
                 <text x="504" y="98" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">RADIO SELECTION</text>
-                <text x="504" y="111" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">Explicit selectable state</text>
+                <text x="504" y="111" font-family="Geist Mono, monospace" font-size="9" fill="#87817A">Explicit selectable state</text>
 
-                <line x1="448" y1="174" x2="500" y2="174" stroke="#2A2620" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="448" y1="174" x2="500" y2="174" stroke="#706A64" stroke-width="1" stroke-dasharray="3,3"/>
                 <text x="504" y="170" font-family="Geist Mono, monospace" font-size="9" fill="#9A9384">UNSELECTED STATE</text>
-                <text x="504" y="183" font-family="Geist Mono, monospace" font-size="9" fill="#5A554B">Visual hierarchy preserved</text>
+                <text x="504" y="183" font-family="Geist Mono, monospace" font-size="9" fill="#87817A">Visual hierarchy preserved</text>
 
-                <text x="360" y="348" font-family="Geist Mono, monospace" font-size="8" fill="#5A554B" text-anchor="middle">INVERTE-QUEST · SAVE OBSERVATION · REVISED AFTER TESTING</text>
+                <text x="360" y="348" font-family="Geist Mono, monospace" font-size="8" fill="#87817A" text-anchor="middle">INVERTE-QUEST · SAVE OBSERVATION · REVISED AFTER TESTING</text>
               </svg>
             </div>
           </div>
