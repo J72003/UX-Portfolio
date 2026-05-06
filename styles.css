@@ -5,23 +5,31 @@
 
 /* ---------- TOKENS ---------- */
 :root {
-  /* warm off-black palette — not pure black, has warmth */
-  --bg: #0F0E0C;
-  --bg-elevated: #16140F;
-  --bg-subtle: #1A1813;
+  /* emerald + antique gold editorial palette */
+  --bg:          #F4EEDC;  /* parchment cream — page background */
+  --bg-elevated: #FBF7EC;  /* ivory — cards, raised panels */
+  --bg-subtle:   #EEE8D5;  /* warm off-cream — subtle fill */
 
-  /* ivory/cream text */
-  --ink: #F2EBDC;
-  --ink-muted: #9A9384;
-  --ink-faint: #5A554B;
+  /* emerald text scale */
+  --ink:         #0E3B2E;  /* deep emerald — headlines, primary text */
+  --ink-soft:    #2F5E4F;  /* forest — body paragraphs */
+  --ink-muted:   #7A8B7F;  /* sage — captions, meta, eyebrows */
+  --ink-faint:   #7A8B7F;  /* sage — lightest labels */
 
-  /* warm copper/amber accent — leather, whiskey, cologne */
-  --accent: #C9A876;
-  --accent-dim: #8B7553;
+  /* antique gold accent */
+  --accent:      #B68D3C;  /* antique gold — italics, links, arrows */
+  --accent-dim:  #8A6A2A;  /* gold hover/pressed */
 
-  /* hairline borders */
-  --line: #2A2620;
-  --line-soft: #1F1C16;
+  /* warm hairline borders */
+  --line:        #D8CFB8;  /* warm hairline / divider */
+  --line-soft:   #E5DFCC;  /* softer divider */
+
+  /* semantic aliases per spec */
+  --surface:     #FBF7EC;
+  --rule:        #D8CFB8;
+  --muted:       #7A8B7F;
+  --gold:        #B68D3C;
+  --gold-deep:   #8A6A2A;
 
   /* typography */
   --serif: 'Instrument Serif', 'Cormorant Garamond', Georgia, serif;
@@ -71,8 +79,8 @@ body {
 
   /* very subtle warm grain — adds atmosphere, easy on the eyes */
   background-image:
-    radial-gradient(circle at 20% 0%, rgba(201, 168, 118, 0.04) 0%, transparent 50%),
-    radial-gradient(circle at 80% 100%, rgba(201, 168, 118, 0.025) 0%, transparent 60%);
+    radial-gradient(circle at 20% 0%, rgba(182, 141, 60, 0.07) 0%, transparent 50%),
+    radial-gradient(circle at 80% 100%, rgba(14, 59, 46, 0.04) 0%, transparent 60%);
   background-attachment: fixed;
 }
 
@@ -138,14 +146,14 @@ body::before {
 }
 
 a {
-  color: var(--ink);
+  color: var(--accent);
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--accent-dim);
 }
 
 /* ---------- LAYOUT ---------- */
@@ -174,7 +182,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(12px);
-  background: rgba(15, 14, 12, 0.6);
+  background: rgba(244, 238, 220, 0.88);
   border-bottom: 1px solid transparent;
   transition: border-color 0.4s ease;
 }
@@ -222,6 +230,10 @@ a:hover {
 }
 
 .nav-links a:hover {
+  color: var(--ink);
+}
+
+.nav-mark a {
   color: var(--ink);
 }
 
@@ -281,7 +293,7 @@ a:hover {
   font-family: var(--serif);
   font-size: clamp(1.25rem, 2.2vw, 1.75rem);
   line-height: 1.4;
-  color: var(--ink-muted);
+  color: var(--ink-soft);
   max-width: 44ch;
   margin-bottom: var(--space-8);
 }
@@ -364,7 +376,7 @@ a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(201, 168, 118, 0.04), transparent 30%);
+  background: linear-gradient(90deg, rgba(182, 141, 60, 0.08), transparent 30%);
   opacity: 0;
   transition: opacity 0.4s ease;
   pointer-events: none;
@@ -415,7 +427,7 @@ a:hover {
 
 .work-desc {
   font-size: 1rem;
-  color: var(--ink-muted);
+  color: var(--ink-soft);
   line-height: 1.5;
   max-width: 60ch;
 }
@@ -429,13 +441,23 @@ a:hover {
   font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--ink-faint);
+  color: var(--ink-soft);
 }
 
+/* ghost chips */
 .work-tag {
   padding: 0.2rem 0.5rem;
-  border: 1px solid var(--line);
+  border: 0.5px solid var(--rule);
   border-radius: 100px;
+  color: var(--ink-soft);
+  background: transparent;
+}
+
+/* primary chip — first tag is the brand name */
+.work-tag:first-child {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
 }
 
 .work-arrow {
@@ -473,7 +495,7 @@ a:hover {
   font-size: 1.0625rem;
   font-family: var(--sans);
   line-height: 1.7;
-  color: var(--ink-muted);
+  color: var(--ink-soft);
   max-width: 60ch;
 }
 
@@ -637,7 +659,7 @@ a:hover {
   font-family: var(--serif);
   font-size: clamp(1.25rem, 2.2vw, 1.625rem);
   line-height: 1.45;
-  color: var(--ink-muted);
+  color: var(--ink-soft);
   max-width: 50ch;
   margin-bottom: var(--space-8);
 }
@@ -713,7 +735,7 @@ a:hover {
 .case-section p {
   font-size: 1.0625rem;
   line-height: 1.75;
-  color: var(--ink);
+  color: var(--ink-soft);
   margin-bottom: var(--space-3);
 }
 
@@ -743,7 +765,7 @@ a:hover {
   font-size: 1.0625rem;
   line-height: 1.75;
   margin-bottom: var(--space-2);
-  color: var(--ink);
+  color: var(--ink-soft);
 }
 
 .case-section li::marker {
@@ -846,7 +868,7 @@ a:hover {
 }
 
 .case-table td {
-  color: var(--ink);
+  color: var(--ink-soft);
 }
 
 .case-table tr:last-child td {
@@ -981,7 +1003,7 @@ a:hover {
   position: fixed;
   inset: 0;
   z-index: 500;
-  background: rgba(15, 14, 12, 0.92);
+  background: rgba(14, 59, 46, 0.94);
   backdrop-filter: blur(6px);
   display: flex;
   align-items: flex-start;
@@ -1020,10 +1042,10 @@ a:hover {
   top: 1.25rem;
   right: 1.5rem;
   z-index: 501;
-  background: var(--bg-elevated);
-  border: 1px solid var(--line);
+  background: #1A4A3A;
+  border: 1px solid #2F5E4F;
   border-radius: 2px;
-  color: var(--ink-muted);
+  color: #D8CFB8;
   font-family: var(--mono);
   font-size: 1.125rem;
   line-height: 1;
@@ -1040,8 +1062,8 @@ a:hover {
 }
 
 .lightbox-close:hover {
-  color: var(--ink);
-  border-color: var(--ink-faint);
+  color: #F4EEDC;
+  border-color: #B68D3C;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1089,11 +1111,13 @@ a:hover {
     --bg-elevated: #f5f4f1;
     --bg-subtle:   #edece9;
     --ink:         #111111;
+    --ink-soft:    #222222;
     --ink-muted:   #444444;
     --ink-faint:   #666666;
     --line:        #cccccc;
     --line-soft:   #e0ddd8;
-    /* --accent: #C9A876 — copper prints fine, left as-is */
+    --rule:        #cccccc;
+    /* --accent / --gold: #B68D3C prints fine, left as-is */
   }
 
   /* ----- Body reset ----- */
