@@ -794,11 +794,11 @@ a:hover {
   margin-bottom: 0 !important;
 }
 
-/* placeholder for visuals */
+/* dark editorial card — matches SVG internal palette */
 .artifact {
   margin: var(--space-6) 0;
-  border: 1px solid var(--line);
-  background: var(--bg-elevated);
+  border: 1px solid #706A64;
+  background: #16140F;
   padding: var(--space-4);
   border-radius: 4px;
 }
@@ -808,7 +808,7 @@ a:hover {
   font-size: 0.7rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--ink-faint);
+  color: #87817A;
   margin-bottom: var(--space-3);
 }
 
