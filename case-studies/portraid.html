@@ -88,7 +88,7 @@
             <span class="case-tldr-label">30-second version</span>
             <p>
               I helped evaluate an AI portrait composition assistant by
-              connecting model metrics — precision, recall, and F1 — to
+              connecting model metrics (precision, recall, and F1) to
               user-facing trust and usability questions. The project translated
               technical model behavior into recommendations for how
               confidence-scored feedback interfaces should communicate
@@ -105,7 +105,7 @@
                 learning model evaluate portrait photograph composition and
                 give a photographer actionable feedback? The prior work on
                 computational aesthetics treated image quality as a scalar
-                score — a number that told you whether a photo was good but
+                score: a number that told you whether a photo was good but
                 not why, and not what to change.
               </p>
               <p>
@@ -121,7 +121,7 @@
                 accurate model is not 100% accurate. Every result carries
                 a confidence score. How do you surface that score to a
                 non-technical user in a way that supports good decisions
-                rather than blind trust — or blind rejection?
+                rather than blind trust or blind rejection?
               </p>
             </div>
           </section>
@@ -132,9 +132,9 @@
             <div class="case-prose">
               <p>
                 This was a year-long honors research project on AI evaluation
-                under faculty advisement. I ran the evaluation methodology —
+                under faculty advisement. I ran the evaluation methodology:
                 quantitative model performance analysis combined with qualitative
-                failure-mode review — and translated findings into design
+                failure-mode review, then translated the findings into design
                 hypotheses for the prediction interface.
               </p>
             </div>
@@ -150,16 +150,16 @@
                 portrait photographs, coding each image across five
                 compositional attributes: subject framing, rule-of-thirds
                 alignment, background separation, eye contact, and
-                exposure balance. Each attribute was binary — present or
-                absent — so the labeling was defensible rather than
+                exposure balance. Each attribute was binary (present or
+                absent), so the labeling was defensible rather than
                 aesthetic.
               </p>
               <p>
                 The CNN was trained on this labeled dataset using transfer
                 learning from a pretrained image backbone. After training,
                 the model output a per-image classification (well-composed
-                / needs improvement) plus a confidence score and — via
-                gradient-weighted class activation mapping — an attention
+                / needs improvement) plus a confidence score and, via
+                gradient-weighted class activation mapping, an attention
                 overlay showing which regions of the image most influenced
                 the verdict.
               </p>
@@ -336,14 +336,14 @@
                 attention overlays, and disclosure notes. The result interface
                 rests on three hypotheses, derived directly from the
                 failure-mode research. Each is a testable bet about how
-                interface treatment shapes calibrated trust — and each could
+                interface treatment shapes calibrated trust, and each could
                 be validated through follow-on research with real photographers.
               </p>
               <p>
                 The result screen was organized around a hierarchy of
                 certainty. The verdict (well-composed / needs improvement)
                 was displayed at the top, but in a softer visual weight
-                than I might otherwise use — set in the muted palette,
+                than I might otherwise use, set in the muted palette,
                 not as a large proclamation. The confidence score sat
                 immediately below it, with a plain-language gloss:
                 "The model is fairly confident" at 80%+ and "The model
@@ -353,7 +353,7 @@
                 The attention overlay was placed directly on the uploaded
                 photo, using a heatmap-style highlight (warm tones over
                 areas of high influence). This grounded the abstract score
-                in something concrete — a specific region the user could
+                in something concrete: a specific region the user could
                 look at and evaluate for themselves.
               </p>
               <p>
@@ -366,7 +366,7 @@
               </p>
               <p>
                 Critically: the interface included a persistent disclosure
-                note at the bottom of every result — "This model is 92%
+                note at the bottom of every result: "This model is 92%
                 accurate on the test set. Treat this as a second opinion,
                 not a verdict." This was the most explicit trust-calibration
                 mechanism in the design. It was also the one I had to argue
@@ -484,8 +484,8 @@
                 a verdict ("but the photo looks fine to me") changed their
                 reasoning when they could see which region had triggered
                 the classification. The overlay converted an abstract score
-                into a spatial argument — something you could agree or
-                disagree with, rather than just accept.
+                into a spatial argument, something you could agree or
+                disagree with rather than just accept.
               </p>
               <p>
                 The deeper takeaway, which connects to the Inverte-Quest

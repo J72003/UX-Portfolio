@@ -52,7 +52,7 @@
             </h1>
             <p class="case-sub">
               An NSF-funded project that required defining three user
-              populations — students, teachers, and field researchers — before
+              populations (students, teachers, and field researchers) before
               writing a single requirement. The core UX problem was not "AI
               identifies bugs." It was: how do users trust, interpret, and log
               AI-assisted identification in contexts with bad lighting, poor
@@ -90,7 +90,7 @@
             <p>
               I researched and designed an AI-assisted identification tool for
               students, teachers, and field researchers. The core challenge was
-              not just identifying organisms — it was helping users capture
+              not just identifying organisms. It was helping users capture
               usable photos, interpret AI confidence, understand uncertainty,
               and save observations in real field conditions where lighting is
               bad, signal is poor, and errors have consequences.
@@ -112,7 +112,7 @@
               <p>
                 I came onto the project as UX designer and was handed two
                 constraints that defined everything downstream. First: the app
-                would be used in streams and creek banks — wet hands, bright
+                would be used in streams and creek banks: wet hands, bright
                 sun, time pressure, no stable surface. Second: the ML model
                 had meaningful accuracy variance across species. A high-confidence
                 match on a common stonefly and a low-confidence guess on an
@@ -172,7 +172,7 @@
                 several academic species ID tools. The pattern was consistent:
                 most apps were designed for desktop-origin workflows (upload
                 a photo you already have, review results later). The capture
-                flow was treated as a formality — tap, confirm, done. Nothing
+                flow was treated as a formality: tap, confirm, done. Nothing
                 accounted for the fact that capture itself is the hard part
                 when you're standing in a stream.
               </p>
@@ -188,8 +188,8 @@
                 </li>
                 <li>
                   Glare made standard dark overlays and small text nearly
-                  unreadable in direct sun. Students squinted and leaned in —
-                  a friction signal.
+                  unreadable in direct sun. Students squinted and leaned in.
+                  Clear friction signal.
                 </li>
                 <li>
                   When a result showed low confidence, students didn't know
@@ -304,12 +304,12 @@
                 shape student trust in AI outputs? A raw percentage (72%)
                 communicates nothing about what action to take. Users needed a
                 result screen that told them both what the model thinks and
-                whether they should trust it — and if not, what to do instead.
+                whether they should trust it, and if not, what to do instead.
               </p>
               <blockquote>
                 How might we design a field-use mobile interface where the AI's
-                uncertainty is legible — so students can act on the output, not
-                just receive it?
+                uncertainty is legible, so students can act on the output
+                rather than just receive it?
               </blockquote>
             </div>
           </section>
@@ -318,12 +318,12 @@
           <section class="case-section reveal">
             <h2 class="case-section-title"><span class="case-section-num">04</span> Role</h2>
             <div class="case-prose">
-              <p>This is a solo project. I am the designer, researcher, and developer.</p>
+              <p>This is a solo project. I'm the designer, researcher, and developer.</p>
               <ul>
                 <li>Conducted formative research across three user populations (students in field contexts, teachers reviewing observations, researchers logging stream data) to understand workflow constraints and trust expectations</li>
                 <li>Analyzed model failure modes through dataset review and augmentation testing, translating quantitative ML behavior into qualitative design hypotheses about user trust</li>
                 <li>Designed user flows and interface concepts as hypotheses to be validated, with explicit attention to multi-stakeholder workflows and field-condition usability</li>
-                <li>Built the technical foundation for usability testing — Firebase backend, FastAPI inference service on Cloud Run, Expo cross-platform app — to enable end-to-end research with real users</li>
+                <li>Built the technical foundation for usability testing (Firebase backend, FastAPI inference service on Cloud Run, Expo cross-platform app) to enable end-to-end research with real users</li>
                 <li>Maintained NSF S-STEM sponsor alignment through formal research presentations communicating findings, design rationale, and roadmap direction</li>
               </ul>
             </div>
@@ -342,7 +342,7 @@
               </p>
               <p>
                 For the result screen, I separated confidence into three
-                bands — high, medium, low — each with a distinct visual
+                bands (high, medium, low), each with a distinct visual
                 treatment and a distinct call to action. High confidence
                 showed a bold match name and a single "Save" action. Medium
                 confidence showed the match with a secondary "Recapture"
@@ -353,7 +353,7 @@
               </p>
               <p>
                 I also added a brief plain-language explanation under the
-                confidence indicator — not "Confidence: 61%" but "The model
+                confidence indicator. Instead of "Confidence: 61%" it read "The model
                 found a close match. Photographing from a different angle
                 may produce a clearer result." This closed the loop between
                 the score and the action.
@@ -368,7 +368,7 @@
               <p>
                 The screens below are design hypotheses, not deliverables. Each
                 one represents a specific bet about how to translate a research
-                finding into an interface — bets that would be validated through
+                finding into an interface. Each one is a bet that would be validated through
                 moderated usability testing with each user population before
                 moving to higher fidelity.
               </p>
@@ -547,7 +547,7 @@
             <div class="case-prose">
               <p>
                 I ran prototype testing with four biology students across
-                two sessions. The capture flow tested well — students
+                two sessions. The capture flow tested well. Students
                 found the shutter button without instruction and didn't
                 comment on it, which was the intended outcome. The framing
                 guide corners were described by one student as "feeling like
@@ -558,14 +558,14 @@
                 The confidence result screens produced more feedback. The
                 three-tier system worked in the high-confidence condition.
                 In the low-confidence condition, two students initially tried
-                to tap a candidate card to "select" it before saving — an
+                to tap a candidate card to "select" it before saving, an
                 interaction the prototype didn't support. This pointed to a
                 gap: the candidates needed to be explicitly selectable, not
                 just informational. I revised the design to add a radio
                 selection state to each candidate card, which resolved the
                 confusion in the follow-up session.
               </p>
-              <p class="muted">Prototype testing revealed that low-confidence candidate cards needed explicit selection states — a finding that directly changed the save flow before any further iteration.</p>
+              <p class="muted">Prototype testing revealed that low-confidence candidate cards needed explicit selection states. That finding directly changed the save flow before any further iteration.</p>
             </div>
           </section>
 
@@ -634,14 +634,14 @@
                 run three additional rounds of moderated usability research:
               </p>
               <ul>
-                <li><strong>Field condition usability</strong> — recruit 6–8 students in actual classroom field-day contexts, observe capture behavior with wet hands and direct sunlight, measure task completion and error recovery rather than satisfaction</li>
-                <li><strong>Trust calibration</strong> — A/B test the high-confidence vs low-confidence result variants with 12+ student participants, measure whether inverted action hierarchy actually shifts behavior toward retake when confidence is low (vs. the rate of save-anyway clicks as counter-signal)</li>
-                <li><strong>Teacher review workflow</strong> — semi-structured interviews with 5–6 teachers about classroom adoption barriers, including a think-aloud protocol on the observation review and export flow</li>
+                <li><strong>Field condition usability:</strong> recruit 6–8 students in actual classroom field-day contexts, observe capture behavior with wet hands and direct sunlight, measure task completion and error recovery rather than satisfaction</li>
+                <li><strong>Trust calibration:</strong> A/B test the high-confidence vs low-confidence result variants with 12+ student participants, measure whether inverted action hierarchy actually shifts behavior toward retake when confidence is low (vs. the rate of save-anyway clicks as counter-signal)</li>
+                <li><strong>Teacher review workflow:</strong> semi-structured interviews with 5–6 teachers about classroom adoption barriers, including a think-aloud protocol on the observation review and export flow</li>
               </ul>
               <p>
                 Each round would feed back into the design hypotheses. The
                 point of building the technical infrastructure first was to
-                make this research possible at all — without working ML, the
+                make this research possible at all. Without working ML, the
                 trust questions can't be tested honestly.
               </p>
             </div>
@@ -655,8 +655,8 @@
                 The confidence signal problem turned out to be the more
                 interesting design challenge. Translating a model output
                 into an actionable interface decision is something that
-                comes up anywhere ML is surfaced to a non-technical user —
-                and the instinct to display the raw score is almost always
+                comes up anywhere ML is surfaced to a non-technical user.
+                The instinct to display the raw score is almost always
                 wrong. What matters to the user is not the number; it's
                 the answer to "should I trust this and what do I do
                 next."
@@ -666,13 +666,13 @@
                 granularity in exchange for clarity. A 68% and an 89%
                 both read as "high confidence" in this system. For a
                 research app where data quality matters, that flattening
-                could be a problem — which is why the underlying score
+                could be a problem, which is why the underlying score
                 was kept visible, just de-emphasized. Expert users can
                 find it. Novice users are guided by the band.
               </p>
               <p>
-                The testing revision — adding radio selection to the
-                candidate cards — was the cleanest change in the project.
+                Adding radio selection to the candidate cards was the
+                cleanest change in the project.
                 The problem surfaced in under ten minutes of observation
                 and the fix took an afternoon. That ratio is why I treat
                 early prototype testing as non-optional rather than as
