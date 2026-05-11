@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Potr-Aid — Jaspal Singh Kahlon</title>
+    <title>PortrAid — Jaspal Singh Kahlon</title>
     <meta
       name="description"
       content="An honors research project on portrait composition. A published paper, a 92% accurate model, and the design problem at the heart of every confidence-scored interface."
@@ -11,7 +11,7 @@
     <meta name="theme-color" content="#F4EEDC" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Potr-Aid — Jaspal Singh Kahlon" />
+    <meta property="og:title" content="PortrAid — Jaspal Singh Kahlon" />
     <meta property="og:description" content="An honors research project on portrait composition. A published paper, a 92% accurate model, and the design problem at the heart of every confidence-scored interface." />
     <meta property="og:type" content="website" />
 
@@ -83,12 +83,25 @@
       <main class="case-body">
         <div class="container">
 
+          <!-- 30-second version -->
+          <div class="case-tldr reveal">
+            <span class="case-tldr-label">30-second version</span>
+            <p>
+              I helped evaluate an AI portrait composition assistant by
+              connecting model metrics — precision, recall, and F1 — to
+              user-facing trust and usability questions. The project translated
+              technical model behavior into recommendations for how
+              confidence-scored feedback interfaces should communicate
+              certainty, uncertainty, and actionable guidance.
+            </p>
+          </div>
+
           <!-- 01 · CONTEXT -->
           <section class="case-section reveal">
             <h2 class="case-section-title"><span class="case-section-num">01</span> Context</h2>
             <div class="case-prose">
               <p>
-                Potr-Aid started as an honors thesis question: can a machine
+                PortrAid started as an honors thesis question: can a machine
                 learning model evaluate portrait photograph composition and
                 give a photographer actionable feedback? The prior work on
                 computational aesthetics treated image quality as a scalar
@@ -219,10 +232,17 @@
             </div>
           </div>
 
-          <!-- 03 · DESIGN PROBLEM -->
+          <!-- 03 · BRIDGE + DESIGN PROBLEM -->
           <section class="case-section reveal">
-            <h2 class="case-section-title"><span class="case-section-num">04</span> Design problem</h2>
+            <h2 class="case-section-title"><span class="case-section-num">04</span> From model performance to <em>user experience</em></h2>
             <div class="case-prose">
+              <blockquote>
+                Precision, recall, and F1 were not only model-performance
+                metrics. They shaped the interface problem: when should the
+                system sound confident, when should it communicate uncertainty,
+                and how should users interpret AI-generated feedback without
+                treating it as absolute truth?
+              </blockquote>
               <p>
                 The model had three outputs: a binary verdict
                 (well-composed / needs improvement), a confidence score
@@ -269,7 +289,7 @@
                 <rect x="160" y="20" width="400" height="300" rx="6" fill="none" stroke="#706A64" stroke-width="1"/>
 
                 <!-- Page title -->
-                <text x="360" y="50" font-family="Instrument Serif, serif" font-size="18" fill="#F2EBDC" text-anchor="middle" font-style="italic">Potr-Aid</text>
+                <text x="360" y="50" font-family="Instrument Serif, serif" font-size="18" fill="#F2EBDC" text-anchor="middle" font-style="italic">PortrAid</text>
                 <text x="360" y="66" font-family="Geist Mono, monospace" font-size="8" fill="#87817A" text-anchor="middle">PORTRAIT COMPOSITION FEEDBACK</text>
 
                 <!-- Drop zone -->

@@ -1110,6 +1110,98 @@ a:hover {
 .has-custom-cursor * { cursor: none !important; }
 
 /* ============================================================
+   CASE STUDY — 30-second summary box
+   ============================================================ */
+.case-tldr {
+  background: var(--bg-elevated);
+  border-left: 2px solid var(--accent);
+  padding: var(--space-5) var(--space-6);
+  margin-bottom: var(--space-10);
+  border-radius: 0 2px 2px 0;
+}
+
+.case-tldr-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-3);
+}
+
+.case-tldr p {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+/* ============================================================
+   CASE STUDY — ownership split (owned / not owned)
+   ============================================================ */
+.ownership-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6) var(--space-8);
+  margin-top: var(--space-4);
+}
+
+.ownership-split h4 {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: var(--space-3);
+}
+
+@media (max-width: 600px) {
+  .ownership-split { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   CASE STUDY — data tables (user needs, metrics)
+   ============================================================ */
+.case-section table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  margin: var(--space-4) 0 var(--space-6);
+}
+
+.case-section th {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  border-bottom: 1px solid var(--line);
+  padding: var(--space-2) var(--space-3) var(--space-2) 0;
+  text-align: left;
+}
+
+.case-section td {
+  padding: var(--space-3) var(--space-3) var(--space-3) 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink-soft);
+  line-height: 1.55;
+  vertical-align: top;
+}
+
+.case-section tr:last-child td { border-bottom: none; }
+
+@media (max-width: 600px) {
+  .case-section thead { display: none; }
+  .case-section td {
+    display: block;
+    padding-left: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .case-section td:last-child { border-bottom: none; }
+}
+
+/* ============================================================
    METHODS GRID
    ============================================================ */
 .methods-grid {
