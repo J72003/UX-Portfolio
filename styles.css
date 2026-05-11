@@ -1110,6 +1110,37 @@ a:hover {
 .has-custom-cursor * { cursor: none !important; }
 
 /* ============================================================
+   METHODS GRID
+   ============================================================ */
+.methods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-6) var(--space-8);
+  margin-top: var(--space-8);
+}
+
+.method-name {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-2);
+}
+
+.method-desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .methods-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
    GRAIN TEXTURE — tactile depth over the flat background
    ============================================================ */
 body::after {
