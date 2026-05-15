@@ -1233,6 +1233,112 @@ a:hover {
 }
 
 /* ============================================================
+   WORK CARD — proof line
+   ============================================================ */
+.work-proof {
+  margin-top: var(--space-2);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  opacity: 0.8;
+}
+
+/* ============================================================
+   SAVING GOALS MODULE — compact additional research contribution
+   ============================================================ */
+.sg-module {
+  margin-top: var(--space-10);
+  padding: var(--space-6) var(--space-7);
+  background: var(--bg-elevated);
+  border: 0.5px solid var(--line);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 2px 2px 0;
+}
+
+.sg-module-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-4);
+}
+
+.sg-module-title {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: var(--space-4);
+}
+
+.sg-module p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin-bottom: var(--space-4);
+}
+
+.sg-module p:last-of-type {
+  margin-bottom: 0;
+}
+
+.sg-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+}
+
+.sg-metric {
+  padding: var(--space-4) var(--space-4);
+  background: var(--bg);
+  border: 0.5px solid var(--line);
+  border-radius: 2px;
+}
+
+.sg-metric-value {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.75rem;
+  font-style: italic;
+  color: var(--accent);
+  line-height: 1.1;
+  margin-bottom: var(--space-1);
+}
+
+.sg-metric-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  line-height: 1.4;
+}
+
+.sg-note {
+  margin-top: var(--space-4);
+  font-size: 0.875rem;
+  color: var(--ink-faint);
+  font-style: italic;
+  line-height: 1.6;
+  border-top: 0.5px solid var(--line);
+  padding-top: var(--space-4);
+}
+
+@media (max-width: 800px) {
+  .sg-metrics { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .sg-metrics { grid-template-columns: 1fr 1fr; }
+  .sg-module { padding: var(--space-5) var(--space-5); }
+}
+
+/* ============================================================
    GRAIN TEXTURE — tactile depth over the flat background
    ============================================================ */
 body::after {
