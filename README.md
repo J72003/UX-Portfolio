@@ -26,15 +26,7 @@ visuals/
   potr_01_flow.svg
   potr_02_upload.svg
   potr_03_result.svg
-resume.pdf  ← add manually
+resume.pdf  
 ```
 
-## To run locally
 
-Open `index.html` in a browser. No server required.
-
-## To deploy
-
-Any static host works (Netlify, GitHub Pages, Vercel). Drop the root directory contents into the host's deploy target.
-
-**Before deploying:** add `resume.pdf` to the root directory.
