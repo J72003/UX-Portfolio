@@ -233,9 +233,20 @@
             </div>
           </div>
 
+          <!-- FAILURE-MODE ANALYSIS -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">04</span> Failure-mode <em>analysis</em></h2>
+            <div class="case-prose">
+              <p>Aggregate accuracy was 92%. That number sounds strong, but it flattens the meaningful variation underneath. I broke performance down by attribute type, and the pattern matters for interface design.</p>
+              <p>Three attributes were high-reliability: subject framing, background separation, and exposure balance. All three were consistently classified correctly. These attributes have high-contrast signals that the model could learn from reliably across the training set. For interface purposes, the model's verdict on these can be surfaced with higher confidence to the user.</p>
+              <p>Two attributes showed more variance: rule-of-thirds alignment and eye contact. Both are context-dependent and harder to label consistently. A portrait where the subject is intentionally off-center reads as a compositional error to a model trained on conventional framing, even when the choice is deliberate. For interface purposes, the model's verdict on these should be presented as a signal, not a conclusion.</p>
+              <p>The asymmetry between these two groups shaped every downstream interface recommendation. An 8% error rate distributed uniformly would be a calibration problem. An 8% error rate concentrated in context-dependent attributes is a design problem: the interface has to communicate something the aggregate score obscures.</p>
+            </div>
+          </section>
+
           <!-- 03 · BRIDGE + DESIGN PROBLEM -->
           <section class="case-section reveal">
-            <h2 class="case-section-title"><span class="case-section-num">04</span> From model performance to <em>user experience</em></h2>
+            <h2 class="case-section-title"><span class="case-section-num">05</span> From model performance to <em>user experience</em></h2>
             <div class="case-prose">
               <blockquote>
                 Precision, recall, and F1 were not only model-performance
@@ -327,9 +338,9 @@
             </div>
           </div>
 
-          <!-- 05 · TRUST CALIBRATION HYPOTHESES -->
+          <!-- 06 · TRUST CALIBRATION HYPOTHESES -->
           <section class="case-section reveal">
-            <h2 class="case-section-title"><span class="case-section-num">05</span> Trust calibration hypotheses</h2>
+            <h2 class="case-section-title"><span class="case-section-num">06</span> Trust calibration hypotheses</h2>
             <div class="case-prose">
               <p>
                 The interface direction shifted from showing a raw AI score to
@@ -466,29 +477,69 @@
             </div>
           </div>
 
-          <!-- UX IMPLICATIONS -->
+          <!-- UX IMPLICATIONS / RECOMMENDATIONS -->
           <section class="case-section reveal">
-            <h2 class="case-section-title"><span class="case-section-num">06</span> UX implications</h2>
+            <h2 class="case-section-title"><span class="case-section-num">07</span> Prioritized <em>recommendations</em></h2>
             <div class="case-prose">
-              <p>Five interface recommendations that follow directly from the precision, recall, and failure-mode analysis:</p>
-              <ul>
-                <li><strong>Show confidence, not certainty.</strong> Surface the score with language that frames it as an estimate, not a verdict.</li>
-                <li><strong>Explain the reasoning.</strong> When possible, show which compositional attribute drove the result, not just the classification.</li>
-                <li><strong>Design explicit uncertainty states.</strong> Low-confidence results should look and feel different from high-confidence ones, including different calls to action.</li>
-                <li><strong>Avoid finality in language.</strong> Creative feedback that sounds definitive or objective erodes trust when the model is wrong and removes agency from the user.</li>
-                <li><strong>Treat AI feedback as coaching, not judgment.</strong> Frame results as a starting point for the user's own evaluation, not a replacement for it.</li>
-              </ul>
+              <p>Three interface recommendations ordered by priority, derived directly from the precision, recall, and failure-mode analysis. Each is framed as a testable requirement.</p>
+            </div>
+
+            <div class="case-rec">
+              <span class="priority-tag">Must Have · High reach · High impact · Low effort</span>
+              <h3 style="margin: 0.5rem 0; font-size: 1rem; font-weight: 500;">Confidence bands with plain-language gloss</h3>
+              <p style="margin: 0 0 0.5rem;"><strong>User story:</strong> <em>As a photographer reviewing AI composition feedback, I want to know how confident the model is before I decide whether to act on it, so I don't adjust my style based on a borderline classification.</em></p>
+              <p style="margin: 0 0 0.5rem;">Divide the confidence score into three bands (high: 80%+, uncertain: 60–79%, low: below 60%) and pair each with a plain-language gloss: "The model is confident," "The model is uncertain," "The model is guessing." Low-confidence results should visually distinguish themselves with a softer verdict and a different call to action.</p>
+              <p style="font-size: 0.85rem; color: var(--ink-muted); margin: 0;"><strong>Acceptance criteria:</strong> Every result screen shows a band label and gloss. Low-confidence results display a softer visual treatment than high-confidence results. No result shows only a raw percentage.</p>
+            </div>
+
+            <div class="case-rec">
+              <span class="priority-tag">Should Have · Medium reach · High impact · Medium effort</span>
+              <h3 style="margin: 0.5rem 0; font-size: 1rem; font-weight: 500;">Grad-CAM attention overlay by attribute</h3>
+              <p style="margin: 0 0 0.5rem;"><strong>User story:</strong> <em>As a photographer, I want to see which part of my photo the model is reacting to, so I can evaluate the AI's reasoning rather than just accepting its verdict.</em></p>
+              <p style="margin: 0 0 0.5rem;">Display the gradient activation overlay on the uploaded image, highlighting regions that drove the classification. Pair it with a composition note that names the specific attribute in plain language. Not "gradient activation indicates poor background separation" but "The model flagged the background region."</p>
+              <p style="font-size: 0.85rem; color: var(--ink-muted); margin: 0;"><strong>Acceptance criteria:</strong> Overlay renders on all result screens. Composition note is present and uses plain language. Attribute name is explicit (not just "region flagged").</p>
+            </div>
+
+            <div class="case-rec">
+              <span class="priority-tag">Must Have · High reach · Risk-driven · Low effort</span>
+              <h3 style="margin: 0.5rem 0; font-size: 1rem; font-weight: 500;">Persistent accuracy disclosure</h3>
+              <p style="margin: 0 0 0.5rem;"><strong>User story:</strong> <em>As a photographer, I want to know that the AI isn't infallible before I trust its feedback, so I treat it as a second opinion rather than a verdict.</em></p>
+              <p style="margin: 0 0 0.5rem;">Display a persistent disclosure note on every result screen: "This model is 92% accurate on the test set. Treat this as a second opinion, not a verdict. Your judgment is the final authority." Never dismiss, never bury.</p>
+              <p style="font-size: 0.85rem; color: var(--ink-muted); margin: 0;"><strong>Acceptance criteria:</strong> Disclosure is present on 100% of result screens. It cannot be dismissed. It is visible without scrolling on standard viewport sizes.</p>
             </div>
           </section>
 
-          <!-- 05 · REFLECTION -->
+          <!-- MEASUREMENT -->
           <section class="case-section reveal">
-            <h2 class="case-section-title"><span class="case-section-num">07</span> Reflection</h2>
+            <h2 class="case-section-title"><span class="case-section-num">08</span> How I would measure <em>success</em></h2>
+            <div class="case-prose">
+              <p>If these recommendations shipped, I would track the following to determine whether calibrated trust is actually improving.</p>
+            </div>
+
+            <div class="ns-metric">
+              <span class="ns-metric-label">North star metric</span>
+              Decision-quality rate: the percentage of sessions where the user takes an identifiable action after viewing a result (retakes the photo, adjusts framing, or explicitly dismisses the feedback as not useful). This indicates they are engaging with the AI's output rather than ignoring or blindly following it.
+            </div>
+
+            <div class="case-prose">
+              <p><strong>Supporting KPIs:</strong></p>
+              <ul>
+                <li><strong>Retake rate by confidence band:</strong> do users act more on high-confidence results and more often dismiss low-confidence ones? If yes, trust calibration is working.</li>
+                <li><strong>Overtrust rate:</strong> percentage of users who accept a low-confidence verdict without engaging with the composition note or overlay. A high rate signals the confidence band isn't landing.</li>
+                <li><strong>Disclosure interaction rate:</strong> how often users tap or hover over the disclosure note. Low engagement is fine; zero engagement over time may indicate it's invisible.</li>
+              </ul>
+              <p><strong>Counter-metric:</strong> Abandonment rate on low-confidence results. If users are leaving the product specifically on uncertain outputs, the low-confidence treatment may be too alarming rather than helpfully honest.</p>
+            </div>
+          </section>
+
+          <!-- REFLECTION -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">09</span> Reflection</h2>
             <div class="case-prose">
               <p>
                 The disclosure note was the decision I'm most confident about
-                in hindsight. It felt slightly over-cautious at the time —
-                we had a strong model, and making the uncertainty explicit
+                in hindsight. It felt slightly over-cautious at the time. We
+                had a strong model, and making the uncertainty explicit
                 risked undermining the product. But the opposite risk was
                 worse: a photographer adjusting their style based on a
                 borderline classification, because the interface made the
@@ -512,6 +563,12 @@
                 score is an input to that answer, not the answer itself.
                 The interface's job is to close that gap.
               </p>
+              <p>
+                Two things I would do differently. First, finer-grained attribute labeling. The binary coding scheme (present/absent) was defensible and tractable, but it collapsed meaningful variance. An image where rule-of-thirds is intentionally violated for artistic effect gets labeled the same as one where it was accidentally missed. A three-point scale (strong/weak/intentional) would have produced a more nuanced dataset and a model better equipped to handle deliberate compositional choices.
+              </p>
+              <p>
+                Second, usability testing before finalizing the interface hypotheses. The recommendations here are grounded in the failure-mode analysis and in design reasoning, but I never ran them with real photographers to test whether the confidence band language was interpreted correctly. That should have happened before the hypotheses became design decisions.
+              </p>
             </div>
           </section>
 
@@ -529,9 +586,9 @@
       <!-- ============ CASE NEXT ============ -->
       <div class="case-next reveal">
         <div class="container">
-          <a class="case-next-link" href="../index.html#work">
-            <span class="case-next-label">Back to work</span>
-            <span class="case-next-title">View all selected projects</span>
+          <a class="case-next-link" href="frost.html">
+            <span class="case-next-label">Back to the beginning</span>
+            <span class="case-next-title">Frost Bank — helping SMB customers find the right digital banking tools</span>
             <span class="case-next-arrow">→</span>
           </a>
         </div>

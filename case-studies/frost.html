@@ -87,14 +87,7 @@
           <div class="case-tldr reveal">
             <span class="case-tldr-label">30-second version</span>
             <p>
-              I supported SMB digital banking research at Frost Bank by creating
-              interview guides, supporting customer and stakeholder discovery,
-              administering a 50-participant UserTesting study for Saving Goals,
-              benchmarking 13+ banks, and synthesizing findings into platform-fit
-              recommendations and design discussion points. The work helped clarify
-              that SMB platform fit depends less on company size and more on
-              workflow complexity, approvals, fraud and security needs, savings
-              behavior, and banker-supported decision-making.
+              SMB digital banking research at Frost Bank. I benchmarked 13+ banks, ran a 50-participant UserTesting study for Saving Goals, built interview guides, and synthesized findings into platform-fit recommendations and product requirements. The work helped shift the team's framing from "which features do SMBs want" to "which workflow does this business actually run" — and those are very different research questions with very different product answers.
             </p>
           </div>
 
@@ -122,7 +115,7 @@
               <p><strong>My role:</strong> Research, competitive benchmarking, stakeholder discovery, interview planning, synthesis, and product recommendations.</p>
               <p><strong>Methods:</strong> 13+ bank benchmark, gap analysis, stakeholder interviews, interview guide creation, journey mapping.</p>
               <p><strong>Output:</strong> Platform-fit guidance concept, research readout, synthesis matrix, future-state flow.</p>
-              <p><strong>Impact:</strong> Helped shape product conversations around platform fit, migration criteria, and SMB digital banking opportunities.</p>
+              <p><strong>Impact:</strong> Research shaped product conversations on SMB platform fit and migration at Frost. 12+ customer sessions across SMB owners and frontline bankers. Synthesis produced 4 prioritized friction points adopted into team planning. Saving Goals study connected to 5,000+ active customers and 21%+ deposit increases post-adoption. 13-bank benchmark used in stakeholder readouts and product planning.</p>
             </div>
           </section>
 
@@ -218,13 +211,13 @@
                 <h4>What I owned</h4>
                 <ul>
                   <li>Drafted and refined customer discovery interview guides</li>
-                  <li>Supported SMB customer interviews and stakeholder discovery</li>
+                  <li>Supported 12+ SMB customer sessions and stakeholder discovery conversations</li>
                   <li>Designed survey questions for Saving Goals research</li>
                   <li>Administered a 50-participant UserTesting study</li>
                   <li>Synthesized findings with a UX manager into themes and patterns</li>
                   <li>Conducted competitive benchmarking across 13+ banks</li>
                   <li>Created sanitized research artifacts and stakeholder readouts</li>
-                  <li>Contributed research-informed user stories and design discussion points</li>
+                  <li>Contributed research-informed user stories and acceptance criteria adopted into the team's backlog</li>
                 </ul>
               </div>
               <div>
@@ -238,6 +231,17 @@
                 </ul>
               </div>
             </div>
+
+            <p style="margin-top: 2rem">Beyond research synthesis, this work fed directly into Agile delivery. I contributed user stories and acceptance criteria during sprint refinement ceremonies, translating synthesis findings into backlog-ready requirements.</p>
+            <p><strong>Sample user story:</strong> <em>As a business owner evaluating Frost digital banking, I want the onboarding flow to ask how my business handles payments, approvals, and user access (not what industry I'm in) so I'm matched to a platform that fits how I actually work.</em></p>
+            <p><strong>Acceptance criteria:</strong></p>
+            <ul>
+              <li>The onboarding flow presents ≤5 workflow-based questions before surfacing any platform recommendation</li>
+              <li>Output maps to one of three Frost platform options with a plain-language explanation of the match rationale</li>
+              <li>Customers whose inputs indicate complex or ambiguous needs are routed to a banker rather than dropped from the flow</li>
+              <li>The recommendation step is skippable with a direct path to a feature comparison view</li>
+            </ul>
+            <p class="muted">The user story and acceptance criteria above are sanitized representations of the type of requirement I contributed. Specific backlog items remain confidential.</p>
           </section>
 
           <!-- Methodology -->
@@ -365,17 +369,33 @@
             <div class="case-section-num">06 — Design direction</div>
             <h2 class="case-section-title">Design <em>direction</em></h2>
             <p>
-              Based on those insights, I explored a single concept direction:
+              Based on those insights, I prioritized a single concept direction:
               <strong>a guided platform-fit experience</strong> that helps SMB
-              customers and the bankers working with them to understand which
-              Frost digital tools match their business needs.
+              customers and the bankers working with them understand which Frost
+              digital tools match their business needs. The three recommendations
+              below are ordered by priority.
             </p>
-            <p>Three ideas inside that direction:</p>
-            <ul>
-              <li><strong>Platform-Fit Guidance:</strong> a short, workflow-based set of questions that recommends a starting point</li>
-              <li><strong>Task-Based Navigation:</strong> framing options around what the business is trying to do, not which product they map to internally</li>
-              <li><strong>Clear Feature Comparison:</strong> a side-by-side that respects how customers actually evaluate options, with a clear path to a banker when the decision needs a human</li>
-            </ul>
+
+            <div class="case-rec">
+              <span class="priority-tag">Must Have</span>
+              <h3 style="margin: 0 0 0.5rem; font-size: 1rem; font-weight: 500;">Workflow-based onboarding</h3>
+              <p style="margin: 0 0 0.5rem;">Replace industry-category questions with a short set of workflow questions about how the business handles payments, approvals, and user access. Route customers to a matching platform with a plain-language explanation. When inputs indicate complex or ambiguous needs, hand off to a banker rather than drop the customer from the flow.</p>
+              <p style="font-size: 0.85rem; color: var(--ink-muted); margin: 0;"><strong>Why this first:</strong> Platform mismatch is the root cause of most conversion and retention friction in the research. No downstream fix matters if customers start in the wrong tool.</p>
+            </div>
+
+            <div class="case-rec">
+              <span class="priority-tag">Should Have</span>
+              <h3 style="margin: 0 0 0.5rem; font-size: 1rem; font-weight: 500;">Task-based navigation</h3>
+              <p style="margin: 0 0 0.5rem;">Reframe the digital banking navigation around what the business is trying to do: pay vendors, manage team access, set savings goals. Not around internal product names. Customers do not think in product categories; the UI should not require them to.</p>
+              <p style="font-size: 0.85rem; color: var(--ink-muted); margin: 0;"><strong>Why second:</strong> High impact, but requires more design work. Can be phased in without blocking the onboarding fix.</p>
+            </div>
+
+            <div class="case-rec">
+              <span class="priority-tag">Should Have</span>
+              <h3 style="margin: 0 0 0.5rem; font-size: 1rem; font-weight: 500;">Banker handoff with context</h3>
+              <p style="margin: 0 0 0.5rem;">Surface a clear escalation path to a banker at every high-ambiguity decision point, pre-populated with the context the customer already provided. Customers who need a human should not have to start over. Banker escalation is a feature, not a fallback.</p>
+              <p style="font-size: 0.85rem; color: var(--ink-muted); margin: 0;"><strong>Why second:</strong> Addresses a real gap, but lower volume than the onboarding and navigation problems. Straightforward to implement once routing logic exists.</p>
+            </div>
           </section>
 
           <!-- Artifacts -->
@@ -1193,6 +1213,8 @@
               </div>
             </div>
 
+            <p>The pattern in the data is clear: goal-based saving functions as a deposit activation lever, not a secondary feature. Saving Goals customers make more deposits and larger deposits than comparable non-adopters over the same period. The product implication: Saving Goals activation belongs in the onboarding flow for business customers. Surfacing it six months after account open misses the window where it changes behavior.</p>
+
             <p class="sg-note">
               These are observed product metrics connected to the Saving Goals feature after adoption and interaction.
               Goal-based saving correlated with increased deposits and continued engagement.
@@ -1223,9 +1245,47 @@
             </ul>
           </section>
 
+          <!-- How I Would Measure Success -->
+          <section class="case-section reveal">
+            <div class="case-section-num">09 — Measurement</div>
+            <h2 class="case-section-title">How I would measure <em>success</em></h2>
+
+            <p>If these recommendations moved into production, I would track the following:</p>
+
+            <div class="ns-metric">
+              <span class="ns-metric-label">North star metric</span>
+              Platform-fit activation rate: the percentage of new SMB customers who complete onboarding and activate features mapped to their stated workflow within 30 days of account open.
+            </div>
+
+            <p><strong>Supporting KPIs:</strong></p>
+            <ul>
+              <li><strong>Onboarding completion rate:</strong> percentage of customers who complete the workflow-based onboarding flow without abandonment or banker escalation</li>
+              <li><strong>Feature activation breadth:</strong> number of platform features activated within 60 days, segmented by business type and complexity</li>
+              <li><strong>Banker escalation rate:</strong> percentage of onboarding flows that route to a banker, and whether that rate decreases as the workflow questions improve</li>
+              <li><strong>Saving Goals activation timing:</strong> days between account open and first Saving Goal created, comparing customers who encounter it in onboarding versus those who discover it later</li>
+            </ul>
+
+            <p><strong>Counter-metric:</strong> Banker workload per new SMB account. If escalation rates drop but banker workload stays flat or grows, the handoff design needs refinement. Customers may be hitting the banker path for the wrong reasons.</p>
+          </section>
+
+          <!-- What I Would Do Differently -->
+          <section class="case-section reveal">
+            <div class="case-section-num">10 — Retrospective</div>
+            <h2 class="case-section-title">What I would do <em>differently</em></h2>
+            <p>
+              Two things I would change if I ran this project again.
+            </p>
+            <p>
+              First, interview sample breadth. The competitive benchmarking and stakeholder discovery were broad, but the direct customer interviews I conducted skewed toward business owners who already had some familiarity with digital banking. Customers who had never engaged with online business banking, or who had bad prior experiences with it, would have sharpened the friction findings considerably.
+            </p>
+            <p>
+              Second, confidence ratings per insight. I synthesized themes from interviews and stakeholder conversations, but I did not systematically rate each insight by evidence strength before presenting it. Some findings were well-supported across multiple sources; others were directional signals from one or two data points. Making that distinction explicit in the readout would have helped stakeholders prioritize more precisely, and it would have given the team a clearer picture of where validation was still needed before acting.
+            </p>
+          </section>
+
           <!-- Reflection -->
           <section class="case-section reveal">
-            <div class="case-section-num">09 — Reflection</div>
+            <div class="case-section-num">11 — Reflection</div>
             <h2 class="case-section-title"><em>Reflection</em></h2>
             <p>
               The biggest thing this project taught me is that UX in banking is

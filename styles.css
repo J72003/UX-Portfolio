@@ -1245,6 +1245,58 @@ a:hover {
 }
 
 /* ============================================================
+   PRODUCT RECOMMENDATION BLOCKS
+   ============================================================ */
+.case-rec {
+  padding: var(--space-5) var(--space-6);
+  border-left: 1.5px solid var(--line);
+  margin: var(--space-5) 0;
+}
+
+.case-rec + .case-rec {
+  border-top: 0.5px solid var(--line);
+  padding-top: var(--space-5);
+}
+
+.priority-tag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-2);
+}
+
+.case-rule {
+  border: none;
+  border-top: 0.5px solid var(--line);
+  margin: var(--space-8) 0;
+}
+
+/* North star metric highlight */
+.ns-metric {
+  background: var(--bg-elevated);
+  border-left: 2px solid var(--accent);
+  padding: var(--space-4) var(--space-5);
+  margin: var(--space-4) 0 var(--space-5);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  border-radius: 0 2px 2px 0;
+}
+
+.ns-metric-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-2);
+}
+
+/* ============================================================
    SAVING GOALS MODULE — compact additional research contribution
    ============================================================ */
 .sg-module {
