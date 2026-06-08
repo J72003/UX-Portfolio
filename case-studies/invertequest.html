@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Inverte-Quest — Jaspal Singh Kahlon</title>
+    <title>Defining Requirements for an AI-Assisted Field Identification Tool — Jaspal Singh Kahlon</title>
     <meta
       name="description"
-      content="An NSF-funded mobile concept for aquatic invertebrate identification. Two design problems: surviving stream-bank use and calibrating trust in ML predictions."
+      content="Requirements definition for an NSF-funded AI-assisted mobile identification tool. Mapped three user populations, field-condition constraints, and AI confidence needs before writing a single requirement."
     />
     <meta name="theme-color" content="#F4EEDC" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Inverte-Quest — Jaspal Singh Kahlon" />
-    <meta property="og:description" content="An NSF-funded mobile concept for aquatic invertebrate identification. Two design problems: surviving stream-bank use and calibrating trust in ML predictions." />
+    <meta property="og:title" content="Defining Requirements for an AI-Assisted Field Identification Tool — Jaspal Singh Kahlon" />
+    <meta property="og:description" content="Requirements definition for an NSF-funded AI-assisted mobile identification tool. Mapped three user populations, field-condition constraints, and AI confidence needs." />
     <meta property="og:type" content="website" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,23 +46,21 @@
       <header class="case-hero">
         <div class="container">
           <div class="reveal-stagger">
-            <span class="case-eyebrow">02 · NSF S-STEM · UX Research · AI/ML</span>
+            <span class="case-eyebrow">03 · NSF S-STEM · AI Product Discovery · Requirements Definition</span>
             <h1 class="case-title">
-              Designing an AI-assisted invertebrate identification tool for
-              <em>students</em> and field researchers
+              Defining requirements for an AI-assisted <em>field identification</em> tool
             </h1>
             <p class="case-sub">
-              An NSF-funded project that required defining three user
-              populations (students, teachers, and field researchers) before
-              writing a single requirement. The core UX problem was not "AI
-              identifies bugs." It was: how do users trust, interpret, and log
-              AI-assisted identification in contexts with bad lighting, poor
-              signal, and no room for error?
+              Requirements definition for an NSF-funded mobile identification
+              app. The core product problem was not "AI identifies organisms."
+              It was: how do students, teachers, and field researchers capture
+              usable data, interpret AI confidence, and save credible
+              observations under real field constraints?
             </p>
             <div class="case-meta-row">
               <div class="case-meta-item">
                 <span class="case-meta-label">Role</span>
-                <span class="case-meta-value">UX Designer · Researcher</span>
+                <span class="case-meta-value">Product Researcher · Requirements Lead</span>
               </div>
               <div class="case-meta-item">
                 <span class="case-meta-label">Duration</span>
@@ -70,7 +68,7 @@
               </div>
               <div class="case-meta-item">
                 <span class="case-meta-label">Methods</span>
-                <span class="case-meta-value">Persona mapping · Workflow analysis · Competitive audit · Requirements definition · AI confidence UX</span>
+                <span class="case-meta-value">Persona mapping · Workflow analysis · Competitive audit · Requirements definition · Prototype testing · AI confidence analysis</span>
               </div>
               <div class="case-meta-item">
                 <span class="case-meta-label">Tools</span>
@@ -89,12 +87,22 @@
           <div class="case-tldr reveal">
             <span class="case-tldr-label">30-second version</span>
             <p>
-              I researched and designed an AI-assisted identification tool for
-              students, teachers, and field researchers. The core challenge was
-              not just identifying organisms. It was helping users capture
-              usable photos, interpret AI confidence, understand uncertainty,
-              and save observations in real field conditions where lighting is
-              bad, signal is poor, and errors have consequences.
+              I defined requirements for an NSF-funded AI-assisted identification
+              tool used by students, teachers, and field researchers. The core
+              product challenge was not "identify organisms." It was helping users
+              capture usable inputs, interpret uncertain predictions, and save
+              credible observations in real field conditions. I mapped four user
+              types (including the AI system itself), conducted prototype testing,
+              and revised the low-confidence save flow after observing a
+              requirements gap in user testing.
+            </p>
+          </div>
+
+          <!-- Product Question -->
+          <div class="case-tldr reveal" style="border-left-color: var(--accent)">
+            <span class="case-tldr-label">Product question</span>
+            <p>
+              How should an AI-assisted field identification tool help users capture reliable inputs, interpret uncertain predictions, and save credible observations — in conditions where standard mobile UI patterns break down?
             </p>
           </div>
 
@@ -127,16 +135,16 @@
             <div class="case-section-num">01.5 — User needs</div>
             <h2 class="case-section-title">Who uses this, and <em>what they need</em></h2>
             <p>
-              Three distinct user populations shaped the requirements. Their
-              needs were compatible in some areas and in direct tension in
-              others.
+              Four user types shaped every requirement. Three were people;
+              one was the AI system itself, which has its own input quality
+              requirement the product must satisfy.
             </p>
             <table>
               <thead>
                 <tr>
                   <th>User group</th>
                   <th>Primary need</th>
-                  <th>UX implication</th>
+                  <th>Product requirement</th>
                 </tr>
               </thead>
               <tbody>
@@ -166,7 +174,7 @@
 
           <!-- 02 · RESEARCH -->
           <section class="case-section reveal">
-            <h2 class="case-section-title"><span class="case-section-num">02</span> Research</h2>
+            <h2 class="case-section-title"><span class="case-section-num">02</span> Evidence and research</h2>
             <div class="case-prose">
               <p>
                 I started with a competitive audit of iNaturalist, Seek, and
@@ -282,36 +290,24 @@
             </div>
           </div>
 
-          <!-- 03 · THE RESEARCH QUESTIONS -->
+          <!-- 03 · THE PRODUCT PROBLEMS -->
           <section class="case-section reveal">
-            <h2 class="case-section-title"><span class="case-section-num">03</span> The research questions</h2>
+            <h2 class="case-section-title"><span class="case-section-num">03</span> The product <em>problems</em></h2>
             <div class="case-prose">
               <p>
-                Two research questions sat under the surface of "build an ID app":
+                Two product problems sat under the surface of "build an ID app":
               </p>
-              <h3 style="font-family: var(--serif); font-size: 1.125rem; margin: 2rem 0 0.5rem; color: var(--ink);">Field conditions break typical mobile UI patterns</h3>
+              <h3 style="font-family: var(--serif); font-size: 1.125rem; margin: 2rem 0 0.5rem; color: var(--ink);">Capture quality is the first bottleneck</h3>
               <p>
-                RQ1: What design patterns survive when standard mobile usability
-                assumptions break down? The camera interface had to work for
-                someone standing in a creek with one dry hand, bright ambient
-                light, and five seconds before the specimen moves. This meant
-                the capture trigger had to live in the thumb zone, guidance text
-                had to be large enough to read in direct sun, and the
-                confirmation step had to be forgiving of accidental taps.
+                Most identification tools assume the user already has a clean image. In field conditions, capture quality is the product problem. Students stand in streams with one dry hand, deal with direct sunlight, and have seconds before the specimen moves. Standard mobile UI patterns break down here. The capture trigger had to live in the thumb zone, guidance had to be legible in bright sun, and the confirmation step had to be forgiving of accidental taps.
               </p>
-              <h3 style="font-family: var(--serif); font-size: 1.125rem; margin: 2rem 0 0.5rem; color: var(--ink);">AI predictions need calibrated trust</h3>
+              <p class="muted"><strong>Product decision informed:</strong> One large shutter button in the thumb zone, minimal controls, framing guide visible in direct sun, no mid-capture menu.</p>
+
+              <h3 style="font-family: var(--serif); font-size: 1.125rem; margin: 2rem 0 0.5rem; color: var(--ink);">AI uncertainty must be legible and actionable</h3>
               <p>
-                RQ2: How does interface treatment of confidence and uncertainty
-                shape student trust in AI outputs? A raw percentage (72%)
-                communicates nothing about what action to take. Users needed a
-                result screen that told them both what the model thinks and
-                whether they should trust it, and if not, what to do instead.
+                The model had meaningful accuracy variance across species. A raw confidence percentage (72%) communicates nothing about what action to take. Users needed a result screen that answered "should I trust this?" and "what should I do next?" — not just "here is a prediction."
               </p>
-              <blockquote>
-                How might we design a field-use mobile interface where the AI's
-                uncertainty is legible, so students can act on the output
-                rather than just receive it?
-              </blockquote>
+              <p class="muted"><strong>Product decision informed:</strong> Three confidence bands (high, medium, low) each with distinct visual treatment and a distinct call to action. Plain-language gloss alongside every score.</p>
             </div>
           </section>
 
@@ -319,20 +315,22 @@
           <section class="case-section reveal">
             <h2 class="case-section-title"><span class="case-section-num">04</span> Role</h2>
             <div class="case-prose">
-              <p>This is a solo project. I'm the designer, researcher, and developer.</p>
+              <p>This is a solo project. I led requirements definition, product research, and prototype development.</p>
               <ul>
-                <li>Conducted formative research across three user populations (students in field contexts, teachers reviewing observations, researchers logging stream data) to understand workflow constraints and trust expectations</li>
-                <li>Analyzed model failure modes through dataset review and augmentation testing, translating quantitative ML behavior into qualitative design hypotheses about user trust</li>
-                <li>Designed user flows and interface concepts as hypotheses to be validated, with explicit attention to multi-stakeholder workflows and field-condition usability</li>
-                <li>Built the technical foundation for usability testing (Firebase backend, FastAPI inference service on Cloud Run, Expo cross-platform app) to enable end-to-end research with real users</li>
-                <li>Maintained NSF S-STEM sponsor alignment through formal research presentations communicating findings, design rationale, and roadmap direction</li>
+                <li>Conducted competitive audit across iNaturalist, Seek, and academic species ID tools to map capture-flow gaps</li>
+                <li>Ran two field observation sessions watching biology students collect specimens to identify workflow constraints and failure points</li>
+                <li>Mapped requirements across four user types: students, teachers, field researchers, and the AI system's input quality needs</li>
+                <li>Analyzed model confidence variance by species to translate ML behavior into product-relevant confidence tiers and interface requirements</li>
+                <li>Ran prototype testing with four biology students across two sessions; observed a requirements gap in the low-confidence flow and revised the save interaction before the follow-up session</li>
+                <li>Built the technical infrastructure (Firebase, FastAPI, Cloud Run, Expo) to enable real end-to-end prototype testing with working ML inference</li>
+                <li>Maintained NSF S-STEM sponsor alignment through formal research presentations</li>
               </ul>
             </div>
           </section>
 
           <!-- 05 · DESIGN DECISIONS -->
           <section class="case-section reveal">
-            <h2 class="case-section-title"><span class="case-section-num">05</span> Design decisions</h2>
+            <h2 class="case-section-title"><span class="case-section-num">05</span> Product <em>decisions</em></h2>
             <div class="case-prose">
               <p>
                 The capture screen resolved around a single principle: reduce
@@ -550,7 +548,7 @@
 
           <!-- 07 · TESTING -->
           <section class="case-section reveal">
-            <h2 class="case-section-title"><span class="case-section-num">07</span> Testing</h2>
+            <h2 class="case-section-title"><span class="case-section-num">07</span> Prototype <em>testing</em></h2>
             <div class="case-prose">
               <p>
                 I ran prototype testing with four biology students across
@@ -631,9 +629,106 @@
             </div>
           </div>
 
+          <!-- REQUIREMENTS MATRIX -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">08</span> Requirements <em>matrix</em></h2>
+            <p>Requirements prioritized by MoSCoW, with user need and success signal for each.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Requirement</th>
+                  <th>User need</th>
+                  <th>Priority</th>
+                  <th>Success signal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>One-thumb capture</strong></td>
+                  <td>Field usability</td>
+                  <td>Must-have</td>
+                  <td>Students capture without instruction</td>
+                </tr>
+                <tr>
+                  <td><strong>High / medium / low confidence bands</strong></td>
+                  <td>Trust calibration</td>
+                  <td>Must-have</td>
+                  <td>Users choose appropriate next action per band</td>
+                </tr>
+                <tr>
+                  <td><strong>Plain-language gloss alongside score</strong></td>
+                  <td>Trust calibration</td>
+                  <td>Must-have</td>
+                  <td>Users do not act on raw percentage alone</td>
+                </tr>
+                <tr>
+                  <td><strong>Retake prompt on low confidence</strong></td>
+                  <td>Data quality</td>
+                  <td>Must-have</td>
+                  <td>Low-confidence outputs trigger recapture, not blind save</td>
+                </tr>
+                <tr>
+                  <td><strong>Selectable candidate cards (radio state)</strong></td>
+                  <td>Error handling</td>
+                  <td>Must-have</td>
+                  <td>Users can explicitly select an ID, not just view candidates</td>
+                </tr>
+                <tr>
+                  <td><strong>"Save as unidentified" always visible</strong></td>
+                  <td>Data integrity</td>
+                  <td>Must-have</td>
+                  <td>Users don't force-assign an ID under uncertainty</td>
+                </tr>
+                <tr>
+                  <td><strong>Teacher observation review flow</strong></td>
+                  <td>Classroom adoption</td>
+                  <td>Should-have</td>
+                  <td>Teachers can organize and review session observations</td>
+                </tr>
+                <tr>
+                  <td><strong>Exportable metadata and notes</strong></td>
+                  <td>Research credibility</td>
+                  <td>Should-have</td>
+                  <td>Observations remain useful outside the app</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- SUCCESS METRICS -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">09</span> How I would measure <em>success</em></h2>
+
+            <div class="ns-metric">
+              <span class="ns-metric-label">North star metric</span>
+              Credible observation completion rate: the percentage of field sessions where a user captures, interprets, and saves an observation with enough confidence and metadata to be scientifically useful. This measures whether the product is actually helping users generate reliable data, not just identifying organisms.
+            </div>
+
+            <p><strong>Supporting KPIs:</strong></p>
+            <ul>
+              <li><strong>Retake rate on low-confidence results:</strong> do users act on the retake prompt? A low rate signals the low-confidence treatment is being ignored.</li>
+              <li><strong>Candidate selection rate vs. save-as-unidentified rate:</strong> indicates whether users are making intentional identification decisions or defaulting to a save action.</li>
+              <li><strong>Save-anyway rate on low-confidence:</strong> users who skip the retake and save a low-confidence prediction without selection. This is the key counter-signal for trust calibration failure.</li>
+              <li><strong>Teacher review completion rate:</strong> whether teachers are actually using the observation log to review class sessions.</li>
+            </ul>
+
+            <p><strong>Counter-metric:</strong> Abandonment after low-confidence results. If users are leaving the product at uncertain outputs rather than retaking or saving as unidentified, the low-confidence treatment is too alarming rather than helpfully honest.</p>
+          </section>
+
+          <!-- TRADEOFFS -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">10</span> Product <em>tradeoffs</em></h2>
+            <div class="case-prose">
+              <p><strong>Simplicity vs. accuracy.</strong> Confidence bands simplify a continuous score into three buckets. A 68% and an 89% both read as "high confidence." For a research application where data quality matters, that flattening is a deliberate tradeoff: expert users can see the underlying score (kept visible but de-emphasized), while novice users are guided by the band label. The tradeoff is clarity over granularity.</p>
+              <p style="margin-top: 1.5rem"><strong>Automation vs. human judgment.</strong> The AI can identify with high confidence, but it cannot know whether a student's observation context matters. Keeping human override always accessible — via candidate selection, retake, or save-as-unidentified — means the product never forces false precision on the user's behalf.</p>
+              <p style="margin-top: 1.5rem"><strong>Speed vs. credibility.</strong> Fast capture matters in field conditions. But a fast capture of a blurry image produces a low-confidence prediction that still requires the user to make a decision. The retake prompt adds a step but protects data quality for the use cases where the observation is actually being used scientifically.</p>
+              <p style="margin-top: 1.5rem"><strong>Novice guidance vs. expert control.</strong> Students need clear direction. Field researchers need access to metadata, exportable notes, and model score detail. The layered confidence display (band label for novices, raw score visible for those who want it) is the same tradeoff applied consistently across the product.</p>
+            </div>
+          </section>
+
           <!-- 09 · WHAT I'D VALIDATE NEXT -->
           <section class="case-section reveal">
-            <h2 class="case-section-title"><span class="case-section-num">08</span> What I'd validate next</h2>
+            <h2 class="case-section-title"><span class="case-section-num">11</span> What I'd validate next</h2>
             <div class="case-prose">
               <p>
                 The current state has early prototype validation, but not full
@@ -654,9 +749,9 @@
             </div>
           </section>
 
-          <!-- 10 · REFLECTION -->
+          <!-- 12 · REFLECTION -->
           <section class="case-section reveal">
-            <h2 class="case-section-title"><span class="case-section-num">09</span> Reflection</h2>
+            <h2 class="case-section-title"><span class="case-section-num">12</span> Reflection</h2>
             <div class="case-prose">
               <p>
                 The confidence signal problem turned out to be the more
@@ -688,15 +783,37 @@
             </div>
           </section>
 
+          <!-- PRODUCT ANALYST TAKEAWAY -->
+          <section class="case-section reveal">
+            <h2 class="case-section-title"><span class="case-section-num">13</span> Product analyst <em>takeaway</em></h2>
+            <div class="case-prose">
+              <p>
+                This project shows that AI product requirements cannot be
+                written from the model output alone. The workflow around the
+                prediction matters just as much as the prediction itself.
+                The product has to support input quality, confidence interpretation,
+                human correction, and downstream use.
+              </p>
+              <p>
+                The radio selection gap — discovered in ten minutes of prototype
+                testing — is a good example of why requirements definition needs
+                real users. The written requirement said "show two candidates."
+                What users actually needed was "let me select between them."
+                Those are different requirements with different implementation
+                implications. Only observation revealed the gap.
+              </p>
+            </div>
+          </section>
+
         </div><!-- /container -->
       </main>
 
       <!-- ============ CASE NEXT ============ -->
       <div class="case-next reveal">
         <div class="container">
-          <a class="case-next-link" href="portraid.html">
-            <span class="case-next-label">Next case study — 03</span>
-            <span class="case-next-title">PortrAid — evaluating AI portrait composition assistance</span>
+          <a class="case-next-link" href="frost.html">
+            <span class="case-next-label">Back to the beginning</span>
+            <span class="case-next-title">Frost Bank — analyzing SMB digital banking workflows to improve platform-fit decisions</span>
             <span class="case-next-arrow">→</span>
           </a>
         </div>
